@@ -1,1 +1,13 @@
-FIXME: describe how to cite this lesson.
+cff-version: 0.0.1
+message: If you use this software, please cite it as below.
+authors:
+  - family-names: Fisher
+    given-names: B.A.
+    orcid: https://orcid.org/0000-0002-6461-041X
+  - family-names: Aufdenkampe
+    given-names: A.K.
+    orcid: http://orcid.org/0000-0002-5811-6458
+title: Introduction to EnviroDIY Modular Sensor Library for environmental monitoring.
+version: 0.0.1
+doi:
+date-released: 2018-11-11
