@@ -7,7 +7,7 @@ questions:
 objectives:
 - "Create a GitHub account and connect with GitHub Desktop."
 keypoints:
-- "PlatformIO is one of many IDEs for code development."
+- "(insert when compiled)"
 ---
 Remember that the overall goal of this training is to prepare you to use the EnviroDIY Modular Sensors Library for environmental monitoring.  
 
