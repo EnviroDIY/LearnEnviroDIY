@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Arduino for EnviroDIY"
 teaching: 0
-exercises: 0
+exercises: 120
 questions:
 - "How do I connect to an Arduino board? How do I modify an Arduino sketch? How do I connect sensors?"
 objectives:

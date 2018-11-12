@@ -1,7 +1,7 @@
 ---
 title: "Installing PlatformIO"
 teaching: 0
-exercises: 0
+exercises: 20
 questions:
 - "How will I manage more complicated Arduino code libraries?"
 objectives:

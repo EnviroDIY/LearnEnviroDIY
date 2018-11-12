@@ -1,7 +1,7 @@
 ---
 title: "Connecting to GitHub"
 teaching: 0
-exercises: 0
+exercises: 20
 questions:
 - "How will I keep track of changes in the EnviroDIY code library? With all the library dependencies, how do I share my code with collaborators?"
 objectives:
