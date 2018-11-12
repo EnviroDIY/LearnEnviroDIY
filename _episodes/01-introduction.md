@@ -45,17 +45,11 @@ This lesson teaches you what libraries are and how to manage them, including com
 
 Multi-tasking the Arduino Part 1 by Bill Earl
 https://learn.adafruit.com/multi-tasking-the-arduino-part-1
-Because an Arduino is a microcontroller and not a computer, it can do only one thing at a time. This means that to perform multiple tasks we need to combine sketches. EnviroDIY Modular Sensors combines many, many functions for you (so you won't have to). We want you to work through this tutorial because it teaches you about class structures, which is the core of how Modular Sensors is structured. Until you are a developer, you will not be combining outside sketches with the EnviroDIY Modular Sensors, but you will need to modify Modular Sensors sketches to run your specific set sensors and to do that you need to recognize constructor functions. (rephrase this for clarity and sequencing)
+Because an Arduino is a microcontroller and not a computer, it can do only one thing at a time. This means that to perform multiple tasks we need to combine sketches. EnviroDIY Modular Sensors combines many, many things for you (run multiple sensors with different warm up times, putting the sensors to sleep, use solar energy to recharge batteries, save information to an SD card, stream information to an internet portal, etc.). This tutorial demonstrates how multitasking sketches handle timing, objects, class, constructors, and functions, which are core of how Modular Sensors is structured. You will need to be familiar with the concepts of object, class, constructor, and function, but you will not need to be able to create any of these on your own to use the Modular Sensors sketches. Also note that the idea of an external button that we can use to interact with the Arduino (and interrupt it) is used in Modular Sensors to initiate a testing mode.
 
-(RESUME here)
-Including intro to object-oriented (class/subclass) structures that are used in complex libraries like ModularSensors, starting with https://learn.adafruit.com/multi-tasking-the-arduino-part-1/a-classy-solution
+Multi-tasking the Arduino Part 2 by Bill Earl
 https://learn.adafruit.com/multi-tasking-the-arduino-part-2
-
-Arduino as a Data Logger platform
-4 Lectures in HydroInformatics course by Jeff Horsburgh
-https://usu.instructure.com/courses/417249/pages/lecture-materials
-4 lectures from Sep. 13-22
-
+This lesson is optional. Introduces interrupts, which Modular Sensors uses for pin changes, sleep mode, and sensor testing mode. The primary need for Modular Sensors users from this lesson is to be aware that interrupts are part of the structure of Modular Sensors and they contribute to the ability to perform multiple tasks.
 
 
 {% include links.md %}
