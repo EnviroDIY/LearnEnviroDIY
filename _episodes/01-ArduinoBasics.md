@@ -3,7 +3,8 @@ title: "Arduino Basics for EnviroDIY"
 teaching: 0
 exercises: 120
 questions:
-- "How do I connect to an Arduino board? How do I modify an Arduino sketch? How do I connect sensors?"
+- "What are the parts of an Arduino board?"
+- "How do I create, upload and modify an Arduino code sketch?"
 objectives:
 - "Learn basic Arduino skills, including uploading, running, and modifying sketches."
 keypoints:

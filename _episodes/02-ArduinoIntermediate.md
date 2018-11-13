@@ -3,7 +3,8 @@ title: "Arduino Intermediate Skills for EnviroDIY"
 teaching: 0
 exercises: 120
 questions:
-- "How do I connect to an Arduino board? How do I modify an Arduino sketch? How do I connect sensors?"
+- "What is an Arduino library and how do I use it?"
+- "What intermediate code structures are critical to data logging?"
 objectives:
 - "Learn how to use external libraries, which leverage the power of C++."
 - "Learn how to use a C++ class, using a `constructor` function, leveraging Object Oriented Programming."
