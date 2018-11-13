@@ -34,7 +34,7 @@ The Arduino sketches in this episode are simple and require a minimal number of 
 
 
 **[Adafruit Learn Arduino](https://learn.adafruit.com/series/learn-arduino) by Simon Monk**, lessons 0, 2, 6  
-NOTE: You'll need addition parts from an [Arduino Uno Starter Kit](https://www.amazon.com/gp/product/B00BT0NDB8) or an [Adafruit Metro 328 Starter Pack](https://www.adafruit.com/product/3345).
+NOTE: You will need additional parts from an [Arduino Uno Starter Kit](https://www.amazon.com/gp/product/B00BT0NDB8) or an [Adafruit Metro 328 Starter Pack](https://www.adafruit.com/product/3345).
 
 - [Arduino Lesson 0. Getting Started](https://learn.adafruit.com/lesson-0-getting-started)
   - A look at all the parts of the starter kit. Describes a breadboard anatomy. (You will be using breadboards to test sensor wiring prior to soldering for your deployments.) Repeats how to install Arduino software, so you can skip that part.
