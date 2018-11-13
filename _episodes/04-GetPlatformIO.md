@@ -17,16 +17,17 @@ In this lesson we will prepare you to use PlatformIO, an Integrated Development 
 PlatformIO IDE is hosted within a text editor designed for editing code. Most code text editors highlight syntax and have special auto-complete features based on elements of the code. PlatformIO can be hosted by several text editors, so if you are a coder and already use VSCode or Sublime, please feel free to install PlatformIO for one of these editors. This tutorial will be presented from the perspective of PlatformIO hosted within Atom text editor. Since Microsoft took ownership of GitHub, their VSCode has become the "recommended" download for PlatformIO, but Atom and other editors still work great. If you choose a different text editor, some of the buttons will be located in different places, but all of the functionality will be preserved.
 
 - [Install PlatformIO for Atom.](https://platformio.org/install/ide?install=atom)
-  - After you download Atom, as described in the download webpage, you will go to Settings in Atom (gear symbol), select install (plus symbol) and type in `platformio-ide` in the box that says "search packages" to install PlatformIO.
+  - After you download Atom, you will go to Settings in Atom (gear symbol), select install (plus symbol) and type in `platformio-ide` in the box that says "search packages" (see image below). PlatformIO should appear in the list after your search. Click on the blue install button and follow any additional instructions (such as to restart) to complete the installation.
 
 ![Source and Destination Files]({{ page.root }}/fig/PlatformIO_navigation002.png)
 
 ### What you can see in PlatformIO
+In the following sections we will take you on a tour through the PlatformIO environment.
 
 ![Source and Destination Files]({{ page.root }}/fig/PlatformIO_navigation003.png)
 
 #### Left side bar:
-**PlatformIO Home.** This is where you will manage software updates for PlatformIO and other libraries that PlatformIO sees you using. You will know when updates are needed because they will be marked with bright badges. Make sure your board is loaded under the Boards sidebar in the Home space (e.g. EnviroDIY Mayfly). You also create a PlatformIO account here, which I think you need if you use some of the development capabilities; I don’t have a PlatformIO account.
+**PlatformIO Home.** This is where you will manage software updates for PlatformIO and other libraries that PlatformIO sees you using. You will know when updates are needed because they will be marked with bright badges. You also create a PlatformIO account here, which I think you need if you use some of the development capabilities; I don’t have a PlatformIO account.
 
 **Build (checkmark).** Formerly known as “compile” in Arduino. This is the button you push when your sketch is ready and your platformio.ini is pointing to all of the right files and repositories for your sketch. This process will list color-coded errors (and successes) as it runs the build. I have found that the error messages are usually pretty understandable and repairable, so don’t despair. Red error messages will not allow you to proceed. Yellow error messages will still allow you to proceed.
 
@@ -58,6 +59,9 @@ PlatformIO IDE is hosted within a text editor designed for editing code. Most co
 This is basically Finder/Windows Explorer conveniently located right in PlatformIO. You can add, move, copy, and delete files and folders in this tab. Right-clicking on any of the items in your project will give you a list of possible actions. I also frequently use the “Copy Project Path” option for naming the source directories in my platformio.ini file.
 
 One of the most important things to notice in the project tab is the blue vertical line along the left side of the project tab. This line indicates which project is the active project, meaning that the platformio.ini file in the root directory of that project is where PlatformIO will look for build instructions. In the screen shots provided “ModularSensors” is the active project, and all others are inactive (even though I am editing files in the LearnEnviroDIY project).
+
+There’s a little half-circle that appears when your mouse hovers over the project tab that will allow you to hide or show it as needed. This will be useful when you are comparing two sketches side-by-side.
+
 
 
 
