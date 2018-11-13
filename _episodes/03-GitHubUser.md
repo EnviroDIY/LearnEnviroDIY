@@ -9,19 +9,33 @@ objectives:
 keypoints:
 - "Learn what GitHub can do and the jargon GitHub uses to describe your activity on GitHub."
 ---
-Remember that the overall goal of this training is to prepare you to use the EnviroDIY Modular Sensors Library for environmental monitoring.  
+This lesson will help you connect to GitHub, which is a web-hosting service for computer code repositories. This tutorial is hosted on GitHub, and the EnviroDIY Modular Sensor Library is also on GitHub. That means GitHub is the source code manager for the code you will be using, so you will benefit from using GitHub to keep track of updates to the EnviroDIY Modular Sensor Library. You may also find it to be a useful place to keep track of your own codes to manage versions and share will collaborators.
 
-This lesson will help you connect to GitHub, which is a web-hosting service for computer code repositories. This tutorial is hosted on GitHub, and the EnviroDIY Modular Sensor Library is also on GitHub. That means it is the source code manager for the code you will be using, so you will benefit from using GitHub to keep track of updates to the EnviroDIY Modular Sensor Library. You may also find it to be a useful place to keep track of your own codes to manage versions and share will collaborators.
+## Part 1, Episode 3: Connecting to GitHub
 
-First, here's a short introduction to one group's project using GitHub for collaboration. It's a little bit silly, but we like how it introduces the vocabulary of GitHub.
-https://www.youtube.com/watch?v=w3jLJU7DT5E
+> ## GitHub example use case
+> Here's a short introduction to one group's project using GitHub for collaboration. It's a little bit silly, but we like how it introduces the vocabulary of GitHub. [How GitHub Works](https://www.youtube.com/watch?v=w3jLJU7DT5E)
+{: .testimonial}
 
-Go to https://github.com/ and "Sign Up" for GitHub (create your own user account).
+The operative word for our use of GitHub is collaborative! It can be a place where you share files with collaborators, keep track of changes (*version control*, which is pretty much track changes on steroids; it's excellent.), and collaborate even when you are not sitting together or working at the same moment.
 
-Go to https://desktop.github.com/ and download and install GitHub Desktop. This software is a graphical user interface to help you manage the files that you get from (pull) or send to (push) GitHub repositories. Having a Git Client will allow you to (mostly) avoid command line interaction with GitHub. There are other Git Clients available, and you are welcome to explore and use them. Our tutorials will be from the perspective of GitHub Desktop simply because that is what was available when the authors started. Sign in to GitHub desktop so it will be prepared to track your contributions.
+> ## Things you should know
+> Your activity on GitHub is public. Your content on GitHub is public (but credited to you as the owner/contributor). Private repositories (*repos* for short, defined as a storage place) exist, but they are not free. Don't let this scare you away from interacting on GitHub, submitting *issues*, or making *commits*.
+{: .callout}
 
-Your first GitHub activity will acquaint you with some of the jargon and functionality of GitHub.  
-https://guides.github.com/activities/hello-world/
+- ["Sign Up" for GitHub (create your own user account).](https://github.com/) :octocat:
+  - In most cases we will be using code that others have contributed to GitHub, but you will need to create an account to be a GitHub user. As you create your account, consider using an email address that you will continue to use beyond this project. (If you need to change it some day, GitHub handles redirects well.)
+
+- [Download and install GitHub Desktop.](https://desktop.github.com/)
+  - This software is a graphical user interface (GUI) to help you manage the files that you get from (pull) or send to (push) GitHub repositories. Having a Git Client will allow you to (mostly) avoid command line interaction with GitHub. There are other Git Clients available, and you are welcome to explore and use them. Our tutorials will be from the perspective of GitHub Desktop simply because that is what was available when the authors started. Sign in to GitHub desktop so it will be prepared to track your contributions.
+
+- [GitHub activity: Hello World](https://guides.github.com/activities/hello-world/.
+  - Your first GitHub activity will acquaint you with some of the jargon and functionality of GitHub by creating your own repository.  
+
+
+> ##For your reference
+> GitHub is full of jargon. [Here's a glossary for GitHub.](https://help.github.com/articles/github-glossary/)
+{: .callout}
 
 
 {% include links.md %}
