@@ -7,7 +7,7 @@ questions:
 objectives:
 - "Learn basic Arduino skills, including uploading, running, and modifying sketches; adding sensors; and managing libraries."
 keypoints:
-- "(Insert when compiled)"
+- "Arduino connection, uploading sketches, connecting hardware, managing libraries, and multi-tasking."
 ---
 Overall goal of this training is to prepare you to use the EnviroDIY Modular Sensors Library for environmental monitoring.
 
