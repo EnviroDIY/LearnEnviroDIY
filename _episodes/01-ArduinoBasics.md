@@ -1,7 +1,7 @@
 ---
 title: "Arduino Basics for EnviroDIY"
 teaching: 0
-exercises: 120
+exercises: 90
 questions:
 - "What are the parts of an Arduino board?"
 - "How do I create, upload and modify an Arduino code sketch?"
@@ -41,7 +41,15 @@ NOTE: You'll need addition parts from an [Arduino Uno Starter Kit](https://www.a
 - [Arduino Lesson 2. LEDs](https://learn.adafruit.com/adafruit-arduino-lesson-2-leds)
   - Uses resistors to change the brightness of an LED light by utilizing a breadboard. Important for understanding resistors, which are required for many environmental sensors. Introduces you to the different pins on the Arduino board. Understanding pins will be important for connecting environmental sensors.
 - [Arduino Lesson 6. Digital Inputs](https://learn.adafruit.com/adafruit-arduino-lesson-6-digital-inputs)
-  - Adding a button response to the breadboard means sending a digital input back to the Arduino board. In the "Other Things to Do" step you will add a couple of commands to the sketch that will allow you to see your input responses in the "Serial Monitor". We skipped Mr. Monk's initial introduction to the serial monitor in lesson 5 for brevity, so reading his one page on "The Serial Monitor" from lesson 5 would be helpful. We use the serial monitor all the time to see how sensors are responding before deployment.s
+  - Adding a button response to the breadboard means sending a digital input back to the Arduino board. In the "Other Things to Do" step you will add a couple of commands to the sketch that will allow you to see your input responses in the "Serial Monitor". We skipped Mr. Monk's initial introduction to the serial monitor in lesson 5 for brevity, so reading his one page on "The Serial Monitor" from lesson 5 would be helpful. We use the serial monitor all the time to see how sensors are responding before deployment.
+
+
+> ## Complement your Learning
+> - Open the [SparkFun Inventors Guide v3.3](https://cdn.sparkfun.com/datasheets/Kits/SFE03-0012-SIK.Guide-300dpi-01.pdf), or whatever booklet might have come with your starter kit, for helpful diagrams, explanations and tips.
+> - Consult the official [Arduino Language Reference](https://www.arduino.cc/reference/en/), the [Variables Tutorial](https://www.arduino.cc/en/Tutorial/Variables), or the [Functions Tutorial](https://www.arduino.cc/en/Reference/FunctionDeclaration) if you have an additional question about any elements of the code you are exploring.
+>
+{: .callout}
+
 
 
 {% include links.md %}

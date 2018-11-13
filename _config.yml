@@ -14,7 +14,7 @@ title: "Learn EnviroDIY Programming"
 
 # Life cycle stage of the lesson
 # possible values: "pre-alpha", "alpha", "beta", "stable"
-life_cycle: "pre-alpha"
+life_cycle: "alpha"
 
 #------------------------------------------------------------
 # Generic settings (should not need to change).
@@ -29,7 +29,7 @@ kind: "lesson"
 repository: <USERNAME>/<PROJECT>
 
 # Email address, no mailto:
-email: "team@carpentries.org"
+email: "aaufdenkampe@limno.com"
 
 # Sites.
 amy_site: "https://amy.software-carpentry.org/workshops"
