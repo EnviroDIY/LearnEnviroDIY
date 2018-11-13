@@ -1,5 +1,5 @@
 ---
-title: "Installing PlatformIO"
+title: "Using PlatformIO"
 teaching: 0
 exercises: 20
 questions:
@@ -9,7 +9,7 @@ objectives:
 keypoints:
 - "PlatformIO is one of many IDEs for code development."
 ---
-## Part 1, Episode 4: Installing PlatformIO
+## Part 1, Episode 5: Using PlatformIO
 
 In this lesson we will prepare you to use PlatformIO, an Integrated Development Environment (IDE), which is extremely helpful (and we believe necessary) for keeping track of libraries and code differences when using the EnviroDIY Modular Sensors sketches. You will install PlatformIO, and become acquainted with many of its features, including file management, syntax highlighting, code difference tracking, code debugging, library management, and integration with Arduino and GitHub.
 

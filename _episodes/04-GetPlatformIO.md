@@ -19,9 +19,12 @@ PlatformIO IDE is hosted within a text editor designed for editing code. Most co
 - [Install PlatformIO for Atom.](https://platformio.org/install/ide?install=atom)
   - After you download Atom, as described in the download webpage, you will go to Settings in Atom (gear symbol), select install (plus symbol) and type in `platformio-ide` in the box that says "search packages" to install PlatformIO.
 
-![Source and Destination Files]({{ page.root }}/fig/PlatformIOscreen.png)
+![Source and Destination Files]({{ page.root }}/fig/PlatformIO_navigation002.png)
 
 ### What you can see in PlatformIO
+
+![Source and Destination Files]({{ page.root }}/fig/PlatformIO_navigation003.png)
+
 #### Left side bar:
 **PlatformIO Home.** This is where you will manage software updates for PlatformIO and other libraries that PlatformIO sees you using. You will know when updates are needed because they will be marked with bright badges. Make sure your board is loaded under the Boards sidebar in the Home space (e.g. EnviroDIY Mayfly). You also create a PlatformIO account here, which I think you need if you use some of the development capabilities; I don’t have a PlatformIO account.
 
@@ -49,6 +52,12 @@ PlatformIO IDE is hosted within a text editor designed for editing code. Most co
 
 **Atom Settings (gear wheel).** The main setting that I change is in the “tree-view” package, which is the code that tells Atom how to view your project files. To see hidden files, go to Settings>Packages>tree-view and uncheck “Hide Ignored Names.” After you build/compile your sketches, PlatformIO will create several items in your root directory, including the Arduino libraries, and sometimes you will need to be able to see these (namely, .git, .pioenvs, and .piolibdeps).
 
+![Source and Destination Files]({{ page.root }}/fig/PlatformIO_navigation004.png)
+
+#### Project tab
+This is basically Finder/Windows Explorer conveniently located right in PlatformIO. You can add, move, copy, and delete files and folders in this tab. Right-clicking on any of the items in your project will give you a list of possible actions. I also frequently use the “Copy Project Path” option for naming the source directories in my platformio.ini file.
+
+One of the most important things to notice in the project tab is the blue vertical line along the left side of the project tab. This line indicates which project is the active project, meaning that the platformio.ini file in the root directory of that project is where PlatformIO will look for build instructions. In the screen shots provided “ModularSensors” is the active project, and all others are inactive (even though I am editing files in the LearnEnviroDIY project).
 
 
 
