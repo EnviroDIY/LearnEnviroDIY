@@ -14,7 +14,7 @@ This lesson will help you connect to GitHub, which is a web-hosting service for 
 ## Part 1, Episode 3: Connecting to GitHub
 
 > ## GitHub example use case
-> [What is GitHub?](https://www.youtube.com/watch?v=w3jLJU7DT5E) is a short introduction to one group's project using GitHub for collaboration. It's a little bit silly, but we like how it introduces the vocabulary and workflow of GitHub. 
+> [What is GitHub?](https://www.youtube.com/watch?v=w3jLJU7DT5E) is a short introduction to one group's project using GitHub for collaboration. It's a little bit silly, but we like how it introduces the vocabulary and workflow of GitHub.
 {: .testimonial}
 
 The operative word for our use of GitHub is collaborative! It can be a place where you share files with collaborators, keep track of changes (*version control*, which is pretty much track changes on steroids; it's excellent.), and collaborate even when you are not sitting together or working at the same moment.
@@ -23,13 +23,13 @@ The operative word for our use of GitHub is collaborative! It can be a place whe
 > Your activity on GitHub is public. Your content on GitHub is public (but credited to you as the owner/contributor). Private repositories (*repos* for short, defined as a storage place) exist, but they are not free. Don't let this scare you away from interacting on GitHub, submitting *issues*, or making *commits*.
 {: .discussion}
 
-- ["Sign Up" for GitHub (create your own user account).](https://github.com/) :octocat:
+- ["Sign Up" for GitHub (create your own user account).](https://github.com/)
   - In most cases we will be using code that others have contributed to GitHub, but you will need to create an account to be a GitHub user. As you create your account, consider using an email address that you will continue to use beyond this project. (If you need to change it some day, GitHub handles redirects well.)
 
 - [Download and install GitHub Desktop.](https://desktop.github.com/)
   - This software is a graphical user interface (GUI) to help you manage the files that you get from (pull) or send to (push) GitHub repositories. Having a Git Client will allow you to (mostly) avoid command line interaction with GitHub. There are other Git Clients available, and you are welcome to explore and use them. Our tutorials will be from the perspective of GitHub Desktop simply because that is what was available when the authors started. Sign in to GitHub desktop so it will be prepared to track your contributions.
 
-- [GitHub activity: Hello World](https://guides.github.com/activities/hello-world/.
+- [GitHub activity: Hello World](https://guides.github.com/activities/hello-world/)
   - Your first GitHub activity will acquaint you with some of the jargon and functionality of GitHub by creating your own repository.  
 
 > ## For your reference
