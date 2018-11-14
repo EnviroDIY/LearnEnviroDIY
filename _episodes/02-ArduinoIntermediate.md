@@ -14,6 +14,12 @@ keypoints:
 - "Many libraries, including ModularSensors, use Object Oriented Programming, in which a class of objects is defined. A special type of function called a `constructor` creates an object of that class."
 ---
 
+> ## Prerequisites
+>
+> - A computer, an internet connection, and motivation to tinker and hack.
+> - For this episode, you'll need an [EnviroDIY Mayfly Starter Kit](https://www.amazon.com/EnviroDIY-Mayfly-Arduino-Compatible-Starter/dp/B01FCVALDW) and selected environmental sensors (list coming soon).
+{: .prereq}
+
 In **Part 1, Episode 2**, we continue to introduce you to Arduino concepts and skills necessary for utilizing ModularSensors. We again do this through online tutorials.
 
 > ## Actively Participate

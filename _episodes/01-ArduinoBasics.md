@@ -13,6 +13,12 @@ keypoints:
 - "An Arduino has different pins, which are designated for analog or digital inputs and outputs."
 - "The Serial Monitor allows you to view outputs that you send from your Arduino."
 ---
+> ## Prerequisites
+>
+> - A computer, an internet connection, and motivation to tinker and hack.
+> - For this episode, you'll either need an [Arduino Uno Starter Kit](https://www.amazon.com/gp/product/B00BT0NDB8), an [Adafruit Metro 328 Starter Pack](https://www.adafruit.com/product/3345), a [Sparkfun RedBoard Tinker Kit](https://www.sparkfun.com/products/14556) or any Arduino-compatible micro-controller board along with other listed accessories.
+{: .prereq}
+
 
 In **Part 1: Arduino and IoT for EnviroDIY**, we introduce you to general skills to prepare you for using ModularSensors for environmental monitoring. We do this largely by leveraging interactive online tutorials that are not directly related to environmental monitoring. We have intentionally chosen this approach to acquaint users to the broader world of Arduino-framework micro-controllers.
 

@@ -1,13 +1,13 @@
 ---
 title: "Installing PlatformIO"
 teaching: 0
-exercises: 20
+exercises: 45
 questions:
-- "How will I manage more complicated Arduino code libraries?"
+- "How will I manage extensive Arduino libraries? How can I easily compare two codes? What is a code text editor? Which buttons do I push in PlatformIO?"
 objectives:
 - "Download PlatformIO and Atom. Test PlatformIO."
 keypoints:
-- "PlatformIO is one of many IDEs for code development."
+- "Download and become acquainted with the PlatformIO environment."
 ---
 ## Part 1, Episode 4: Installing PlatformIO
 
@@ -22,7 +22,7 @@ PlatformIO IDE is hosted within a text editor designed for editing code. Most co
 ![Source and Destination Files]({{ page.root }}/fig/PlatformIO_navigation002.png)
 
 ### What you can see in PlatformIO
-In the following sections we will take you on a tour through the PlatformIO environment.
+In the following sections we will take you on a tour through the PlatformIO environment to describe which features of PlatformIO you will need for using EnviroDIY Modular Sensors sketches.
 
 ![Source and Destination Files]({{ page.root }}/fig/PlatformIO_navigation003.png)
 
@@ -61,6 +61,8 @@ This is basically Finder/Windows Explorer conveniently located right in Platform
 One of the most important things to notice in the project tab is the blue vertical line along the left side of the project tab. This line indicates which project is the active project, meaning that the platformio.ini file in the root directory of that project is where PlatformIO will look for build instructions. In the screen shots provided “ModularSensors” is the active project, and all others are inactive (even though I am editing files in the LearnEnviroDIY project).
 
 There’s a little half-circle that appears when your mouse hovers over the project tab that will allow you to hide or show it as needed. This will be useful when you are comparing two sketches side-by-side.
+
+In the next episode, we will start uploading code to the Mayfly!
 
 
 
