@@ -8,7 +8,10 @@ questions:
 objectives:
 - "Learn basic Arduino skills, including uploading, running, and modifying sketches."
 keypoints:
-- "Arduino connection, uploading sketches, connecting hardware."
+- "Arduino-framework microcontroller boards are designed to be programed to interact with the real world."
+- "An Arduino code sketch has comments, statements and functions organized into two main blocks, the `setup()` function block and the `loop()` function block."
+- "An Arduino has different pins, which are designated for analog or digital inputs and outputs."
+- "The Serial Monitor allows you to view outputs that you send from your Arduino."
 ---
 
 In **Part 1: Arduino and IoT for EnviroDIY**, we introduce you to general skills to prepare you for using ModularSensors for environmental monitoring. We do this largely by leveraging interactive online tutorials that are not directly related to environmental monitoring. We have intentionally chosen this approach to acquaint users to the broader world of Arduino-framework micro-controllers.
@@ -34,7 +37,7 @@ The Arduino sketches in this episode are simple and require a minimal number of 
 
 
 **[Adafruit Learn Arduino](https://learn.adafruit.com/series/learn-arduino) by Simon Monk**, lessons 0, 2, 6  
-NOTE: You will need additional parts from an [Arduino Uno Starter Kit](https://www.amazon.com/gp/product/B00BT0NDB8) or an [Adafruit Metro 328 Starter Pack](https://www.adafruit.com/product/3345).
+NOTE: You will need additional parts, such as those included with either an [Arduino Uno Starter Kit](https://www.amazon.com/gp/product/B00BT0NDB8), an [Adafruit Metro 328 Starter Pack](https://www.adafruit.com/product/3345), or a [Sparkfun RedBoard Tinker Kit](https://www.sparkfun.com/products/14556).
 
 - [Arduino Lesson 0. Getting Started](https://learn.adafruit.com/lesson-0-getting-started)
   - A look at all the parts of the starter kit. Describes a breadboard anatomy. (You will be using breadboards to test sensor wiring prior to soldering for your deployments.) Repeats how to install Arduino software, so you can skip that part.
@@ -45,8 +48,9 @@ NOTE: You will need additional parts from an [Arduino Uno Starter Kit](https://w
 
 
 > ## Complement your Learning
-> - Open the [SparkFun Inventors Guide v3.3](https://cdn.sparkfun.com/datasheets/Kits/SFE03-0012-SIK.Guide-300dpi-01.pdf), or whatever booklet might have come with your starter kit, for helpful diagrams, explanations and tips.
+> - Open the [SparkFun Inventor's Kit (SIK) Guide v3.3](https://cdn.sparkfun.com/datasheets/Kits/SFE03-0012-SIK.Guide-300dpi-01.pdf) booklet (or whatever booklet might have come with your starter kit) for helpful diagrams, explanations and tips.
 > - Consult the official [Arduino Language Reference](https://www.arduino.cc/reference/en/), the [Variables Tutorial](https://www.arduino.cc/en/Tutorial/Variables), or the [Functions Tutorial](https://www.arduino.cc/en/Reference/FunctionDeclaration) if you have an additional question about any elements of the code you are exploring.
+> - Explore other online resources, such as [Sparkfun's SIK Experiment Guide for Arduino - V3.3](https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v33), for alternate presentations of Arduino basics.  
 >
 {: .callout}
 
