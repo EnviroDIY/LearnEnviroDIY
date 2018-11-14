@@ -33,7 +33,7 @@ To insert the coin battery, make sure the positive (+) side of the battery is fa
 ![Source and Destination Files]({{ page.root }}/fig/MayflyBattSD.JPG)
 
 Press the battery securely (and carefully) into the slot on the Mayfly. The fit is intentionally tight, and this is somewhat difficult to do. If you need an extra push, using the edge of the cover on your starter kit might give you leverage to push the battery into the slot (but don't push too far!). The good news is that you will not have to do this again for years.
-![Source and Destination Files]({{ page.root }}/fig/MayflyBattPush.JPG)
+![Source and Destination Files]({{ page.root }}/fig/MayflyBattPush.jpg)
 
 Inserting the SD card is much easier. Orient the card into the SD card slot as shown above and it will set itself with a click. To remove, push the SD card deeper into the slot (gently), and the spring mechanism will release or eject the card.
 
