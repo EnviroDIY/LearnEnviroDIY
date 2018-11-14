@@ -32,10 +32,13 @@ Many of the Sketches in the EnviroDIY library will not work if the Mayfly is mis
 To insert the coin battery, make sure the positive (+) side of the battery is facing upward as shown below. (Caution: if you insert the battery upside-down you might ruin the Real Time Clock).  
 ![Source and Destination Files]({{ page.root }}/fig/MayflyBattSD.JPG)
 
-Press the battery securely (and carefully) into the slot on the Mayfly. The fit is intentionally tight, and this is somewhat difficult to do. If you need an extra push, using the edge of the cover on your starter kit might give you leverage to push the battery into the slot (but don't push too far!). The good news is that you will not have to do this again for years.
+Press the battery securely (and carefully) into the slot on the Mayfly. The fit is intentionally tight, and inserting the battery is somewhat difficult to do. If you need extra leverage, using the edge of the cover on your starter kit (shown below) might give you what you need to push the battery into the slot (but don't push too far!). The good news is that you will not have to do this again for years.
 ![Source and Destination Files]({{ page.root }}/fig/MayflyBattPush.jpg)
 
 Inserting the SD card is much easier. Orient the card into the SD card slot as shown above and it will set itself with a click. To remove, push the SD card deeper into the slot (gently), and the spring mechanism will release or eject the card.
+
+**Download sketches for this Episode**
+[Sketches for Part 1 Episode 5](weblink)
 
 
 
