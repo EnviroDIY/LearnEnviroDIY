@@ -20,20 +20,22 @@ keypoints:
 In this lesson we will interactively explore the features of PlatformIO and finalize your readiness for Part 2, where we begin using the EnviroDIY Modular Sensors sketches to run multiple environmental sensors in a manner that is energy efficient and that can send data to an internet repository.
 
 **Get Mayfly running in PlatformIO**
+
 In PlatformIO, click the Home button and in the PlatformIO Home tab, select *Boards*, and in the search bar search for "Mayfly" or "EnviroDIY". Good news! The Mayfly is among the more than 500 boards supported by PlatformIO.
 
 You did not really need to go find the Mayfly, but we lead you there because we want you to see the columns next to the Mayfly. Notice that the Mayfly's platform is "Atmel AVR" and the framework is "Arduino." These are important pieces of information that you will need to include in your PlatformIO.ini file so you can upload code to the Mayfly. If you are using a different microcontroller for this tutorial, you will need to use this information to customize the PlatformIO.ini file to give correct upload instructions for your board.
 
 **Get to know the Mayfly**
+
 Many of the Sketches in the EnviroDIY library will not work if the Mayfly is missing an SD card. While we are getting familiar with its ports and connections, let's take a moment to insert a CR1220 coin battery and SD card into the Mayfly. The coin battery keeps the Real Time Clock running on the Mayfly, which we will set at the end of this episode. You will need a separate, external battery to supply power to the Mayfly and sensors.
 
-To insert the coin battery, make sure the positive (+) side of the battery is facing away from the Mayfly breakout board as shown below. (Caution: if you insert the battery upside-down you might ruin the Real Time Clock).  
+To insert the coin battery, make sure the positive (+) side of the battery is facing upward as shown below. (Caution: if you insert the battery upside-down you might ruin the Real Time Clock).  
 ![Source and Destination Files]({{ page.root }}/fig/MayflyBattSD.JPG)
 
 Press the battery securely (and carefully) into the slot on the Mayfly. The fit is intentionally tight, and this is somewhat difficult to do. If you need an extra push, using the edge of the cover on your starter kit might give you leverage to push the battery into the slot (but don't push too far!). The good news is that you will not have to do this again for years.
-![Source and Destination Files]({{ page.root }}/fig/MayflyBattSD.JPG)
+![Source and Destination Files]({{ page.root }}/fig/MayflyBattPush.JPG)
 
-The SD card is much easier. Orient the card into the SD card slot as shown above and it will set itself with a click. To remove, push the SD card deeper into the slot (gently), and the spring mechanism will release or eject the card.
+Inserting the SD card is much easier. Orient the card into the SD card slot as shown above and it will set itself with a click. To remove, push the SD card deeper into the slot (gently), and the spring mechanism will release or eject the card.
 
 
 
