@@ -5,14 +5,14 @@ exercises: 90
 questions:
 - "How do I tell PlatformIO which Arduino I am using? How do I use PlatformIO to upload a sketch to an Arduino board? How do I view and edit sketches in PlatformIO?"
 objectives:
-- "Install Mayfly data logger in PlatformIO. Edit and upload sketches to Mayfly. Set real time clock on Mayfly. Connect sensor to Mayfly."
+- "Install Mayfly data logger in PlatformIO. Edit and upload sketches to Mayfly."
 keypoints:
 - "Translate skills from earlier tutorials using Arduino UNO and Arduino IDE to a new PlatformIO IDE and the EnviroDIY Mayfly logger."
 ---
 > ## Prerequisites
 >
 > - A computer, an internet connection, and motivation to tinker and hack.
-> - For this episode, you'll need an [EnviroDIY Mayfly Starter Kit](https://www.amazon.com/EnviroDIY-Mayfly-Arduino-Compatible-Starter/dp/B01FCVALDW), a [CR1220 12mm Diameter - 3V Lithium Coin Cell Battery](https://www.adafruit.com/product/380) (also available where watch batteries are sold), and selected environmental sensors (list coming soon).
+> - For this episode, you'll need an [EnviroDIY Mayfly Starter Kit](https://www.amazon.com/EnviroDIY-Mayfly-Arduino-Compatible-Starter/dp/B01FCVALDW), and a [CR1220 12mm Diameter - 3V Lithium Coin Cell Battery](https://www.adafruit.com/product/380) (also available where watch batteries are sold).
 {: .prereq}
 
 ## Part 1, Episode 5: Using PlatformIO
@@ -63,11 +63,11 @@ You have a few ways to use an existing GitHub repository (repo from now on), inc
 
 - **Step 3:** In PlatformIO, add the unzipped directory as a "Project" by going to File>Add Project Folder... and selecting your *LearnEnviroDIYcode* directory. Notice that each sketch includes a folder that is named identically to the *.ino* file Ardunio sketch. This structure is still required even though we are not working in the Arudino IDE.  
 
-- **Step 4:** Open Blink_Example1_Mayfly.ino, and examine the code. It should look extremely familiar to the very first sketch from Ladyada's lesson 1. We changed the pin number in the sketch to match one of the LED options on the Mayfly. Although many Arduino framework boards have compatible functionality, the ports and lights are usually not located at the same pin numbers. Most have a listing or schematic diagram to help you locate the pin numbers.
+- **Step 4:** Open Example_01_Mayfly_blink.ino, and examine the code. It should look extremely familiar to the very first sketch from Ladyada's lesson 1. We changed the pin number in the sketch to match one of the LED options on the Mayfly. Although many Arduino framework boards have compatible functionality, the ports and lights are usually not located at the same pin numbers. Most have documentation to help you locate the pin numbers. [Documentation for the Mayfly is compiled at envirodiy.org.](https://www.envirodiy.org/mayfly/hardware/).
 
 - **Step 5:** Open platformio.ini file located in the LearnEnviroDIYcode directory. Notice that opening this ".ini" file caused the *LearnEnviroDIYcode* to be highlighted with the blue vertical line indicating that it is the active directory (if it wasn't already). This is an “initialization” file (the community calls it the “ini” file, pronounced like an innie belly button).
 
-  This file is where you give PlatformIO instructions, and we have it set up for your first sketch. We have it set up with `[env:mayfly]`, and we specified the board and framework you are using (e.g. board = mayfly and framework = arduino), the “lib deps” needed for the sketch, and other information that you will not need to change. The part that you will need to change is the source directory, which is where PlatformIO will look for the Arduino sketch to "Build/Compile" and "Upload", located under `[platformio]`. Currently the source directory is set as `src_dir = Part1Episode5-sketches/Blink_Example1_Mayfly` (in line 12), which is what we want to use as our first sketch.
+  This file is where you give PlatformIO instructions, and we have it set up for your first sketch. We have it set up with `[env:mayfly]`, and we specified the board and framework you are using (e.g. board = mayfly and framework = arduino), the “lib deps” needed for the sketch, and other information that you will not need to change. The part that you will need to change is the source directory, which is where PlatformIO will look for the Arduino sketch to "Build/Compile" and "Upload", located under `[platformio]`. Currently the source directory is set as `src_dir = Part1-sketches/Example_01_Mayfly_blink` (in line 12), which is what we want to use as our first sketch.
 
   Notice line 13 has a different source directory listed, but it has a semicolon (;) at the beginning, which comments out this line. We commonly keep a list of the source directories that we are actively using and add or remove the semicolon to switch between sketches.
 
