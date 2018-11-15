@@ -33,7 +33,7 @@ To insert the coin battery, make sure the positive (+) side of the battery is fa
 ![Source and Destination Files]({{ page.root }}/fig/MayflyBattSD.JPG)
 
 Press the battery securely (and carefully) into the slot on the Mayfly. The fit is intentionally tight, and inserting the battery is somewhat difficult to do. If you need extra leverage, using the edge of the cover on your starter kit (shown below) might give you what you need to push the battery into the slot (but don't push too far!). The good news is that you will not have to do this again for years.
-![Source and Destination Files]({{ page.root }}/fig/MayflyBattPush.jpg =600x)
+![Source and Destination Files]({{ page.root }}/fig/MayflyBattPush.jpg)
 
 Inserting the SD card is much easier. Orient the card into the SD card slot as shown above and it will set itself with a click. To remove, push the SD card deeper into the slot (gently), and the spring mechanism will release or eject the card.
 
@@ -56,7 +56,7 @@ You have a few ways to use an existing GitHub repository (repo from now on), inc
 - **Step 1:** Before you download the repo, we recommend that you make a folder dedicated to Arduino, if you haven't already. Locate it somewhere convenient to your file management structure (mine is ~Documents/Arduino/...).
 
 - **Step 2:** We made a dedicated repository for this learning tutorial called [LearnEnviroDIYcode](https://github.com/EnviroDIY/LearnEnviroDIYcode). Go to this GitHub site and click on the green "Clone or Download" button (see below). Select the "Download ZIP" option and save the file in your dedicated Arduino directory. Finally, unzip the download and you will notice that it contains a few directories, including codes for the Arduino Starter Kit for Episodes 1&2, and more.
-![Source and Destination Files]({{ page.root }}/fig/GitDownload.png =600x)
+![Source and Destination Files]({{ page.root }}/fig/GitDownload.png)
 
 - **Step 3:** In PlatformIO, add the unzipped directory as a "Project" by going to File>Add Project Folder... and selecting your *LearnEnviroDIYcode* directory. Notice that each sketch includes a folder that is named identically to the *.ino* file Ardunio sketch. This structure is still required even though we are not working in the Arudino IDE.  
 
@@ -88,13 +88,13 @@ You have a few ways to use an existing GitHub repository (repo from now on), inc
 - **Step 8:** Upload a different sketch to the Mayfly. Go back to the platformio.ini file and type a ";" in front of the "example1" sketch, and uncomment the Blink_Example2_Mayfly sketch to make that active. **Save the platformio.ini file.** Push the Build/Compile button (checkmark), and after that has completed, push the Upload button (right arrow). The Mayfly should blink as it did before, but now we will be able to check its status through the serial monitor by clicking the power plug button:
   ![Source and Destination Files]({{ page.root }}/fig/pioSerialMonitorButton.png)
   You will be prompted to select your Port and Baudrate:
-  ![Source and Destination Files]({{ page.root }}/fig/pioPortBaudrate.png =300x)
+  ![Source and Destination Files]({{ page.root }}/fig/pioPortBaudrate.png)
   The Baudrate is defined in the sketch as 9600.
   Regarding your port selection:
   **In Windows** your port will be `COM?`, where ?=some number (but it won't be `COM1`). Every Arduino board that you plug into your computer will be seen as a completely unique and new piece of hardware, and Windows assigns each a sequentially higher COM number (until it reaches 99, but that's a problem for another day).
   **In MacOS** your port will be a long string of gobbledygook with something about "usb" in the string (as shown above).
   Your serial output should look something like this:
-  ![Source and Destination Files]({{ page.root }}/fig/SerialMonitorBlink.png =600x)
+  ![Source and Destination Files]({{ page.root }}/fig/SerialMonitorBlink.png)
   When you are testing sensors in the Modular Sensors sketches, the serial monitor will help you confirm that all of your sensors are working correctly, which is an extremely useful thing.
 
 
