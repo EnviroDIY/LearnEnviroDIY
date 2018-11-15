@@ -41,13 +41,17 @@ Inserting the SD card is much easier. Orient the card into the SD card slot as s
 [Download Sketches for Part 1 Episode 5](weblink)
 You have a few ways to use an existing GitHub repository (repo from now on), including to *fork*, *clone*, or *download* the full repository of files. The typical GitHub behavior is that downloading individual files or folders within a repo is possible but difficult. Let's pause for a moment and find out what each of those actions means.
 
-**Fork:** If you want to take an existing repo and modify it for your purposes, you could *fork* the repo. That sounds a lot like copying someone else's work, but in the GitHub and open-source world, this is permitted and encouraged. Forking through GitHub retains attribution and authorship. For example, if you look at the documentation for this tutorial, you will see that we are using a repository designed by Software Carpentry.
+> ## GitHub Jargon
+>**Fork:** If you want to take an existing repo and modify it for your purposes, you could *fork* the repo. That sounds a lot like copying someone else's work, but in the GitHub and open-source world, this is permitted and encouraged. Forking through GitHub retains attribution and authorship. For example, if you look at the documentation for this tutorial, you will see that we are using a repository designed by Software Carpentry.
+>
+>If you want to make improvements to someone else's repo, you can fork the repo, make your edits, and then do a *pull request* to share it with the owners of the repository, to offer that they *pull* it back into their repository. This type of skills sharing is one of the more powerful aspects of the open source world.
+>
+>**Clone:** This approach gives you direct access to a repository, and makes the most sense if you have access to contribute to the repository. When we clone a repository, our *Git* software (e.g. GitHub Desktop) will track the history and changes of the repo and allow you to fetch those changes and directly update the files stored on your computer in your project. If you have access to contribute, you can also *push* your changes to the repo.
+>
+>**Download:** This approach allows you to download and use files from a repo. It will not track changes or allow you to contribute to the repo, but you may edit the files as much as you like. For the purpose of this tutorial, downloading the repo is the best option.
+{: .callout}
 
-If you want to make improvements to someone else's repo, you can fork the repo, make your edits, and then do a *pull request* to share it with the owners of the repository, to offer that they *pull* it back into their repository. This type of skills sharing is one of the more powerful aspects of the open source world.
-
-**Clone:** This approach gives you direct access to a repository, and makes the most sense if you have access to contribute to the repository. When we clone a repository, our *Git* software (e.g. GitHub Desktop) will track the history and changes of the repo and allow you to fetch those changes and directly update the files stored on your computer in your project. If you have access to contribute, you can also *push* your changes to the repo.
-
-**Download:** This approach allows you to download and use files from a repo. It will not track changes or allow you to contribute to the repo, but you may edit the files as much as you like. For the purpose of this tutorial, downloading the repo is the best option.
+**Load your first sketch from PlatformIO!**
 
 - **Step 1:** Before you download the repo, we recommend that you make a folder dedicated to Arduino, if you haven't already. Locate it somewhere convenient to your file management structure (mine is ~Documents/Arduino/...).
 
@@ -65,7 +69,9 @@ If you want to make improvements to someone else's repo, you can fork the repo, 
 - Notice line 13 has a different source directory listed, but it has a semicolon (;) at the beginning, which comments out this line. We commonly keep a list of the source directories that we are actively using and add or remove the semicolon to switch between sketches.
 
 > ## Note:
-> The platformio.ini file must be located in the root directory for your project. When you start using Modular Sensors, many of the sketches will have a “platformio.ini” file included in the sketch directory; these exist so you do not have to guess which “lib deps” you will need to run the sketch, and not guessing is awesome. But PlatformIO will only look for the ".ini" file in the root of the active directory. **ALSO NOTE:** If you are working with a group and syncing to GitHub, you want your root platformio.ini file to be among the files that do not get uploaded to GitHub (list it in the gitignore and/or uncheck it when pushing your contributions to GitHub).
+> The platformio.ini file must be located in the root directory for your project. When you start using Modular Sensors, many of the sketches will have a “platformio.ini” file included in the sketch directory; these exist so you do not have to guess which “lib deps” you will need to run the sketch, and not guessing is awesome. But PlatformIO will only look for the ".ini" file in the root of the active directory.
+>
+>ALSO NOTE: If you are working with a group and syncing to GitHub, you want your root platformio.ini file to be among the files that do not get uploaded to GitHub (list it in the gitignore and/or uncheck it when pushing your contributions to GitHub).
 {: .callout}
 
 - **Step 6:** Connect the Mayfly logger using the USB cable included in your starter kit. Turn the Mayfly on. Push the Build/Compile button (checkmark)
