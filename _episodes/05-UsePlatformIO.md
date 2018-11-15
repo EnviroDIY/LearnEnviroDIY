@@ -7,7 +7,7 @@ questions:
 objectives:
 - "Install Mayfly data logger in PlatformIO. Edit and upload sketches to Mayfly. Set real time clock on Mayfly. Connect sensor to Mayfly."
 keypoints:
-- "Translate skills from earlier tutorials on Arduino UNO to a new IDE and different logger board."
+- "Translate skills from earlier tutorials using Arduino UNO and Arduino IDE to a new PlatformIO IDE and the EnviroDIY Mayfly logger."
 ---
 > ## Prerequisites
 >
@@ -17,7 +17,7 @@ keypoints:
 
 ## Part 1, Episode 5: Using PlatformIO
 
-In this lesson we will interactively explore the features of PlatformIO and finalize your readiness for Part 2, where we begin using the EnviroDIY Modular Sensors sketches to run multiple environmental sensors in a manner that is energy efficient and that can send data to an internet repository.
+In this lesson we will interactively explore the features of PlatformIO and increase your readiness for Part 2, where we begin using the EnviroDIY Modular Sensors sketches to run multiple environmental sensors in a manner that is energy efficient and that can send data to an internet repository.
 
 ### Get Mayfly running in PlatformIO
 
@@ -58,7 +58,8 @@ You have a few ways to use an existing GitHub repository (repo from now on), inc
 - **Step 1:** Before you download the repo, we recommend that you make a folder dedicated to Arduino, if you haven't already. Locate it somewhere convenient to your file management structure (mine is ~Documents/Arduino/...).
 
 - **Step 2:** We made a dedicated repository for this learning tutorial called [LearnEnviroDIYcode](https://github.com/EnviroDIY/LearnEnviroDIYcode). Go to this GitHub site and click on the green "Clone or Download" button (see below). Select the "Download ZIP" option and save the file in your dedicated Arduino directory. Finally, unzip the download and you will notice that it contains a few directories, including codes for the Arduino Starter Kit for Episodes 1&2, and more.
-![Source and Destination Files]({{ page.root }}/fig/GitDownload.png)
+<img src="https://envirodiy.github.io/LearnEnviroDIY/fig/GitDownload.png" width="700">
+
 
 - **Step 3:** In PlatformIO, add the unzipped directory as a "Project" by going to File>Add Project Folder... and selecting your *LearnEnviroDIYcode* directory. Notice that each sketch includes a folder that is named identically to the *.ino* file Ardunio sketch. This structure is still required even though we are not working in the Arudino IDE.  
 
@@ -77,8 +78,8 @@ You have a few ways to use an existing GitHub repository (repo from now on), inc
 {: .callout}
 
 - **Step 6:** Connect the Mayfly logger using the USB cable included in your starter kit. Turn the Mayfly on. Push the Build/Compile button (checkmark). You should see a terminal pop up and lines of text will scroll through the terminal, and if all goes well, it will conclude with a green bar that says "platform run" and "[SUCCESS]" in green, as shown below.
+<img src="https://envirodiy.github.io/LearnEnviroDIY/fig/platformrunSuccess.png" width="700">
 
-![Source and Destination Files]({{ page.root }}/fig/platformrunSuccess.png)
 
 - **Step 7:** Upload the sketch to the Mayfly by pushing the right arrow button:
   ![Source and Destination Files]({{ page.root }}/fig/pioUploadButton.png)
@@ -86,27 +87,7 @@ You have a few ways to use an existing GitHub repository (repo from now on), inc
   Notice that you did not have to select your upload port like you did in the Arduino IDE; PlatformIO did this for you.
     -If your upload was not successful, double-check to see if the Mayfly is turned on. Another possibility is that your USB cable, if it did not come with the EnviroDIY kit, is not able to transmit data (some are charging only).
 
-### Load your second sketch!
-- **Step 8:** Upload a different sketch to the Mayfly. Go back to the platformio.ini file and type a ";" in front of the "example1" sketch, and uncomment the Blink_Example2_Mayfly sketch to make that active. **Save the platformio.ini file.** Push the Build/Compile button (checkmark), and after that has completed, push the Upload button (right arrow). The Mayfly should blink as it did before, but now we will be able to check its status through the serial monitor by clicking the power plug button:
-  ![Source and Destination Files]({{ page.root }}/fig/pioSerialMonitorButton.png)
-  You will be prompted to select your Port and Baudrate:
-  <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/pioPortBaudrate.png" width="400">
-  The Baudrate is defined in the sketch as 9600.
-
-  Regarding your port selection:
-
-  **In Windows** your port will be `COM?`, where ?=some number (but it won't be `COM1`). Every Arduino board that you plug into your computer will be seen as a completely unique and new piece of hardware, and Windows assigns each a sequentially higher COM number (until it reaches 99, but that's a problem for another day).
-
-  **In MacOS** your port will be a long string of gobbledygook with something about "usb" in the string (as shown above).
-  Your serial output should look something like this:
-  ![Source and Destination Files]({{ page.root }}/fig/SerialMonitorBlink.png)
-  When you are testing sensors in the Modular Sensors sketches, the serial monitor will help you confirm that all of your sensors are working correctly, which is an extremely useful thing.
-
-
-
-
-
-
+In the next tutorial we will begin to monitor sketches using the serial port and add sensors.
 
 
 {% include links.md %}
