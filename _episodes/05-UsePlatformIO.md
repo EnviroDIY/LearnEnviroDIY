@@ -37,24 +37,38 @@ Press the battery securely (and carefully) into the slot on the Mayfly. The fit 
 
 Inserting the SD card is much easier. Orient the card into the SD card slot as shown above and it will set itself with a click. To remove, push the SD card deeper into the slot (gently), and the spring mechanism will release or eject the card.
 
-**Download sketches for this Episode**
-[Sketches for Part 1 Episode 5](weblink)
+**Create a project of Episode 5 sketches**
+[Download Sketches for Part 1 Episode 5](weblink)
+You have a few ways to use an existing GitHub repository (repo from now on), including to *fork*, *clone*, or *download* the full repository of files. The typical GitHub behavior is that downloading individual files or folders within a repo is possible but difficult. Let's pause for a moment and find out what each of those actions means.
 
+**Fork:** If you want to take an existing repo and modify it for your purposes, you could *fork* the repo. That sounds a lot like copying someone else's work, but in the GitHub and open-source world, this is permitted and encouraged. Forking through GitHub retains attribution and authorship. For example, if you look at the documentation for this tutorial, you will see that we are using a repository designed by Software Carpentry.
 
+If you want to make improvements to someone else's repo, you can fork the repo, make your edits, and then do a *pull request* to share it with the owners of the repository, to offer that they *pull* it back into their repository. This type of skills sharing is one of the more powerful aspects of the open source world.
 
-- [Install PlatformIO for Atom.](https://platformio.org/install/ide?install=atom)
-  - After you download Atom, as described in the download webpage, you will go to Settings in Atom (gear symbol), select install (plus symbol) and type in `platformio-ide` in the box that says "search packages" to install PlatformIO.
+**Clone:** This approach gives you direct access to a repository, and makes the most sense if you have access to contribute to the repository. When we clone a repository, our *Git* software (e.g. GitHub Desktop) will track the history and changes of the repo and allow you to fetch those changes and directly update the files stored on your computer in your project. If you have access to contribute, you can also *push* your changes to the repo.
 
-  Logging to EnviroDIY sketch
-  Let’s look at our first sketch: logging_to_EnviroDIY.ino. Before you download this sketch from GitHub, designate a directory on your computer for this Arduino project (e.g. ~/Arduino/Monitoring). Download the three files contained at (https://github.com/EnviroDIY/ModularSensors/tree/master/examples/logging_to_EnviroDIY), namely logging_to_EnviroDIY.ino, platformio.ini, and ReadMe.md. If you choose to clone the Modular Sensors repository, I still recommend creating a new project directory because you will not have access to push edits back to the EnviroDIY repository on GitHub and your personal edits will make it messy for you to pull updates from that repository.
+**Download:** This approach allows you to download and use files from a repo. It will not track changes or allow you to contribute to the repo, but you may edit the files as much as you like. For the purpose of this tutorial, downloading the repo is the best option.
 
-  The .ino file is the Arduino sketch, and it must be in a folder with the same name, so make a folder and put all three files into that folder (~/Arduino/Monitoring/logging_to_EnviroDIY).
+- **Step 1:** Before you download the repo, we recommend that you make a folder dedicated to Arduino, if you haven't already. Locate it somewhere convenient to your file management structure (mine is ~Documents/Arduino/...).
 
-  You won’t really need the ReadMe.md file, which is a GitHub “markdown” file that is best viewed online, but as a best practice you can add to this Read Me with your own notes and metadata about your project. Things to keep here include sensor addresses (when applicable), notes on the libraries required for the sketch, UUIDs, the location of the sensor station, etc.
-  PlatformIO Initialization file
-  The platformio.ini file is an “initialization” file (I call it the “ini” file, pronounced like an innie belly button). This file is where you give PlatformIO instructions, which includes the directory of the sketch you want to upload, the board and framework you are using (e.g. board = mayfly and framework = arduino), the “lib deps” needed for the sketch, and other information that I haven’t had to worry about. The platformio.ini file is located in the root directory for your project. Don’t confuse this with the “ini” files that are included in the directory for each example sketch in the Modular library; these exist so you do not have to guess which “lib deps” you will need to run the sketch, and not guessing is awesome. If you are working with a group and syncing to GitHub, you want your root platformio.ini file to be among the files that do not get uploaded to GitHub (list it in the gitignore).
-  Projects in PlatformIO
-  In PlatfiormIO under the File menu, select Add Project Folder, and navigate to your ~/Arduino/Monitoring/logging_to_EnviroDIY directory. You should now see this directory among your lists of projects in the left column of your window. Open all three of the files in your directory by double-clicking on them, and they will appear as tabs in the right column of your window.
+- **Step 2:** We made a dedicated repository for this learning tutorial called [LearnEnviroDIYcode](https://github.com/EnviroDIY/LearnEnviroDIYcode). Go to this GitHub site and click on the green "Clone or Download" button (see below). Select the "Download ZIP" option and save the file in your dedicated Arduino directory. Finally, unzip the download and you will notice that it contains a few directories, including codes for the Arduino Starter Kit for Episodes 1&2, and more.
+![Source and Destination Files]({{ page.root }}/fig/GitDownload.png)
 
+- **Step 3:** In PlatformIO, add the unzipped directory as a "Project" by going to File>Add Project Folder... and selecting *LearnEnviroDIYcode*. Notice that each sketch includes a folder that is named identically to the *.ino* file Ardunio sketch. This structure is still required even though we are not working in the Arudino IDE.  
+
+- **Step 4:** Open Blink_Example1_Mayfly.ino, and examine the code. It should look extremely familiar to the very first sketch from Ladyada's lesson 1. We changed the pin number in the sketch to match one of the LED options on the Mayfly. Although many Arduino framework boards have compatible functionality, the ports and lights are usually not located at the same pin numbers. Most have a listing or schematic diagram to help you locate the pin numbers.
+
+- **Step 5:** Open platformio.ini file located in the LearnEnviroDIYcode directory. Notice that opening this ".ini" file caused the *LearnEnviroDIYcode* to be highlighted with the blue vertical line indicating that it is the active directory (if it wasn't already). This is an “initialization” file (the community calls it the “ini” file, pronounced like an innie belly button).
+
+This file is where you give PlatformIO instructions, and we have it set up for your first sketch. We have it set up with `[env:mayfly]`, and we specified the board and framework you are using (e.g. board = mayfly and framework = arduino), the “lib deps” needed for the sketch, and other information that you will not need to change. The part that you will need to change is the source directory, which is where PlatformIO will look for the Arduino sketch to "Build/Compile" and "Upload", located under `[platformio]`. Currently the `src_dir = Part1Episode5-sketches/Blink_Example1_Mayfly` (in line 12), which what we want to use as our first sketch.
+
+Notice line 13 has a different source directory listed, but it has a semicolon (;) at the beginning, which comments out this line. We commonly keep a list of the source directories that we are actively using and add or remove the semicolon to switch between sketches.
+
+> **Important!
+>NOTE: The platformio.ini file must be located in the root directory for your project. When you start using Modular Sensors, many of the sketches will have a “platformio.ini” file included in the sketch directory; these exist so you do not have to guess which “lib deps” you will need to run the sketch, and not guessing is awesome. But PlatformIO will only look for the ".ini" file in the root of the active directory.
+ALSO NOTE: If you are working with a group and syncing to GitHub, you want your root platformio.ini file to be among the files that do not get uploaded to GitHub (list it in the gitignore and/or uncheck it when pushing your contributions to GitHub).
+{: .callout}
+
+- **Step 6:** Connect the Mayfly logger using the USB cable included in your 
 
 {% include links.md %}
