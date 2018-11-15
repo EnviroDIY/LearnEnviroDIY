@@ -30,11 +30,11 @@ You did not really need to go find the Mayfly, but we lead you there because we 
 Many of the Sketches in the EnviroDIY library will not work if the Mayfly is missing an SD card. While we are getting familiar with its ports and connections, let's take a moment to insert a CR1220 coin battery and SD card into the Mayfly. The coin battery keeps the Real Time Clock running on the Mayfly, which we will set at the end of this episode. You will need a separate, external battery to supply power to the Mayfly and sensors.
 
 To insert the coin battery, make sure the positive (+) side of the battery is facing upward as shown below. (Caution: if you insert the battery upside-down you might ruin the Real Time Clock).  
-<img src="https://envirodiy.github.io/LearnEnviroDIY/fig/fig/MayflyBattSD.JPG" width="600">
+<img src="https://envirodiy.github.io/LearnEnviroDIY/fig/MayflyBattSD.JPG" width="600">
 
 
 Press the battery securely (and carefully) into the slot on the Mayfly. The fit is intentionally tight, and inserting the battery is somewhat difficult to do. If you need extra leverage, using the edge of the cover on your starter kit (shown below) might give you what you need to push the battery into the slot (but don't push too far!). The good news is that you will not have to do this again for years.
-<img src="https://envirodiy.github.io/LearnEnviroDIY/fig/fig/MayflyBattPush.jpg" width="400">
+<img src="https://envirodiy.github.io/LearnEnviroDIY/fig/MayflyBattPush.jpg" width="400">
 
 
 Inserting the SD card is much easier. Orient the card into the SD card slot as shown above and it will set itself with a click. To remove, push the SD card deeper into the slot (gently), and the spring mechanism will release or eject the card.
