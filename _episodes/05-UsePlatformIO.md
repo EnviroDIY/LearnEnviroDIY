@@ -60,15 +60,14 @@ If you want to make improvements to someone else's repo, you can fork the repo, 
 
 - **Step 5:** Open platformio.ini file located in the LearnEnviroDIYcode directory. Notice that opening this ".ini" file caused the *LearnEnviroDIYcode* to be highlighted with the blue vertical line indicating that it is the active directory (if it wasn't already). This is an “initialization” file (the community calls it the “ini” file, pronounced like an innie belly button).
 
-This file is where you give PlatformIO instructions, and we have it set up for your first sketch. We have it set up with `[env:mayfly]`, and we specified the board and framework you are using (e.g. board = mayfly and framework = arduino), the “lib deps” needed for the sketch, and other information that you will not need to change. The part that you will need to change is the source directory, which is where PlatformIO will look for the Arduino sketch to "Build/Compile" and "Upload", located under `[platformio]`. Currently the source directory is set as `src_dir = Part1Episode5-sketches/Blink_Example1_Mayfly` (in line 12), which is what we want to use as our first sketch.
+- This file is where you give PlatformIO instructions, and we have it set up for your first sketch. We have it set up with `[env:mayfly]`, and we specified the board and framework you are using (e.g. board = mayfly and framework = arduino), the “lib deps” needed for the sketch, and other information that you will not need to change. The part that you will need to change is the source directory, which is where PlatformIO will look for the Arduino sketch to "Build/Compile" and "Upload", located under `[platformio]`. Currently the source directory is set as `src_dir = Part1Episode5-sketches/Blink_Example1_Mayfly` (in line 12), which is what we want to use as our first sketch.
 
-Notice line 13 has a different source directory listed, but it has a semicolon (;) at the beginning, which comments out this line. We commonly keep a list of the source directories that we are actively using and add or remove the semicolon to switch between sketches.
+- Notice line 13 has a different source directory listed, but it has a semicolon (;) at the beginning, which comments out this line. We commonly keep a list of the source directories that we are actively using and add or remove the semicolon to switch between sketches.
 
-> NOTE:
->The platformio.ini file must be located in the root directory for your project. When you start using Modular Sensors, many of the sketches will have a “platformio.ini” file included in the sketch directory; these exist so you do not have to guess which “lib deps” you will need to run the sketch, and not guessing is awesome. But PlatformIO will only look for the ".ini" file in the root of the active directory.
-ALSO NOTE: If you are working with a group and syncing to GitHub, you want your root platformio.ini file to be among the files that do not get uploaded to GitHub (list it in the gitignore and/or uncheck it when pushing your contributions to GitHub).
+> ## Note:
+> The platformio.ini file must be located in the root directory for your project. When you start using Modular Sensors, many of the sketches will have a “platformio.ini” file included in the sketch directory; these exist so you do not have to guess which “lib deps” you will need to run the sketch, and not guessing is awesome. But PlatformIO will only look for the ".ini" file in the root of the active directory. **ALSO NOTE:** If you are working with a group and syncing to GitHub, you want your root platformio.ini file to be among the files that do not get uploaded to GitHub (list it in the gitignore and/or uncheck it when pushing your contributions to GitHub).
 {: .callout}
 
-- **Step 6:** Connect the Mayfly logger using the USB cable included in your
+- **Step 6:** Connect the Mayfly logger using the USB cable included in your starter kit. Turn the Mayfly on. Push the Build/Compile button (checkmark)
 
 {% include links.md %}
