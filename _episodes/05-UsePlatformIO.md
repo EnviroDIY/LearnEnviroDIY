@@ -88,10 +88,13 @@ You have a few ways to use an existing GitHub repository (repo from now on), inc
 - **Step 8:** Upload a different sketch to the Mayfly. Go back to the platformio.ini file and type a ";" in front of the "example1" sketch, and uncomment the Blink_Example2_Mayfly sketch to make that active. **Save the platformio.ini file.** Push the Build/Compile button (checkmark), and after that has completed, push the Upload button (right arrow). The Mayfly should blink as it did before, but now we will be able to check its status through the serial monitor by clicking the power plug button:
   ![Source and Destination Files]({{ page.root }}/fig/pioSerialMonitorButton.png)
   You will be prompted to select your Port and Baudrate:
-  ![Source and Destination Files]({{ page.root }}/fig/pioPortBaudrate.png)
+  <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/pioPortBaudrate.png" width=400>
   The Baudrate is defined in the sketch as 9600.
+
   Regarding your port selection:
+
   **In Windows** your port will be `COM?`, where ?=some number (but it won't be `COM1`). Every Arduino board that you plug into your computer will be seen as a completely unique and new piece of hardware, and Windows assigns each a sequentially higher COM number (until it reaches 99, but that's a problem for another day).
+
   **In MacOS** your port will be a long string of gobbledygook with something about "usb" in the string (as shown above).
   Your serial output should look something like this:
   ![Source and Destination Files]({{ page.root }}/fig/SerialMonitorBlink.png)
