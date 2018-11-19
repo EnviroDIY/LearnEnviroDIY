@@ -45,12 +45,27 @@ When you are testing sensors in the Modular Sensors sketches, the serial monitor
     - The baud rate in the sketch is different and you need to manually select it when you start the serial monitor.
     - Your serial monitor should be outputting a temperature in degrees C once per second (or every 1000 milliseconds).
 
-### Set Real Time Clock on the Mayfly
--
+> ## Running sketches in PlatformIO
+> From this point forward we will not remind you of the steps to upload a sketch, so here they are for quick reference:
+> 1. Add your project directory in the src_dir list in platformio.ini and save.
+> 2. Build and upload the sketch.
+> 3. Run the serial monitor after noting the baud rate for the sketch.
+{: .callout}
 
+### Set Real Time Clock on the Mayfly
+- We can manually set the Real Time Clock (RTC) on the Mayfly, which will be useful in your future with environmental sensors. Ideally we would let the Mayfly's connection to the WiFi or data network sync the clock, but we will not always have that functionality. As long as your coin battery remains installed and alive, the RTC on your Mayfly will keep ticking.
+  1. Setting the RTC is a finicky task.
+  2. Upload Example_04_Mayfly_setRTC.ino to your Mayfly.
+  3. Open the serial monitor (baudrate 57600) to confirm that it is outputting a time (probably ~January of 2000).
+  4. Click on the keyboard icon at the top left corner of the serial monitor window to open the Serial Text Insert box.
+  5. Open a web browser to the [current unix time stamp at Sodaq](http://time.sodaq.net/) or http://www.unixtimestamp.com/. I prefer the simplicity of time.sodaq.net.
+  6. I like to split my screen between PlatformIO and my web browser for the next task.
+  7. As quickly as possible, you will need to copy the numeric unix time from the web browser and paste into the PlatformIO Serial Text Insert box. For the sketch to receive this time it needs to begin with a *T* followed by the numeric unix time stamp. I type the *T* into PlatformIO, then refresh the browser, select the number, copy, insert my cursor after the T in PlatformIO, paste, and immediately press [Enter].
+  <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/serialtextinsert.png" width="400">
+  8. If it worked, your serial monitor will begin scrolling a time that is within a minute of the current time, which is good enough for now.
 
 ### Connect OneWire sensor: DS18B20 waterproof temperature  
-
+- We
 
 
 ### Connect I2C sensors: BME280 temperature, pressure, and humidity and OLED display
