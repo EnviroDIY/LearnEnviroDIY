@@ -65,7 +65,23 @@ When you are testing sensors in the Modular Sensors sketches, the serial monitor
   8. If it worked, your serial monitor will begin scrolling a time that is within a minute of the current time, which is good enough for now.
 
 ### Connect OneWire sensor: DS18B20 waterproof temperature  
-- We
+- Sensors use a variety of communication protocols, each with their own pros and cons. The waterproof temperature sensor in this example uses the One Wire protocol. The DS18B20 sensor has three wires: power, ground, and data, but OneWire sensors can take "parasitic" power over the data line (many sensors dedicate a wire to send and a separate wire to receive data, plus power and ground). Each communication protocol is limited in the length of cable you may use before the signal is too weak.
+
+  You may run many OneWire sensors on the same Arduino pin. This requires you to define the address of each sensor in your Arduino sketch. (Theoretically you could run more than 100 sensors, but people seem to begin having issues running more than 10 sensors.)
+
+  Fun fact: Apple MagSafe and Dell laptop power connectors use OneWire protocol for power and to send information about power to the computer.
+  To connect your DS18B20, you may either use a Grove connector or your breadboard and wires. We will show both approaches side by side.
+
+  1. Open the sketch Example_05_Mayfly_DS18B20temp.ino.
+  2. Notice that you specify which pin you are using in Line 7, and the DS18B20 is currently assigned to pin 7. Your Mayfly has the pins labeled on the header rail and in the Grove ports. You can change this number to use any available digital pin on the Mayfly.
+  3. Wire the sensor as illustrated below. If your DS18B20 has different wire colors than pictured:
+        Red connects to 3-5V power (3V3 on Mayfly)
+        Blue/Black connects to ground (GND on Mayfly)
+        Yellow/White is data (D7 on Mayfly)
+        4.7kohm resistor between data and power (resistors are not directional)
+  <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/DS18B20pinout.jpg" width="600">
+  4. Connect Mayfly to your computer, set up platformio.ini and run the sketch.
+  5. As the sketch scrolls on your serial monitor, hold the sensor and see if you can get the temperature change. 
 
 
 ### Connect I2C sensors: BME280 temperature, pressure, and humidity and OLED display
