@@ -78,13 +78,14 @@ When you are testing sensors in the Modular Sensors sketches, the serial monitor
         Red connects to 3-5V power (3V3 on Mayfly)
         Blue/Black connects to ground (GND on Mayfly)
         Yellow/White is data (D7 on Mayfly)
-        4.7kohm resistor between data and power (resistors are not directional)
+        4.7kΩ resistor between data and power (resistors are not directional)
   <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/DS18B20pinout.jpg" width="600">
-  4. Connect Mayfly to your computer, set up platformio.ini and run the sketch.
-  5. As the sketch scrolls on your serial monitor, hold the sensor and see if you can get the temperature change. 
-
+  4. Connect Mayfly to your computer, set up platformio.ini and do all of the steps to run the sketch.
+  5. As the sketch scrolls on your serial monitor, hold the sensor and see if you can get the temperature change.
 
 ### Connect I2C sensors: BME280 temperature, pressure, and humidity and OLED display
 
+
+### Extras
 
 {% include links.md %}
