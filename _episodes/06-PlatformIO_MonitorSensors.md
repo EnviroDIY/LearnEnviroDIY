@@ -83,7 +83,19 @@ When you are testing sensors in the Modular Sensors sketches, the serial monitor
   4. Connect Mayfly to your computer, set up platformio.ini and do all of the steps to run the sketch.
   5. As the sketch scrolls on your serial monitor, hold the sensor and see if you can get the temperature change.
 
-### Connect I2C sensors: BME280 temperature, pressure, and humidity and OLED display
+### Connect I<sup>2</sup>C sensors: BME280 temperature, pressure, and humidity and OLED display
+- I<sup>2</sup>C (Inter-Integrated Circuit) is a communication protocol that is generally used in inexpensive, short wire sensor applications, so it shows up a lot in the Arduino world. The internets say it's pronounced *I-squared-C*, but I hear a lot of very smart engineers calling it *I-two-C*, so take your pick. This protocol communicates through two wires (SDA for data and SCL for clock). It also has a power and ground wire. There's only one I<sup>2</sup>C port on the Mayfly because this communication protocol can support 1008 sensors over two wires. The catch for our purposes is that the sensors need to have different addresses (or "slave IDs", where a "slave" is a sensor). The Real Time Clock on the Mayfly is an I<sup>2</sup>C device, so your addresses need to be different than the clock (the clock's address is 0x68, and [here's a list of common addresses](https://learn.adafruit.com/i2c-addresses/the-list).
+
+  The most common instance in environmental monitoring that we have had to pay attention to I<sup>2</sup>C addresses is when using the pressure sensors that we commonly use for water pressure and air pressure (such as in combination to log water level). It turns out that the manufacturers for these sensors use the same two addresses quite commonly. The default addresses are 0x76 and 0x77 for both types of pressure sensors, but most have a way to change the address by physically soldering a jumper on the sensor breakout board. Your sketch needs to reference the correct address for each sensor.
+
+  Because I<sup>2</sup>C sensors know how to take turns sending data on the wires they share, we are able to string together several sensors. Most often with the Mayfly, we do this using an I<sup>2</sup>C hub with several Grove ports.
+  <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/I2CtoMayfly.jpg" width="500">
+
+  It is a little more complicated, but completely possible to do this with pin headers, wires, and a breadboard.
+  (image coming)
+
+  1. Open the sketch Example_06_Mayfly_BME280_OLED.ino.
+  2. Take note of the address for your BME280 sensor, which is probably printed in *tiny* characters on the breakout board (0x77 is Adafruit default; 0x76 is Grove default). Make sure line 32 in the sketch has the correct address for your sensor.
 
 
 ### Extras
