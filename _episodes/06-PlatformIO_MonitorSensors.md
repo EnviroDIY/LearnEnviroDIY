@@ -80,7 +80,7 @@ When you are testing sensors in the Modular Sensors sketches, the serial monitor
         Yellow/White is data (D7 on Mayfly)
         4.7kΩ resistor between data and power (resistors are not directional)
   <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/DS18B20pinout.jpg" width="600">
-  4. Connect Mayfly to your computer, set up platformio.ini and do all of the steps to run the sketch.
+  4. Connect the Mayfly to your computer, set up platformio.ini and do all of the steps to run the sketch.
   5. As the sketch scrolls on your serial monitor, hold the sensor and see if you can get the temperature change.
 
 ### Connect I<sup>2</sup>C sensors: BME280 temperature, pressure, and humidity and OLED display
@@ -89,16 +89,17 @@ When you are testing sensors in the Modular Sensors sketches, the serial monitor
   The most common instance in environmental monitoring that we have had to pay attention to I<sup>2</sup>C addresses is when using the pressure sensors that we commonly use for water pressure and air pressure (such as in combination to log water level). It turns out that the manufacturers for these sensors use the same two addresses quite commonly. The default addresses are 0x76 and 0x77 for both types of pressure sensors, but most have a way to change the address by physically soldering a jumper on the sensor breakout board. Your sketch needs to reference the correct address for each sensor.
 
   Because I<sup>2</sup>C sensors know how to take turns sending data on the wires they share, we are able to string together several sensors. Most often with the Mayfly, we do this using an I<sup>2</sup>C hub with several Grove ports.
-  <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/I2CtoMayfly.JPG" width="500">
-
-  It is a little more complicated, but completely possible to do this with pin headers, wires, and a breadboard.
-  (image coming)
 
   1. Open the sketch Example_06_Mayfly_BME280_OLED.ino.
   2. Take note of the address for your BME280 sensor, which is probably printed in *tiny* characters on the breakout board (0x77 is Adafruit default; 0x76 is Grove default). Make sure line 32 in the sketch has the correct address for your sensor.
-  3. Wire the sensors as illustrated below.
-
+  3. Wire the sensors as illustrated below. Note, we are not offering a breadboard variation because the OLED (which is optional in the sketch) only has Grove connection available (in our SwitchDoctor breakout, the holes the board connect to nothing).
+  <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/I2CtoMayfly.JPG" width="500">
+  4. Connect the Mayfly to your computer, set up platformio.ini and do all of the steps to run the sketch.
+  5. As the sketch scrolls on your serial monitor, hold the sensor or blow on it and see if you can get the temperature and humidity to change.
 
 ### Extras
+- There are several additional example sketches in the extras folder that you may try if you have the sensors.
+
+If you are able to edit and run sketches on the Mayfly using PlatformIO, you are ready for Part 2, where we begin to use the Modular Sensors library. 
 
 {% include links.md %}
