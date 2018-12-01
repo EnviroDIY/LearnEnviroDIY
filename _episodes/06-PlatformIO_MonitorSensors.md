@@ -100,6 +100,6 @@ When you are testing sensors in the Modular Sensors sketches, the serial monitor
 ### Extras
 - There are several additional example sketches in the extras folder that you may try if you have the sensors.
 
-If you are able to edit and run sketches on the Mayfly using PlatformIO, you are ready for Part 2, where we begin to use the Modular Sensors library. 
+If you are able to edit and run sketches using PlatformIO and upload them to the Mayfly, you are ready for Part 2, where we begin to use the Modular Sensors library. 
 
 {% include links.md %}
