@@ -40,7 +40,7 @@ Press the battery securely (and carefully) into the slot on the Mayfly. The fit 
 Inserting the SD card is much easier. Orient the card into the SD card slot as shown above and it will set itself with a click. To remove, push the SD card deeper into the slot (gently), and the spring mechanism will release or eject the card.
 
 ### Create a project of Episode 5 sketches
-[Download Sketches for Part 1 Episode 5](weblink)
+[Download Sketches for Part 1 Episode 5](https://github.com/EnviroDIY/LearnEnviroDIYcode/tree/master/Part1-sketches)
 You have a few ways to use an existing GitHub repository (repo from now on), including to *fork*, *clone*, or *download* the full repository of files. The typical GitHub behavior is that downloading individual files or folders within a repo is possible but difficult. Let's pause for a moment and find out what each of those actions means.
 
 > ## GitHub Jargon
