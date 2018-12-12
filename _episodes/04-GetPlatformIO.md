@@ -3,21 +3,32 @@ title: "Installing PlatformIO"
 teaching: 0
 exercises: 45
 questions:
-- "How will I manage extensive Arduino libraries? How can I easily compare two codes? What is a code text editor? Which buttons do I push in PlatformIO?"
+- "How will I manage extensive Arduino libraries?"
+- "What are the benefits of a code text editor? How can I easily compare two codes files?"
+- "Which buttons do I push in PlatformIO?"
 objectives:
 - "Download PlatformIO and Atom. Test PlatformIO."
 keypoints:
-- "Download and become acquainted with the PlatformIO environment."
+- "PlatformIO provides an Integrated Development Environment (IDE) that combines all the capabilities of the Arduino IDE along with many advanced capabilities of a code editor that you will come to appreciate."
 ---
 ## Part 1, Episode 4: Installing PlatformIO
 
 In this lesson we will prepare you to use PlatformIO, an Integrated Development Environment (IDE), which is extremely helpful (and we believe necessary) for keeping track of libraries and code differences when using the EnviroDIY Modular Sensors sketches. You will install PlatformIO, and become acquainted with many of its features, including file management, syntax highlighting, code difference tracking, code debugging, library management, and integration with Arduino and GitHub.
 
-**Atom and PlatformIO**
+### Atom and PlatformIO
 PlatformIO IDE is hosted within a text editor designed for editing code. Most code text editors highlight syntax and have special auto-complete features based on elements of the code. PlatformIO can be hosted by several text editors, so if you are a coder and already use VSCode or Sublime, please feel free to install PlatformIO for one of these editors. This tutorial will be presented from the perspective of PlatformIO hosted within Atom text editor. Since Microsoft took ownership of GitHub, their VSCode has become the "recommended" download for PlatformIO, but Atom and other editors still work great. If you choose a different text editor, some of the buttons will be located in different places, but all of the functionality will be preserved.
 
+- [First Install Git](https://git-scm.com/downloads)
+  - You need to have an all purpose Git Client installed to use the great library functions in PlatformIO. Although you installed GitHub Desktop, its Git client is only used by that application.
+  - Download and install Git from [https://git-scm.com/downloads](https://git-scm.com/downloads). Install selecting all the defaults (make sure your PATH environment allows Git from command line and also from 3rd-party software). We find it best to reboot your computer before installing Atom.
+
+- [Install Atom](https://atom.io/)
+  - Download and install official GitHub's Atom text editor, PlatformIO IDE is built on top of it.
+  - You will likely be asked to install Clang, a library for Intelligent Code Completion. If so, follow the [instructions for installing Clang for PlatformIO](https://docs.platformio.org/en/latest/ide/atom.html#ii-clang-for-intelligent-code-completion), which guide you to “Add LLVM to the system PATH for all users” (which is not the default).
+
 - [Install PlatformIO for Atom.](https://platformio.org/install/ide?install=atom)
-  - After you download Atom, you will go to Settings in Atom (gear symbol), select install (plus symbol) and type in `platformio-ide` in the box that says "search packages" (see image below). PlatformIO should appear in the list after your search. Click on the blue install button and follow any additional instructions (such as to restart) to complete the installation.
+  - After you install Atom, follow the [PlatformIO for Atom Installation Instructions](https://docs.platformio.org/en/latest/ide/atom.html#installation).
+  - In brief, you will go to Settings in Atom (gear symbol), select install (plus symbol) and type in `platformio-ide` in the box that says "search packages" (see image below). PlatformIO should appear in the list after your search. Click on the blue install button and follow any additional instructions (such as to restart) to complete the installation.
 
 ![Source and Destination Files]({{ page.root }}/fig/PlatformIO_navigation002.png)
 

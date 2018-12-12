@@ -8,7 +8,9 @@ questions:
 objectives:
 - "Create a GitHub account, set up GitHub Desktop, and learn GitHub terminology."
 keypoints:
-- "Learn what GitHub can do and the jargon GitHub uses to describe your activity on GitHub."
+- "GitHub is a collaborative *version control* system, where changes are tracked over an entire directory of files that is called a *repository*."
+- "GitHub enables multiple edits to be saved in a *commit*, and for a different version to be developed in a *branch*."
+- "When contributing to someone else's repo, you ask them to pull your code edits into their code base by issuing a *pull request*"
 ---
 This lesson will help you connect to GitHub, which is a web-hosting service for computer code repositories. This tutorial is hosted on GitHub, and the EnviroDIY Modular Sensor Library is also on GitHub. That means GitHub is the source code manager for the code you will be using, so you will benefit from using GitHub to keep track of updates to the EnviroDIY Modular Sensor Library. You may also find it to be a useful place to keep track of your own codes to manage versions and share will collaborators.
 
