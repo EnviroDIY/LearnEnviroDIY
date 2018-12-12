@@ -80,10 +80,11 @@ As we did for the list of sensors, we will select and comment out the lines we a
 
 - **Main Setup Function (518-569)** If you are not using a modbus sensor, comment out the following lines:
     - `// Start the stream for the modbus sensors`
-    - `modbusSerial.begin(9600);`
+    - `modbusSerial.begin(9600);`  
+
 Similarly, if you are not using a Maxbotix sonar senor, comment out the following lines:
     - `// Start the SoftwareSerial stream for the sonar`
-    - `sonarSerial.begin(9600);
+    - `sonarSerial.begin(9600);`
 
 - **Main loop function (572-579)** No need to change this.
 
