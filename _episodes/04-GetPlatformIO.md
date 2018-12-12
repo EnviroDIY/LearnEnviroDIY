@@ -18,8 +18,8 @@ In this lesson we will prepare you to use PlatformIO, an Integrated Development 
 ### Atom and PlatformIO
 PlatformIO IDE is hosted within a text editor designed for editing code. Most code text editors highlight syntax and have special auto-complete features based on elements of the code. PlatformIO can be hosted by several text editors, so if you are a coder and already use VSCode or Sublime, please feel free to install PlatformIO for one of these editors. This tutorial will be presented from the perspective of PlatformIO hosted within Atom text editor. Since Microsoft took ownership of GitHub, their VSCode has become the "recommended" download for PlatformIO, but Atom and other editors still work great. If you choose a different text editor, some of the buttons will be located in different places, but all of the functionality will be preserved.
 
-- [First Install Git](https://git-scm.com/downloads)
-  - You need to have an all purpose Git Client installed to use the great library functions in PlatformIO. Although you installed GitHub Desktop, its Git client is only used by that application.
+- [Install Git](https://git-scm.com/downloads)
+  - You need to have an all-purpose Git Client installed to use the great library functions in PlatformIO. Although you installed GitHub Desktop, its Git client is only used by that application.
   - Download and install Git from [https://git-scm.com/downloads](https://git-scm.com/downloads). Install selecting all the defaults (make sure your PATH environment allows Git from command line and also from 3rd-party software). We find it best to reboot your computer before installing Atom.
 
 - [Install Atom](https://atom.io/)
