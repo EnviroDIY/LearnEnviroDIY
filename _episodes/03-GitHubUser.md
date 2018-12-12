@@ -3,7 +3,8 @@ title: "Connecting to GitHub"
 teaching: 0
 exercises: 30
 questions:
-- "How will I keep track of changes in the EnviroDIY code library? With all the library dependencies, how do I share my code with collaborators?"
+- "How will I keep track of changes in the EnviroDIY code library?"
+- "How do I share my code with collaborators?"
 objectives:
 - "Create a GitHub account, set up GitHub Desktop, and learn GitHub terminology."
 keypoints:

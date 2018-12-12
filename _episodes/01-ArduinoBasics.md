@@ -53,11 +53,10 @@ NOTE: You will need additional parts, such as those included with either an [Ard
   - Adding a button response to the breadboard means sending a digital input back to the Arduino board. In the "Other Things to Do" step you will add a couple of commands to the sketch that will allow you to see your input responses in the "Serial Monitor". We skipped Mr. Monk's initial introduction to the serial monitor in lesson 5 for brevity, so reading his one page on "The Serial Monitor" from lesson 5 would be helpful. We use the serial monitor all the time to see how sensors are responding before deployment.
 
 
-> ## Complement your Learning
+> ## Complement your Learning (Optional)
 > - Open the [SparkFun Inventor's Kit (SIK) Guide v3.3](https://cdn.sparkfun.com/datasheets/Kits/SFE03-0012-SIK.Guide-300dpi-01.pdf) booklet (or whatever booklet might have come with your starter kit) for helpful diagrams, explanations and tips.
 > - Consult the official [Arduino Language Reference](https://www.arduino.cc/reference/en/), the [Variables Tutorial](https://www.arduino.cc/en/Tutorial/Variables), or the [Functions Tutorial](https://www.arduino.cc/en/Reference/FunctionDeclaration) if you have an additional question about any elements of the code you are exploring.
 > - Explore other online resources, such as [Sparkfun's SIK Experiment Guide for Arduino - V3.3](https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v33), for alternate presentations of Arduino basics.  
->
 {: .callout}
 
 

@@ -9,8 +9,8 @@ Do-it-yourself (DIY) enthusiasts generally find rapid success at reading data fr
 **These lesson episodes will teach you how to program your Arduino for environmental IoT using [ModularSensors](https://github.com/EnviroDIY/ModularSensors).**
 
 We organize episodes into two parts:
-- **Part 1: Arduino and IoT for EnviroDIY** introduces basic Arduino and IoT skills to prepare you for using ModularSensors.
-- **Part 2: Program with ModularSensors** provides exercises to program, test and deploy a monitoring station based on the example code in the ModularSensors library.
+- **Part 1: Arduino and IoT for EnviroDIY (Episodes 1-6)** introduces basic Arduino and IoT skills to prepare you for using ModularSensors.
+- **Part 2: Program with ModularSensors (Episodes 7-13)** provides exercises to program, test and deploy a monitoring station based on the example code in the ModularSensors library.
 
 > ## Prerequisites
 >

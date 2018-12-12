@@ -43,5 +43,12 @@ In **Part 1, Episode 2**, we continue to introduce you to Arduino concepts and s
 **[Multi-tasking the Arduino Part 2](https://learn.adafruit.com/multi-tasking-the-arduino-part-2) by Bill Earl**
 - This lesson is optional. Introduces interrupts, which Modular Sensors uses for pin changes, sleep mode, and sensor testing mode. The primary need for Modular Sensors users from this lesson is to be aware that interrupts are part of the structure of Modular Sensors and they contribute to the ability to perform multiple tasks.
 
+> ## Learning Resources
+> - As you dive deeper into Arduino programming, you might want to have these references handy and open in a separate tab to look up the details on any code element that you come across:
+>   - [Arduino Language Reference](https://www.arduino.cc/reference/en/)
+>   - [Variables Tutorial](https://www.arduino.cc/en/Tutorial/Variables)
+>   - [Functions Tutorial](https://www.arduino.cc/en/Reference/FunctionDeclaration)
+> - There are many other Arduino learning resources online. Googling code snippets will soon become your friend!
+{: .callout}
 
 {% include links.md %}
