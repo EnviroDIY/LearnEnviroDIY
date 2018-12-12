@@ -44,13 +44,13 @@ You can easily switch between which branch is saved on your computer in GitHub D
 ### Managing your own sketches
 You just cloned a repository that we want to watch for updates, but you do not have access to send edits back to this repo. Also, you will be editing the sketches from the Modular Sensors repo for your own sensor stations, which may result in your files getting overwritten when you pull updates or "Fetch origin" from GitHub. For all of these reasons, we recommend that you create a new repository for your own sketches.
 
-Create a new repository and name it *deployments* in your GitHub account as you did in the [GitHub Hello World tutorial](https://guides.github.com/activities/hello-world/#repository). For now we will make this a public repository, but if you may need to consider using a private repo for your organization's deployment sketches.
+- Create a new repository and name it *deployments* in your GitHub account as you did in the [GitHub Hello World tutorial](https://guides.github.com/activities/hello-world/#repository). For now we will make this a public repository, but if you may need to consider using a private repo for your organization's deployment sketches.
 
-Clone your *deployments* repo (as we did earlier in this episode) and make it a project in PlatformIO (as in Part 1 Episode 5).
+- Clone your *deployments* repo (as we did earlier in this episode) and make it a project in PlatformIO (as in Part 1 Episode 5).
 
-Typically within a deployments repo, we keep a separate folder for each project or site. In your *deployments* project in PlatformIO, right click on the *deployments* folder and select "New Folder" from pop up menu. Name the new folder *tutorials*.
+- Typically within a deployments repo, we keep a separate folder for each project or site. In your *deployments* project in PlatformIO, right click on the *deployments* folder and select "New Folder" from pop up menu. Name the new folder *tutorials*.
 
-Copy the *simple_logging* sketch from ~/ModularSensors/examples/ by right-clicking on the *simple_logging* folder. Paste this folder into the tutorials folder in your repository (~/Arduino/deployments/tutorials/). Now you can edit this sketch and save your edits to you own repository.
+- Copy the *simple_logging* sketch from ~/ModularSensors/examples/ by right-clicking on the *simple_logging* folder. Paste this folder into the tutorials folder in your repository (~/Arduino/deployments/tutorials/). Now you can edit this sketch and save your edits to you own repository.
 
 ### Anatomy of Modular Sensors Sketches
 Open your copy of *simple_logging.ino*. This sketch is 580 lines long with multiple sections. We will give you a what you need to know for each section.
@@ -67,7 +67,7 @@ Open your copy of *simple_logging.ino*. This sketch is 580 lines long with multi
 
 - **Massive list of sensors (67-410)** This next section lists nearly all of the sensors currently available in the Modular Sensor Library. The default is for all of the sensors to be *live* in the unedited sketch. Please do not let this give you the impression that you can run all of these at once! When you set up the sketch for your sensors, you will *comment out* the lines that you do not need. The *comment out* character is two forward slashes '//'. To comment out multiple lines at a time, most code editors allow you to select all of the text you wish to comment out and do the following keystroke commands:
     - MacOS: <kbd>Command</kbd>+<kbd>/</kbd>
-    - PC and Linux: <kbd>Ctrl</kbd>+<kbd>/</kbd>
+    - PC and Linux: <kbd>Ctrl</kbd>+<kbd>/</kbd>  
 
 - **Variable Array (413-496)** This is a list of all of the possible variables available to the sensors listed in the sketch. Notice that some sensors have multiple variables. For example, the BME280 that you used in Part 1 Episode 6 includes four variables:
         - new BoschBME280_Temp(&bme280),
@@ -82,7 +82,7 @@ As we did for the list of sensors, we will select and comment out the lines we a
     - `// Start the stream for the modbus sensors`
     - `modbusSerial.begin(9600);`  
 
-Similarly, if you are not using a Maxbotix sonar senor, comment out the following lines:
+Similarly, if you are not using a Maxbotix sonar senor, comment out the following lines:  
     - `// Start the SoftwareSerial stream for the sonar`
     - `sonarSerial.begin(9600);`
 
