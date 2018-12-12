@@ -1,7 +1,7 @@
 ---
 title: Setup
 ---
-We will direct you to download files as needed as you proceed through the lessons. However, we take this opportunity to direct you to the hardware that you will need to complete the tutorials. 
+We will direct you to download files as needed as you proceed through the lessons. However, we take this opportunity to direct you to the hardware that you will need to complete the tutorials.
 
 > ## Prerequisites
 >
