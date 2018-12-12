@@ -23,7 +23,7 @@ Built into the Modular Sensors Library is the ability to
   stream information to an internet portal, and
   put all of that functionality together into one sketch because an Arduino framework microcontroller can do one thing at a time.
 
-#### Clone the repository
+### Clone the repository
 To get the files from any public GitHub repo, including Modular Sensors, on your your computer, you have a couple of options. You may download all of the files for the repo, as we did in Part 1, Episode 5 to get the tutorial sketches. But if we want to check for the most current files, we recommend that you "clone" a repo. Since your purpose in this tutorial is to begin your own environmental monitoring, we recommend that you clone the Modular Sensors repo.
 
 To clone Modular Sensors,
@@ -33,7 +33,7 @@ To clone Modular Sensors,
   4. A dialogue box will appear in GitHub Desktop where you can indicate where you want to put the files.
   (e.g. I keep all of my Arduino work in a folder by that name located in my root directory /~Documents/Arduino/...)
 
-#### Repository branches
+### Repository branches
 Modular Sensors repo is still new and is being regularly modified and improved with new or refined features. Developers add and test new features in different branches of the repository. At any given time, the branches will look something like the image below:
 <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/ModularSensorsNetwork.png " width="400">
 
@@ -41,7 +41,7 @@ Notice in this image that an individual is working on their own branch of Modula
 
 You can easily switch between which branch is saved on your computer in GitHub Desktop by changing the "Current Branch" selection (this may not be a good thing if you change it unintentionally!). "Master" is the default branch for the Modular Sensors repo, and is considered to be the place were features have been tested and are ready for use.
 
-#### Managing your own sketches
+### Managing your own sketches
 You just cloned a repository that we want to watch for updates, but you do not have access to send edits back to this repo. Also, you will be editing the sketches from the Modular Sensors repo for your own sensor stations, which may result in your files getting overwritten when you pull updates or "Fetch origin" from GitHub. For all of these reasons, we recommend that you create a new repository for your own sketches.
 
 Create a new repository and name it *deployments* in your GitHub account as you did in the [GitHub Hello World tutorial](https://guides.github.com/activities/hello-world/#repository). For now we will make this a public repository, but if you may need to consider using a private repo for your organization's deployment sketches.
@@ -52,7 +52,7 @@ Typically within a deployments repo, we keep a separate folder for each project 
 
 Copy the *simple_logging* sketch from ~/ModularSensors/examples/ by right-clicking on the *simple_logging* folder. Paste this folder into the tutorials folder in your repository (~/Arduino/deployments/tutorials/). Now you can edit this sketch and save your edits to you own repository.
 
-#### Anatomy of Modular Sensors Sketches
+### Anatomy of Modular Sensors Sketches
 Open your copy of *simple_logging.ino*. This sketch is 580 lines long with multiple sections. We will give you a what you need to know for each section.
 
 - **Header (lines 1-16)** Comments about the authors and purpose of the sketch. You may add your own deployment notes in this section, but we generally leave the other attribution information intact.
