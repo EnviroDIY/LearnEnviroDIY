@@ -1,7 +1,7 @@
 ---
-title: "Introduction to Telemetry"
+title: "Second Sketch: logging_to_EnviroDIY.ino"
 teaching: 30
-exercises: 15
+exercises: 30
 questions:
 - "FIXME"
 objectives:

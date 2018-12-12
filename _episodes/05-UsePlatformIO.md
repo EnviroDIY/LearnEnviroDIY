@@ -77,7 +77,7 @@ You have a few ways to use an existing GitHub repository (repo from now on), inc
 > ALSO NOTE: If you are working with a group and syncing to GitHub, you do not want to upload your root platformio.ini file to GitHub (list it in the gitignore and/or uncheck it when pushing your contributions to GitHub).
 {: .callout}
 
-- **Step 6:** Connect the Mayfly logger using the USB cable included in your starter kit. Turn the Mayfly on. Push the Build/Compile button (checkmark). You should see a terminal pop up and lines of text will scroll through the terminal, and if all goes well, it will conclude with a green bar that says "platform run" and "[SUCCESS]" in green, as shown below.
+- **Step 6:** Connect the Mayfly logger using the USB cable included in your starter kit. Turn the Mayfly on. Push the Build/Compile button (checkmark). You should see a terminal pop up and lines of text will scroll through the terminal, and if all goes well, it will conclude with a green bar that says "platform run" and "[SUCCESS]" in green, as shown below. Sometimes the system takes a little while to compile and gives an error message ending in "No such file or directory." If you get this error message, wait ~30 seconds and Build/Compile again. 
 <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/platformrunSuccess.png" width="700">
 
 
