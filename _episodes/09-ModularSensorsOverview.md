@@ -83,8 +83,8 @@ As we did for the list of sensors, we will select and comment out the lines we a
     - `modbusSerial.begin(9600);`  
 
 Similarly, if you are not using a Maxbotix sonar senor, comment out the following lines:  
-    - `// Start the SoftwareSerial stream for the sonar`
-    - `sonarSerial.begin(9600);`
+    - `// Start the SoftwareSerial stream for the sonar`  
+    - `sonarSerial.begin(9600);`  
 
 - **Main loop function (572-579)** No need to change this.
 
