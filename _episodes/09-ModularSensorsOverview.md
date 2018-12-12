@@ -66,9 +66,27 @@ Open your copy of *simple_logging.ino*. This sketch is 580 lines long with multi
 - **Real Time Clock (59-64)** Technically this is the beginning of the list of sensors, but this one is the real time clock (RTC) on the Mayfly, and the Maxim DS3231 is the RTC most commonly in use in the Arduino world. The RTC has a temperature sensor that we are able to log to monitor the temperature of the Mayfly.
 
 - **Massive list of sensors (67-410)** This next section lists nearly all of the sensors currently available in the Modular Sensor Library. The default is for all of the sensors to be *live* in the unedited sketch. Please do not let this give you the impression that you can run all of these at once! When you set up the sketch for your sensors, you will *comment out* the lines that you do not need. The *comment out* character is two forward slashes '//'. To comment out multiple lines at a time, most code editors allow you to select all of the text you wish to comment out and do the following keystroke commands:
-    MacOS: <kbd>Command</kbd>+<kbd>/</kbd>
-    PC and Linux: <kbd>Ctrl</kbd>+<kbd>/</kbd>
+    - MacOS: <kbd>Command</kbd>+<kbd>/</kbd>
+    - PC and Linux: <kbd>Ctrl</kbd>+<kbd>/</kbd>
 
-- **Variable Array (413-496)**
+- **Variable Array (413-496)** This is a list of all of the possible variables available to the sensors listed in the sketch. Notice that some sensors have multiple variables. For example, the BME280 that you used in Part 1 Episode 6 includes four variables:
+        - new BoschBME280_Temp(&bme280),
+        - new BoschBME280_Humidity(&bme280),
+        - new BoschBME280_Pressure(&bme280),
+        - new BoschBME280_Altitude(&bme280),
+As we did for the list of sensors, we will select and comment out the lines we are not using from the variable array. In some cases we will not log all of the variables that are available on a sensor.
+
+- **Working Functions (499-515)** We do not need to change anything in this section. This part of the sketch lights LEDs on the logger board to indicate when the logger is running (in contrast to in sleep mode).
+
+- **Main Setup Function (518-569)** If you are not using a modbus sensor, comment out the following lines:
+    - `// Start the stream for the modbus sensors`
+    - `modbusSerial.begin(9600);`
+Similarly, if you are not using a Maxbotix sonar senor, comment out the following lines:
+    - `// Start the SoftwareSerial stream for the sonar`
+    - `sonarSerial.begin(9600);
+
+- **Main loop function (572-579)** No need to change this.
+
+In the next episode, we will set up this sketch and run some sensors!
 
 {% include links.md %}
