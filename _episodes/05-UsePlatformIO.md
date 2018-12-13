@@ -1,5 +1,5 @@
 ---
-title: "Using PlatformIO and Mayfly"
+title: "Episode 1.5 Using PlatformIO and Mayfly"
 teaching: 0
 exercises: 90
 questions:

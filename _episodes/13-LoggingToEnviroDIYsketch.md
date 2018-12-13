@@ -1,5 +1,5 @@
 ---
-title: "Second Sketch: logging_to_EnviroDIY.ino"
+title: "Episode 2.6 Second Sketch: logging_to_EnviroDIY.ino"
 teaching: 10
 exercises: 30
 questions:

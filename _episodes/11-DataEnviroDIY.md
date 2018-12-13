@@ -1,5 +1,5 @@
 ---
-title: "Set up Data.EnviroDIY Site"
+title: "Episode 2.5 Set up Data.EnviroDIY Site"
 teaching: 10
 exercises: 20
 questions:
@@ -9,7 +9,7 @@ objectives:
 keypoints:
 - "Create a repository at data.EnviroDIY.org. Add variables to log from available sensors."
 ---
-## Part 2, Episode 4: Setting up a Data.EnviroDIY Site
+## Part 2, Episode 5: Setting up a Data.EnviroDIY Site
 
 The EnviroDIY ecosystem includes a data repository that is free, open source, secure, and does not expire. The data portal includes a time-series analyst and the ability to download your data. In this episode you will create an account and set up a site to log variables for the BME280, the DS18, and the Mayfly.
 

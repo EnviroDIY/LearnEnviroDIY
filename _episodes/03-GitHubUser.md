@@ -1,5 +1,5 @@
 ---
-title: "Connecting to GitHub"
+title: "Episode 1.3 Connecting to GitHub"
 teaching: 0
 exercises: 30
 questions:

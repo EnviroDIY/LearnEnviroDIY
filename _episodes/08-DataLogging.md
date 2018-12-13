@@ -1,5 +1,5 @@
 ---
-title: "The Data Logging Cycle"
+title: "Episode 2.1 The Data Logging Cycle"
 teaching: 20
 exercises: 0
 questions:
@@ -10,7 +10,7 @@ keypoints:
 - "All dataloggers manage a common sequence of steps, each of which requires coordination of many individual and often complex tasks."
 ---
 
-## Part 2, Episode 8: The Data Logging Cycle
+## Part 2, Episode 1: The Data Logging Cycle
 
 DIYers generally find rapid success at reading data from simple sensors to an Arduino board. However, it is much more challenging to program an Arduino to perform all required functions of a solar-powered station that collects data from several research-grade environmental sensors, saves to an SD card, transmits to a public server with web services, and puts the sensors to sleep to conserve energy between logging intervals. The [EnviroDIY](https://www.envirodiy.org/) [ModularSensors](https://github.com/EnviroDIY/ModularSensors) library was designed coordinate these tasks.
 

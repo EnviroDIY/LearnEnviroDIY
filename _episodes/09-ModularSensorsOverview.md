@@ -1,5 +1,5 @@
 ---
-title: "Tour of Modular Sensors Library"
+title: "Episode 2.2 Tour of Modular Sensors Library"
 teaching: 30
 exercises: 0
 questions:

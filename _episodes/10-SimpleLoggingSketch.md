@@ -1,5 +1,5 @@
 ---
-title: "First Sketch: simple_logging.ino"
+title: "Episode 2.3 First Sketch: simple_logging.ino"
 teaching: 10
 exercises: 20
 questions:

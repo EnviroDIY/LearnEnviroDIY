@@ -1,5 +1,5 @@
 ---
-title: "Installing PlatformIO"
+title: "Episode 1.4 Installing PlatformIO"
 teaching: 0
 exercises: 45
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "Arduino Basics for EnviroDIY"
+title: "Episode 1.1 Arduino Basics for EnviroDIY"
 teaching: 0
 exercises: 90
 questions:

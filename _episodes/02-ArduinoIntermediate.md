@@ -1,5 +1,5 @@
 ---
-title: "Arduino Intermediate Skills for EnviroDIY"
+title: "Episode 1.2 Arduino Intermediate Skills for EnviroDIY"
 teaching: 0
 exercises: 45
 questions:

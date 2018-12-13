@@ -1,5 +1,5 @@
 ---
-title: "Using PlatformIO Serial Monitor and Sensors"
+title: "Episode 1.6 Using PlatformIO Serial Monitor and Sensors"
 teaching: 0
 exercises: 90
 questions:
