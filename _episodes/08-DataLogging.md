@@ -7,7 +7,7 @@ questions:
 objectives:
 - "Learn the basic steps of a data logging cycle."
 keypoints:
-- "Understanding the various steps in "
+- "All dataloggers manage a common sequence of steps, each of which requires coordination of many individual and often complex tasks."
 ---
 
 ## Part 2, Episode 8: The Data Logging Cycle
@@ -29,7 +29,7 @@ A datalogger needs to carefully keep track of time for a wide variety of purpose
 - **Sensor time averaging**, or ***time support***, is the product of measurement time and number of readings.
      - Sometimes it is useful to average over a long-enough time to average-out the effects of higher-frequency environmental variability than what you are studying, such as the pulses of turbidity that go up and down every 3-10 seconds with passing eddies and vortices.
 
-    <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/TimeScaleTriplet-Horsburg.png" width="700">
+    <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/TimeScaleTriplet-Horsburg.png" width="800">
     *Figure from Jeff Horsburgh's lecture 6 in his [2016 HydroInformatics (USU CEE-6110)](https://usu.instructure.com/courses/417249/pages/lecture-materials) class.*
 
 > ## Take home on Timing
@@ -65,14 +65,14 @@ Another key requirement of any data logger is to **provide the appropriate power
   - a sensor's voltage range is typically specified in its spec sheet.
 - **Current draw** (measured in amps (A) or milliamps (mA)).
   - the power supplied from a logger to a sensor always has a maximum upper limit to the current it can provide to all the sensors on that power line (which is often shared internally within the logger). Exceeding this limit will cause the sensor to "brown out".
-  - current draw is also useful for calculating solar charging requirements.
+  - current draw is also useful for calculating solar charging requirements. NOTE that current times voltage equals power (measured in Watts), or V * A = W.
   - a sensor's common or maximum current draw is *sometimes* specified in its spec sheet, but real world current usage most often can only be quantified as directly measured by the user.
 
 
 ### Writing Data to an SD Card
 Once a datalogger had retreived data values from each of the connected sensors, it needs to write those values from short-term memory (i.e. which is erased when the microcontroller is turned off) to a form of long-term data storage (i.e. which can persist for decades even with no power). To do this, the data values need to be organized into a comma-separated string of numbers and characters, along with the date-time at which the measurements were made. For the user to make sense of the data later, the datalogger also needs to record "headers", which are one or more special rows that contain information about the entire file and also what is found in each column, such as the sensor name, variable name and units
 
-<img src="https://envirodiy.github.io/LearnEnviroDIY/fig/DataloggerCSVFileExample.png" width="700">
+<img src="https://envirodiy.github.io/LearnEnviroDIY/fig/DataloggerCSVFileExample.png" width="600">
 *Figure from Jeff Horsburgh's lecture 7 in his [2016 HydroInformatics (USU CEE-6110)](https://usu.instructure.com/courses/417249/pages/lecture-materials) class.*
 
 
