@@ -4,7 +4,7 @@ teaching: 10
 exercises: 30
 questions:
 - "Where in my sketch do I put UUIDs from data.EnviroDIY?"
-- "How do I tell what changes have been made to a sketch?"
+- "How do I find the changes that have been made to a sketch?"
 objectives:
 - "Log data to an online repository. Install and use split-diff package."
 keypoints:
