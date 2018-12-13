@@ -26,8 +26,9 @@ The EnviroDIY ecosystem includes a data repository that is free, open source, se
     7. Use the drop down menus to find and add your sensors. The Mayfly manufacturer is EnviroDIY. The clock and DS18 are by Maxim. The BME280 is made by Bosch (because they made the chip and Adafruit or Grove made the breakout board).
     <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/envirodiy_addsensor.png" width="300">
     8. After you have added at least 3-4 variables to log, click **Back to Site Details**.
+    9. Click the **Token UUID List** button. This is a universally unique identifier for your data repository and for each variable that you log. These numbers are how your data get put in the right place when you transmit them to data.envirodiy.org. You will need these numbers for the final episode of Part 2, but you may copy and paste them during that episode.  
 
-In the next episode we will discuss telemetry and set up your sim card. 
+In the next episode we will discuss telemetry and set up your sim card.
 
 
 {% include links.md %}
