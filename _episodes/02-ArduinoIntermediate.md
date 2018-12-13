@@ -1,7 +1,7 @@
 ---
 title: "Episode 1.2 Arduino Intermediate Skills for EnviroDIY"
 teaching: 0
-exercises: 45
+exercises: 120
 questions:
 - "What is an Arduino library and how do I use it?"
 - "What intermediate code structures are critical to data logging?"

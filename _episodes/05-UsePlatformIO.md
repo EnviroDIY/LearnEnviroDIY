@@ -3,9 +3,12 @@ title: "Episode 1.5 Using PlatformIO and Mayfly"
 teaching: 0
 exercises: 90
 questions:
-- "How do I tell PlatformIO which Arduino I am using? How do I use PlatformIO to upload a sketch to an Arduino board? How do I view and edit sketches in PlatformIO?"
+- "How do I tell PlatformIO which Arduino I am using?"
+- "How do I use PlatformIO to upload a sketch to an Arduino board?"
+- "How do I view and edit sketches in PlatformIO?"
 objectives:
-- "Install Mayfly data logger in PlatformIO. Edit and upload sketches to Mayfly."
+- "Install Mayfly data logger in PlatformIO."
+- "Edit and upload sketches to Mayfly."
 keypoints:
 - "Translate skills from earlier tutorials using Arduino UNO and Arduino IDE to a new PlatformIO IDE and the EnviroDIY Mayfly logger."
 ---

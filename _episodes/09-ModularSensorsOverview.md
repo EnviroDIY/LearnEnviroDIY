@@ -3,7 +3,10 @@ title: "Episode 2.2 Tour of Modular Sensors Library"
 teaching: 30
 exercises: 0
 questions:
-- "How does the Modular Sensors Library meet all of the requirements of data logging? How do I use the Modular Sensors sketches? Why would I clone vs download a repository? Where do I store my own sketches?"
+- "How does the Modular Sensors Library meet all of the requirements of data logging?"
+- "How do I use the Modular Sensors sketches?"
+- "Why would I clone vs download a repository?"
+- "Where do I store my own sketches?"
 objectives:
 - "Download the Modular Sensors Library and become acquainted with its features."
 keypoints:

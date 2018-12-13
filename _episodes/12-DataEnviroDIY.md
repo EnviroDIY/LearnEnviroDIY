@@ -3,9 +3,11 @@ title: "Episode 2.5 Set up Data.EnviroDIY Site"
 teaching: 10
 exercises: 20
 questions:
-- "How can I have real-time monitoring for my sensor stations? How do I send data to an internet repository?"
+- "How can I have real-time monitoring for my sensor stations?"
+- "How do I send data to an internet repository?"
 objectives:
-- Create a repository at data.EnviroDIY.org. Add variables to log from available sensors.
+- "Create a repository at data.EnviroDIY.org."
+- "Add variables to log from available sensors."
 keypoints:
 - "Create a repository at data.EnviroDIY.org. Add variables to log from available sensors."
 ---

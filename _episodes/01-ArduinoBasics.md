@@ -1,7 +1,7 @@
 ---
 title: "Episode 1.1 Arduino Basics for EnviroDIY"
 teaching: 0
-exercises: 90
+exercises: 120
 questions:
 - "What are the parts of an Arduino board?"
 - "How do I create, upload and modify an Arduino code sketch?"
