@@ -23,10 +23,10 @@ A datalogger needs to carefully keep track of time for a wide variety of purpose
   - Sometimes it is useful for a single datalogger to log different measurements at different intervals.
 - **Sensor warm up time**, before it can start sending data or receiving commands after it is powered up.
 - **Sensor stabilization time**, before it can start providing reliably stable or precise data after it is powered up.
-- **Sensor measurement time**, or  or ***scan interval***,  is how long the sensor takes to make a single measurement before it can make another.
+- **Sensor measurement time**, or ***scan interval***, is how long the sensor takes to make a single measurement before it can make another.
 - **Sensor number of readings**, which is how many individual measurements get made, one after another, to then be averaged for the recorded result for that logging interval.
   - Most sensors benefit from averaging multiple readings, to reduce signal noise. Many commercial sensors with built-in dataloggers, do this by default.
-- **Sensor time averaging**, or ***time support***, is the product of measurement time and number of readings.
+- **Sensor averaging time**, or ***time support***, is the product of measurement time and number of readings.
      - Sometimes it is useful to average over a long-enough time to average-out the effects of higher-frequency environmental variability than what you are studying, such as the pulses of turbidity that go up and down every 3-10 seconds with passing eddies and vortices.
 
     <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/TimeScaleTriplet-Horsburg.png" width="800">

@@ -44,13 +44,14 @@ Set up *logging_to_EnviroDIY.ino* to run BME280 and DS18 sensors.
     ```
   2. Copy and paste the tokens and UUIDs from your data.EnviroDIY.org site.
         This task is very tedious. I recommend pasting this information in the ReadMe.md file in (~/Arduino/deployments/tutorials/logging_to_EnviroDIY/). With *logging_to_EnviroDIY.ino* and *ReadMe.md* open, right click on the tab that is not active and select **Split Left** (or right or up or down). This is my preferred method for pasting UUIDs into a sketch.
-  3. Set up the platformio.ini file in the root directory of your repository. Save the ini file.
-  <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/simple_logging_ini.png" width="600">
-  4. Connect the BME280 to the Mayfly, connect the Mayfly to your computer using the USB cable, and turn it on. (Note: Modular Sensors sketches will not run if the SD card is missing.)
-  5. Build/compile and upload your sketch.
-  6. View your sensor using the serial monitor (note: `serialBaud = 115200`). After the logger is set up, push the round, black button near the SD card on the Mayfly to enter sensor testing mode.
-  7. Your serial monitor will now include information about your modem signal strength. Sometimes the first few logging intervals have low strength, so watch give the modem a warm up period.  
-  8. If your modem displays a non-zero signal strength, press the reset button (small, white rectangle near the coin battery and lipo connectors). This will restart the sketch, which allows logging mode to resume. Do not go into sensor testing mode. Wait for logging to begin. If the server response is **201**, you have successfully logged to a data repository!
+  3. Change the apn to match your SIM provider: `const char *apn = "hologram";`   
+  4. Set up the platformio.ini file in the root directory of your repository. Save the ini file.
+  <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/simple_logging_ini.png" width="600">  
+  5. Connect the BME280 to the Mayfly, connect the Mayfly to your computer using the USB cable, and turn it on. (Note: Modular Sensors sketches will not run if the SD card is missing.)
+  6. Build/compile and upload your sketch.
+  7. View your sensor using the serial monitor (note: `serialBaud = 115200`). After the logger is set up, push the round, black button near the SD card on the Mayfly to enter sensor testing mode.
+  8. Your serial monitor will now include information about your modem signal strength. Sometimes the first few logging intervals have low strength, so watch give the modem a warm up period.  
+  9. If your modem displays a non-zero signal strength, press the reset button (small, white rectangle near the coin battery and lipo connectors). This will restart the sketch, which allows logging mode to resume. Do not go into sensor testing mode. Wait for logging to begin. If the server response is **201**, you have successfully logged to a data repository!
 
 
 {% include links.md %}

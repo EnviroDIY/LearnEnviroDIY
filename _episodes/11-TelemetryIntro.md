@@ -36,8 +36,8 @@ Telemetry is the automated communication of measurements and other data from a r
 
 **Communication Protocols for Telemetry** include familiar internet protocols and also more modern protocols designed specifically for IoT, such as:
 - FTP
-- HTTP SOAP web services
-- HTTP REST web services
+- HTTP SOAP web services api
+- HTTP REST web services api 
 - Message Queuing Telemetry Transport (MQTT)
 - UDP CoAP
 NOTE: both the client (your station or device) and the server BOTH need to be configured to use the same protocol.

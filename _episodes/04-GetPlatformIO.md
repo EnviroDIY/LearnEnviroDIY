@@ -4,7 +4,8 @@ teaching: 0
 exercises: 45
 questions:
 - "How will I manage extensive Arduino libraries?"
-- "What are the benefits of a code text editor? How can I easily compare two codes files?"
+- "What are the benefits of a code text editor?"
+- "How can I easily compare two codes files?"
 - "Which buttons do I push in PlatformIO?"
 objectives:
 - "Download PlatformIO and Atom. Test PlatformIO."
