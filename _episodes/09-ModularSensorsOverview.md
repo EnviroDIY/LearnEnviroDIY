@@ -1,7 +1,7 @@
 ---
 title: "Tour of Modular Sensors Library"
-teaching: 20
-exercises: 10
+teaching: 30
+exercises: 0
 questions:
 - "How does the Modular Sensors Library meet all of the requirements of data logging? How do I use the Modular Sensors sketches? Why would I clone vs download a repository? Where do I store my own sketches?"
 objectives:
@@ -35,7 +35,7 @@ To clone Modular Sensors,
 
 ### Repository branches
 Modular Sensors repo is still new and is being regularly modified and improved with new or refined features. Developers add and test new features in different branches of the repository. At any given time, the branches will look something like the image below:
-<img src="https://envirodiy.github.io/LearnEnviroDIY/fig/ModularSensorsNetwork.png " width="400">
+<img src="https://envirodiy.github.io/LearnEnviroDIY/fig/ModularSensorsNetwork.png" width="600">
 
 Notice in this image that an individual is working on their own branch of Modular Sensors. The way GitHub is structured, anyone can copy a repository and modify their copy. In much of society, this level of transparency and sharing is unusual. In the GitHub world this kind of activity is encouraged and regarded as a strength of the platform. When a repo is forked, the attribution of all original contributors is retained. Users who modify the fork can offer to merge their features back into the original repo (through a "pull request"), offering improvements and development capacity that the original team may not have considered or had time to contribute.  
 
@@ -68,6 +68,7 @@ Open your copy of *simple_logging.ino*. This sketch is 580 lines long with multi
 - **Massive list of sensors (67-410)** This next section lists nearly all of the sensors currently available in the Modular Sensor Library. The default is for all of the sensors to be *live* in the unedited sketch. Please do not let this give you the impression that you can run all of these at once! When you set up the sketch for your sensors, you will *comment out* the lines that you do not need. The *comment out* character is two forward slashes '//'. To comment out multiple lines at a time, most code editors allow you to select all of the text you wish to comment out and do the following keystroke commands:
     - MacOS: <kbd>Command</kbd>+<kbd>/</kbd>
     - PC and Linux: <kbd>Ctrl</kbd>+<kbd>/</kbd>  
+
 
 - **Variable Array (413-496)** This is a list of all of the possible variables available to the sensors listed in the sketch. Notice that some sensors have multiple variables. For example, the BME280 that you used in Part 1 Episode 6 includes four variables:
         - new BoschBME280_Temp(&bme280),
