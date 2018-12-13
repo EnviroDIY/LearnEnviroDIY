@@ -32,7 +32,7 @@ Telemetry is the automated communication of measurements and other data from a r
 - Point-to-multipoint, such as 802.15.4 (or WiFi)
 - Mesh Networking, such as ZigBee
 - LoRa & LoRaWAN
-- NBB-IoT
+- NB-IoT
 
 **Communication Protocols for Telemetry** include familiar internet protocols and also more modern protocols designed specifically for IoT, such as:
 - FTP
