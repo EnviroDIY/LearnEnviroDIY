@@ -40,7 +40,7 @@ First we will use *simple_logging.ino* to run only the BME280 sensor.
 
 Now we will modify your existing *simple_logging.ino* to add the DS18 temperature sensor.
   1. Connect the DS18 sensor to the digital pin of your choice (D5, D7, or D11) following our example in Part 1 Episode 6.
-  2. *Turn on* (so... what I mean by *turn on* is to undo the commenting out of this sensor) the *Maxim DS18 One Wire Temperature Sensor* for a sensor with unknown address and assign the pin (called *OneWireBus*):
+  2. *Turn on* (so... what I mean by *turn on* is to undo the commenting out of this sensor) the *Maxim DS18 One Wire Temperature Sensor* for a sensor with unknown address and assign the pin to match the pin you chose in step 1 (called *OneWireBus*):
   <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/simple_logging_onewire.png" width="600">
   3. Be sure to add this sensor to the variable array as well: `new MaximDS18_Temp(&ds18_u),`.
   4. Save the sketch, compile/build, upload, open the serial monitor, and enter sensor testing mode as soon as you are able.
