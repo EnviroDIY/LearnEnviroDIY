@@ -35,7 +35,8 @@ The operative word for our use of GitHub is collaborative! It can be a place whe
 - [Download and install GitHub Desktop.](https://desktop.github.com/)
   - This software is a graphical user interface (GUI) to help you manage the files that you get from (pull) or send to (push) GitHub repositories. Having a Git Client will allow you to (mostly) avoid command line interaction with GitHub. There are other Git Clients available, and you are welcome to explore and use them. Our tutorials will be from the perspective of GitHub Desktop simply because that is what was available when the authors started. Sign in to GitHub desktop so it will be prepared to track your contributions.
 
-- FIXME Add activity to commit files from your repo using GitHub desktop to GitHub. 
+- [Install Git Client](https://git-scm.com/downloads)
+  - You will need this when you use PlatformIO in the next episode. 
 
 
 > ## For your reference
