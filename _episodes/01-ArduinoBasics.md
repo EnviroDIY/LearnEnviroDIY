@@ -38,7 +38,7 @@ The Arduino sketches in this episode are simple and require a minimal number of 
 - [Lesson 0: A Tour of Arduino](https://learn.adafruit.com/ladyadas-learn-arduino-lesson-number-0).
   - Walks through the anatomy of an Arduino board and how to install the Arduino software. (Skip the part about Codebender software.) Even though you aren't using the Uno, please read through the tutorial.
   - Note that the tutorial uses the Arduino Uno because it's a "starter Arduino." That is not going to support your needs for environmental monitoring. Without getting into too much of the history, the EnviroDIY Mayfly was designed specifically to meet the needs of environmental monitoring, based on a board that worked well but was discontinued. Compared with the Uno, the Mayfly has 4x more flash memory, 8x more RAM, a microSD card slot for storing data, a real time clock to maintain logging intervals, the ability to supply 3.3V or 5V of power to sensors, tons of pins to connect sensors, a socket that is built to interface with the common Arduino-compatible radios (Bee) for logging over WiFi or cellular networks, extremely low power requirements, and a built-in solar charging controller (if you connect a solar panel, the Mayfly will automatically charge a connected LiPo battery). If you want more details about the Mayfly, you can find them at [EnviroDIY.org](https://www.envirodiy.org/mayfly/).
-  <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/mayfly_outline.jpg" width="600">
+  <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/mayfly_outline.jpg" width="500">
 
   - A note on the USB fuse on the Uno. The Mayfly does not not have this, which means that it is possible to "fry" the Mayfly more easily than the Uno. Make sure the toggle that we have labeled "12V power option" is on USB/LiPo for the tutorials and for almost everything you will do with the Mayfly. Supplying 12V power is an advanced maneuver that requires extra hardware.
   - After you work through Lady Ada's software download instructions, follow the [instructions for installing the Mayfly driver](https://www.envirodiy.org/mayfly/software/).
@@ -51,7 +51,7 @@ The Arduino sketches in this episode are simple and require a minimal number of 
 - [Lesson 2: The Parts of Sketch](https://learn.adafruit.com/ladyadas-learn-arduino-lesson-number-2)
   - The anatomy of an Arduino sketch and how to change a sketch. This is the core of what you will do with EnviroDIY Modular Sensors.
 
-** The Serial Monitor**
+##The Serial Monitor
 - In environmental monitoring, we use the serial monitor all the time to test sensors before deployment. Modify your Blink sketch with the code below to send information to the serial monitor to describe what actions are happening on the Mayfly.
 
 ```
