@@ -38,7 +38,8 @@ The Arduino sketches in this episode are simple and require a minimal number of 
 - [Lesson 0: A Tour of Arduino](https://learn.adafruit.com/ladyadas-learn-arduino-lesson-number-0).
   - Walks through the anatomy of an Arduino board and how to install the Arduino software. (Skip the part about Codebender software.) Even though you aren't using the Uno, please read through the tutorial.
   - Note that the tutorial uses the Arduino Uno because it's a "starter Arduino." That is not going to support your needs for environmental monitoring. Without getting into too much of the history, the EnviroDIY Mayfly was designed specifically to meet the needs of environmental monitoring, based on a board that worked well but was discontinued. Compared with the Uno, the Mayfly has 4x more flash memory, 8x more RAM, a microSD card slot for storing data, a real time clock to maintain logging intervals, the ability to supply 3.3V or 5V of power to sensors, tons of pins to connect sensors, a socket that is built to interface with the common Arduino-compatible radios (Bee) for logging over WiFi or cellular networks, extremely low power requirements, and a built-in solar charging controller (if you connect a solar panel, the Mayfly will automatically charge a connected LiPo battery). If you want more details about the Mayfly, you can find them at [EnviroDIY.org](https://www.envirodiy.org/mayfly/).
-  ![Source and Destination Files]({{ page.root }}/fig/mayfly_outline.jpg)
+  <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/mayfly_outline.jpg" width="600">
+
   - A note on the USB fuse on the Uno. The Mayfly does not not have this, which means that it is possible to "fry" the Mayfly more easily than the Uno. Make sure the toggle that we have labeled "12V power option" is on USB/LiPo for the tutorials and for almost everything you will do with the Mayfly. Supplying 12V power is an advanced maneuver that requires extra hardware.
   - After you work through Lady Ada's software download instructions, follow the [instructions for installing the Mayfly driver](https://www.envirodiy.org/mayfly/software/).
 - [Lesson 1: Upload your First Sketch](https://learn.adafruit.com/ladyadas-learn-arduino-lesson-number-1)
@@ -46,7 +47,7 @@ The Arduino sketches in this episode are simple and require a minimal number of 
   - Select Board Type: Instead of the Ardunio Uno, select "EnviroDIY Mayfly 1284p".
     - If the Mayfly is not listed as an option, you missed this step in Lesson 0: [Instructions for installing the Mayfly driver](https://www.envirodiy.org/mayfly/software/).
   - You will need to edit the Blink sketch for the Mayfly. As shown in the image below, replace all three instances of `LED_BUILTIN` with `8` to use the green LED2 on the Mayfly's pin number 8.  
-  ![Source and Destination Files]({{ page.root }}/fig/blink_mayflypin.png)
+  <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/blink_mayflypin.png" width="600">
 - [Lesson 2: The Parts of Sketch](https://learn.adafruit.com/ladyadas-learn-arduino-lesson-number-2)
   - The anatomy of an Arduino sketch and how to change a sketch. This is the core of what you will do with EnviroDIY Modular Sensors.
 
@@ -78,9 +79,9 @@ void loop() {
 ```
 - After you edit the blink sketch, verify/compile and upload the sketch to your Mayfly.
 - Click on the "Serial Monitor" button located at the top, right corner of your Arduino window. It looks like a magnifying glass.
-  ![Source and Destination Files]({{ page.root }}/fig/blink_serialout.png)
+  <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/blink_serialout.png" width="600">
 - Select the baud rate of 9600 for this sketch. This rate will vary, but you will find it in the sketch: `Serial.begin(9600)`. If you have the incorrect number in the serial monitor, the output will contain a stream of nonsense.
-  ![Source and Destination Files]({{ page.root }}/fig/serial_monitor.png)
+  <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/serial_monitor.png" width="600">
 
 **[Adafruit Learn Arduino](https://learn.adafruit.com/series/learn-arduino) by Simon Monk**, lessons 0, 2, 6  
 NOTE: Please read through the two lessons to learn how breadboards and resistors work. To participate fully in this tutorial, you will need additional parts, but this is optional. The additional parts include a breadboard, resistors, LED lights, and jumper wires, such as those included with either an [Arduino Uno Starter Kit](https://www.amazon.com/gp/product/B00BT0NDB8), an [Adafruit Metro 328 Starter Pack](https://www.adafruit.com/product/3345), or a [Sparkfun RedBoard Tinker Kit](https://www.sparkfun.com/products/14556).
