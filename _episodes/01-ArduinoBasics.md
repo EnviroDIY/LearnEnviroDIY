@@ -51,7 +51,7 @@ The Arduino sketches in this episode are simple and require a minimal number of 
 - [Lesson 2: The Parts of Sketch](https://learn.adafruit.com/ladyadas-learn-arduino-lesson-number-2)
   - The anatomy of an Arduino sketch and how to change a sketch. This is the core of what you will do with EnviroDIY Modular Sensors.
 
-##The Serial Monitor
+### The Serial Monitor
 - In environmental monitoring, we use the serial monitor all the time to test sensors before deployment. Modify your Blink sketch with the code below to send information to the serial monitor to describe what actions are happening on the Mayfly.
 
 ```
