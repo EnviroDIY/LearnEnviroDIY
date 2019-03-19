@@ -17,7 +17,7 @@ keypoints:
 > ## Prerequisites
 >
 > - A computer, an internet connection, and motivation to tinker and hack.
-> - For this episode, you'll need an [EnviroDIY Mayfly Starter Kit](https://www.amazon.com/EnviroDIY-Mayfly-Arduino-Compatible-Starter/dp/B01FCVALDW) and selected environmental sensors (list coming soon).
+> - For this episode, you'll need an [EnviroDIY Mayfly Starter Kit](https://www.amazon.com/EnviroDIY-Mayfly-Arduino-Compatible-Starter/dp/B01FCVALDW) because we will use the LEDs and button onboard the Mayfly for the tutorials.
 {: .prereq}
 
 In **Part 1, Episode 2**, we continue to introduce you to Arduino concepts and skills necessary for utilizing ModularSensors. We again do this through online tutorials.
