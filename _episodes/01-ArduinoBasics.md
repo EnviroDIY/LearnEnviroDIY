@@ -51,10 +51,10 @@ The Arduino sketches in this episode are simple and require a minimal number of 
 - [Lesson 2: The Parts of Sketch](https://learn.adafruit.com/ladyadas-learn-arduino-lesson-number-2)
   - The anatomy of an Arduino sketch and how to change a sketch. This is the core of what you will do with EnviroDIY Modular Sensors.
 
-### The Serial Monitor
+## The Serial Monitor
 - In environmental monitoring, we use the serial monitor all the time to test sensors before deployment. Modify your Blink sketch with the code below to send information to the serial monitor to describe what actions are happening on the Mayfly.
 
-```
+```cpp
 // the setup function runs once when you press reset or power the board
 void setup() {
   // initialize digital pin 8 as an output.
@@ -83,7 +83,7 @@ void loop() {
 - Select the baud rate of 9600 for this sketch. This rate will vary, but you will find it in the sketch: `Serial.begin(9600)`. If you have the incorrect number in the serial monitor, the output will contain a stream of nonsense.
   <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/serial_monitor.png" width="600">
 
-**[Adafruit Learn Arduino](https://learn.adafruit.com/series/learn-arduino) by Simon Monk**, lessons 0, 2, 6  
+**[Adafruit Learn Arduino](https://learn.adafruit.com/series/learn-arduino) by Simon Monk**, lessons 0 and 2  
 NOTE: Please read through the two lessons to learn how breadboards and resistors work. To participate fully in this tutorial, you will need additional parts, but this is optional. The additional parts include a breadboard, resistors, LED lights, and jumper wires, such as those included with either an [Arduino Uno Starter Kit](https://www.amazon.com/gp/product/B00BT0NDB8), an [Adafruit Metro 328 Starter Pack](https://www.adafruit.com/product/3345), or a [Sparkfun RedBoard Tinker Kit](https://www.sparkfun.com/products/14556).
 
 - [Arduino Lesson 0. Getting Started](https://learn.adafruit.com/lesson-0-getting-started)
