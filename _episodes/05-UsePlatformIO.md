@@ -30,7 +30,7 @@ You did not really need to go find the Mayfly, but we lead you there because we 
 
 ### Get to know the Mayfly
 
-Many of the Sketches in the EnviroDIY library will not work if the Mayfly is missing an SD card. While we are getting familiar with its ports and connections, let's take a moment to insert a CR1220 coin battery and SD card into the Mayfly. The coin battery keeps the Real Time Clock running on the Mayfly, which we will set at the end of this episode. You will need a separate, external battery to supply power to the Mayfly and sensors.
+Many of the Sketches in the EnviroDIY library will not work if the Mayfly is missing an SD card. While we are getting familiar with its ports and connections, let's take a moment to insert a CR1220 coin battery and SD card into the Mayfly. The coin battery keeps the Real Time Clock running on the Mayfly, which we will set at the end of this episode. You will need a separate, external LiPo battery to supply power to the Mayfly and sensors.
 
 To insert the coin battery, make sure the positive (+) side of the battery is facing upward as shown below. (Caution: if you insert the battery upside-down you might ruin the Real Time Clock).  
 <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/MayflyBattSD.JPG" width="600">

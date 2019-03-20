@@ -17,19 +17,24 @@ keypoints:
 In this lesson we will prepare you to use PlatformIO, an Integrated Development Environment (IDE), which is extremely helpful (and we believe necessary) for keeping track of libraries and code differences when using the EnviroDIY Modular Sensors sketches. You will install PlatformIO, and become acquainted with many of its features, including file management, syntax highlighting, code difference tracking, code debugging, library management, and integration with Arduino and GitHub.
 
 ### Atom and PlatformIO
-PlatformIO IDE is hosted within a text editor designed for editing code. Most code text editors highlight syntax and have special auto-complete features based on elements of the code. PlatformIO can be hosted by several text editors, so if you are a coder and already use VSCode or Sublime, please feel free to install PlatformIO for one of these editors. This tutorial will be presented from the perspective of PlatformIO hosted within Atom text editor. Since Microsoft took ownership of GitHub, their VSCode has become the "recommended" download for PlatformIO, but Atom and other editors still work great. If you choose a different text editor, some of the buttons will be located in different places, but all of the functionality will be preserved.
+PlatformIO IDE is hosted within a text editor designed for editing code. Most code text editors highlight syntax and have special auto-complete features based on elements of the code. PlatformIO can be hosted by several text editors, so if you are a coder and already use VSCode or Sublime, please feel free to install PlatformIO for your favorite editor. The original combination was PlatformIO hosted within Atom text editor. Since Microsoft took ownership of GitHub, their VSCode has become the "recommended" download for PlatformIO, but we continue to use Atom. If you choose a different text editor, some of the buttons and commands will be located in different places, but all of the functionality will be preserved.
 
 - [Install Git](https://git-scm.com/downloads)
-  - You need to have an all-purpose Git Client installed to use the great library functions in PlatformIO. Although you installed GitHub Desktop, its Git client is only used by that application.
+  - You need to have an all-purpose Git Client installed to use the library functions in PlatformIO. Although you installed GitHub Desktop, its Git client is only used by that application.
   - Download and install Git from [https://git-scm.com/downloads](https://git-scm.com/downloads). Install selecting all the defaults (make sure your PATH environment allows Git from command line and also from 3rd-party software). We find it best to reboot your computer before installing Atom.
 
 - [Install Atom](https://atom.io/)
   - Download and install official GitHub's Atom text editor, PlatformIO IDE is built on top of it.
-  - You will likely be asked to install Clang, a library for Intelligent Code Completion. If so, follow the [instructions for installing Clang for PlatformIO](https://docs.platformio.org/en/latest/ide/atom.html#ii-clang-for-intelligent-code-completion), which guide you to “Add LLVM to the system PATH for all users” (which is not the default).
+  - You will likely be asked to install Clang, a library for Intelligent Code Completion. If so, follow the [instructions for installing Clang for PlatformIO](https://docs.platformio.org/en/latest/ide/atom.html#ii-clang-for-intelligent-code-completion), which guides you to “Add LLVM to the system PATH for all users” (which is not the default).
 
 - [Install PlatformIO for Atom.](https://platformio.org/install/ide?install=atom)
   - After you install Atom, follow the [PlatformIO for Atom Installation Instructions](https://docs.platformio.org/en/latest/ide/atom.html#installation).
   - In brief, you will go to Settings in Atom (gear symbol), select install (plus symbol) and type in `platformio-ide` in the box that says "search packages" (see image below). PlatformIO should appear in the list after your search. Click on the blue install button and follow any additional instructions (such as to restart) to complete the installation.
+  - You may wish to read through the [PlatformIO quick start guide for Atom](https://docs.platformio.org/en/latest/ide/atom.html#quick-start), but our tutorial will take you through many of the same steps.
+
+- If you choose VSCode, here are the links. [Install VSCode and PlatformIO](https://platformio.org/platformio-ide)
+  - Follow the instructions to download VSCode, then within VSCode you will use a command line to install PlatformIO.
+  - As recommended on the download page, read through the [PlatformIO quick start guide for VSCode](https://docs.platformio.org/en/latest/ide/vscode.html#quick-start).
 
 ![Source and Destination Files]({{ page.root }}/fig/PlatformIO_navigation002.png)
 
@@ -70,7 +75,7 @@ In the following sections we will take you on a tour through the PlatformIO envi
 #### Project tab
 This is basically Finder/Windows Explorer conveniently located right in PlatformIO. You can add, move, copy, and delete files and folders in this tab. Right-clicking on any of the items in your project will give you a list of possible actions. I also frequently use the “Copy Project Path” option for naming the source directories in my platformio.ini file.
 
-One of the most important things to notice in the project tab is the blue vertical line along the left side of the project tab. This line indicates which project is the active project, meaning that the platformio.ini file in the root directory of that project is where PlatformIO will look for build instructions. In the screen shots provided “ModularSensors” is the active project, and all others are inactive (even though I am editing files in the LearnEnviroDIY project).
+One of the most important things to notice in the project tab is the blue vertical line along the left side of the project tab. This line indicates which project is the active project, meaning that the platformio.ini file in the root directory of that project is where PlatformIO will look for build instructions. In the screen shots provided “ModularSensors” is the active project, and all others are inactive.
 
 There’s a little half-circle that appears when your mouse hovers over the project tab that will allow you to hide or show it as needed. This will be useful when you are comparing two sketches side-by-side.
 
