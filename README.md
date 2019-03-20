@@ -1,4 +1,4 @@
-# FIXME Lesson title
+# Learn EnviroDIY Programming tutorial
 
 [![Create a Slack Account with us](https://img.shields.io/badge/Create_Slack_Account-The_Carpentries-071159.svg)](https://swc-slack-invite.herokuapp.com/)
 
@@ -15,7 +15,7 @@ how to write new episodes.
 
 ## Maintainer(s)
 
-* FIXME
+Lessons maintained by [Beth A. Fisher](https://github.com/fisherba) and [Anthony K. Aufdenkampe](https://github.com/aufdenkampe). 
 
 ## Authors
 
