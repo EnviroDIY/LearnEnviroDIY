@@ -28,7 +28,7 @@ This lesson builds directly on Episode 6. We will interactively explore the feat
   ![Source and Destination Files]({{ page.root }}/fig/pioSerialMonitorButton.png)
   You will be prompted to select your Port and Baudrate:
   <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/pioPortBaudrate.png" width="400">
-  The Baudrate is defined in the sketch as 9600.
+  The Baudrate is defined in the ini file and sketch as 115200.
 
   Regarding your port selection:
 
@@ -43,21 +43,25 @@ When you are testing sensors in the Modular Sensors sketches, the serial monitor
 - Your next task is to run `Example_03_Mayfly_temp.ino`. We did not put it in the `platformio.ini` file for you. Please add it to the "ini" file, save, Build, Upload, and run it on the serial monitor.
   - Notes:
     - You can either type the file name into the "ini" file, or right-click on the directory (not the .ino file!) for Example 3 and select "Copy Project Path" (possibly two-finger click on MacOS, depending on your settings) and paste that into the "ini" file.  
-    - The baud rate in the sketch is different and you need to manually select it when you start the serial monitor.
+    <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/src_dir-edit.png" width="400">
+    - It doesn't hurt to check the baud rate in the sketch to make sure it matches your `platformio.ini` file.
     - Your serial monitor should be outputting a temperature in degrees C once per second (or every 1000 milliseconds).
 
 > ## Running sketches in PlatformIO
 > From this point forward we will not remind you of the steps to upload a sketch, so here they are for quick reference:
-> 1. Add your project directory in the src_dir list in `platformio.ini` and save.
-> 2. Build and upload the sketch.
-> 3. Run the serial monitor after noting the baud rate for the sketch.
+> 1. Add your project directory in the src_dir list in `platformio.ini`.
+> 2. Double check that the baud rate in the sketch matches the setting in `platformio.ini`.
+> 3. Save `platformio.ini` to build all the directories needed for the sketch.
+> 4. Build and upload the sketch.
+> 5. Run the serial monitor.
 {: .callout}
 
 ### Set Real Time Clock on the Mayfly
-- We can manually set the Real Time Clock (RTC) on the Mayfly, which will be useful in your future with environmental sensors. Ideally we would let the Mayfly's connection to the WiFi or data network sync the clock, but we will not always have that functionality. As long as your coin battery remains installed and alive, the RTC on your Mayfly will keep ticking.
-  1. Setting the RTC is a finicky task.
+- We can manually set the Real Time Clock (RTC) on the Mayfly, which will be useful in your future with environmental sensors. Ideally we would let the Mayfly's connection to the WiFi or data network sync the clock, but we will not always have that functionality. As long as your coin battery remains installed and alive, the RTC on your Mayfly will keep ticking. Note: Setting the RTC is a finicky task.
+
+  1. Set the baud rate to 57600 for this task. The sketch has this correct, but you may need to set it `platformio.ini` as ```monitor_speed = 57600``` and possibly when prompted by your serial monitor. If you have the wrong baud rate, the serial print may look fine, but any date you try to set will give an "out of range" error.
   2. Upload `Example_04_Mayfly_setRTC.ino` to your Mayfly.
-  3. Open the serial monitor (baudrate 57600) to confirm that it is outputting a time (probably ~January of 2000).
+  3. Open the serial monitor to confirm that it is outputting a time (probably ~January of 2000).
   4. Click on the keyboard icon at the top left corner of the serial monitor window to open the Serial Text Insert box.
   5. Open a web browser to the [current unix time stamp at Sodaq](http://time.sodaq.net/) or http://www.unixtimestamp.com/. I prefer the simplicity of time.sodaq.net.
   6. I like to split my screen between PlatformIO and my web browser for the next task.
