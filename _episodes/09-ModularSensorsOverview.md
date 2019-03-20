@@ -42,12 +42,12 @@ Modular Sensors repo is still new and is being regularly modified and improved w
 
 Notice in this image that an individual is working on their own branch of Modular Sensors. The way GitHub is structured, anyone can copy a repository and modify their copy. In much of society, this level of transparency and sharing is unusual. In the GitHub world this kind of activity is encouraged and regarded as a strength of the platform. When a repo is forked, the attribution of all original contributors is retained. Users who modify the fork can offer to merge their features back into the original repo (through a "pull request"), offering improvements and development capacity that the original team may not have considered or had time to contribute.  
 
-You can easily switch between which branch is saved on your computer in GitHub Desktop by changing the "Current Branch" selection (this may not be a good thing if you change it unintentionally!). "Master" is the default branch for the Modular Sensors repo, and is considered to be the place were features have been tested and are ready for use.
+You can easily switch between which branch is saved on your computer in GitHub Desktop by changing the "Current Branch" selection (this may not be a good thing if you change it unintentionally!). "Master" is the default branch for the Modular Sensors repo, and is the place were features have been tested and are ready for use.
 
 ### Managing your own sketches
 You just cloned a repository that we want to watch for updates, but you do not have access to send edits back to this repo. Also, you will be editing the sketches from the Modular Sensors repo for your own sensor stations, which may result in your files getting overwritten when you pull updates or "Fetch origin" from GitHub. For all of these reasons, we recommend that you create a new repository for your own sketches.
 
-- Create a new repository and name it *deployments* in your GitHub account as you did in the [GitHub Hello World tutorial](https://guides.github.com/activities/hello-world/#repository). For now we will make this a public repository, but if you may need to consider using a private repo for your organization's deployment sketches.
+- Create a new repository and name it *deployments* in your GitHub account as you did in the [GitHub Hello World tutorial](https://guides.github.com/activities/hello-world/#repository). For now we will make this a public repository, but you may need to consider using a private repo for your organization's deployment sketches.
 
 - Clone your *deployments* repo (as we did earlier in this episode) and make it a project in PlatformIO (as in Part 1 Episode 5).
 
@@ -58,15 +58,15 @@ You just cloned a repository that we want to watch for updates, but you do not h
 ### Anatomy of Modular Sensors Sketches
 Open your copy of *simple_logging.ino*. This sketch is 580 lines long with multiple sections. We will give you a what you need to know for each section.
 
-- **Header (lines 1-16)** Comments about the authors and purpose of the sketch. You may add your own deployment notes in this section, but we generally leave the other attribution information intact.
+- **Header** Comments about the authors and purpose of the sketch. You may add your own deployment notes in this section, but we generally leave the other attribution information intact.
 
-- **Include statements (18-23)** Calls all of the libraries needed to run the sketch. You still need to make sure your platformio.ini file has all of the necessary lib_deps. If you have compile errors, comparing the include statements in the sketch to your platformio.ini file may be helpful.
+- **Include statements** Calls all of the libraries needed to run the sketch. You still need to make sure your platformio.ini file has all of the necessary lib_deps. If you have compile errors, comparing the include statements in the sketch to your platformio.ini file may be helpful.
 
-- **Logger settings (26-37)** This is where you set your logging interval (e.g. 15 minutes), your time zone (Central is UTC -6, and we always stay in standard time). You will rename the sketch to match your sketch name for deployments. In the LoggerID space, we usually include a string that indicates the site name, the logger type, and the logger serial number (e.g. Pond05_Mayfly_321456). Keeping these in good form can aid in parsing data from multiple sites.
+- **Logger settings** This is where you set your logging interval (e.g. 15 minutes), your time zone (Central is UTC -6, and we always stay in standard time). You will rename the sketch to match your sketch name for deployments. In the LoggerID space, we usually include a string that indicates the site name, the logger type, and the logger serial number (e.g. Pond05_Mayfly_321456). Keeping these in good form can aid in parsing data from multiple sites.
 
-- **Board and processor settings (40-56)** The default in the EnviroDIY ecosystem is for the Mayfly logger. However, if you are using a different board, you may enter the pin locations for the LEDs, button, and SD card in this section.
+- **Board and processor settings** The default in the EnviroDIY ecosystem is for the Mayfly logger. However, if you are using a different board, you may enter the pin locations for the LEDs, button, and SD card in this section.
 
-- **Real Time Clock (59-64)** Technically this is the beginning of the list of sensors, but this one is the real time clock (RTC) on the Mayfly, and the Maxim DS3231 is the RTC most commonly in use in the Arduino world. The RTC has a temperature sensor that we are able to log to monitor the temperature of the Mayfly.
+- **Real Time Clock** Technically this is the beginning of the list of sensors, but this one is the real time clock (RTC) on the Mayfly, and the Maxim DS3231 is the RTC most commonly in use in the Arduino world. The RTC has a temperature sensor that we are able to log to monitor the temperature of the Mayfly.
 
 - **Massive list of sensors (67-410)** This next section lists nearly all of the sensors currently available in the Modular Sensor Library. The default is for all of the sensors to be *live* in the unedited sketch. Please do not let this give you the impression that you can run all of these at once! When you set up the sketch for your sensors, you will *comment out* the lines that you do not need. The *comment out* character is two forward slashes '//'. To comment out multiple lines at a time, most code editors allow you to select all of the text you wish to comment out and do the following keystroke commands:
     - MacOS: <kbd>Command</kbd>+<kbd>/</kbd>
