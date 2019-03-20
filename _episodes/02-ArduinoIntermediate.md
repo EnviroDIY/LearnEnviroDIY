@@ -62,12 +62,10 @@ void loop()
 - Don't forget to go back and read Bill Earl's conclusion page for this tutorial!  
 
 > ## Solution
->
 > The solutions to the advanced blink sketches are hidden in the [LearnEnviroDIYcode  repository](https://github.com/EnviroDIY/LearnEnviroDIYcode). You will be downloading the entire repository in Eposode 1.5, but if you want to check your work here are the solutions:
 >  - [Blink without using delay](https://github.com/EnviroDIY/LearnEnviroDIYcode/blob/master/Part1-sketches/Extras/Solution01_ep1-2_blinkwithoutdelay/Solution01_ep1-2_blinkwithoutdelay.ino)
 >  - [Blink all three lights using classes](https://github.com/EnviroDIY/LearnEnviroDIYcode/tree/master/Part1-sketches/Extras/Solution02_ep1-2_threeblinkclasses)
 >  - [Blink three lights using classes and button interrupt](https://github.com/EnviroDIY/LearnEnviroDIYcode/tree/master/Part1-sketches/Extras/Solution03_ep1-2_threeblinkclasses_button)
-
 {: .solution}
 
 
