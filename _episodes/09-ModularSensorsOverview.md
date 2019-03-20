@@ -27,7 +27,7 @@ Built into the Modular Sensors Library is the ability to
   put all of that functionality together into one sketch because an Arduino framework microcontroller can do one thing at a time.
 
 ### Clone the repository
-To get the files from any public GitHub repo, including Modular Sensors, on your your computer, you have a couple of options. You may download all of the files for the repo, as we did in Part 1, Episode 5 to get the tutorial sketches. But if we want to check for the most current files, we recommend that you "clone" a repo. Since your purpose in this tutorial is to begin your own environmental monitoring, we recommend that you clone the Modular Sensors repo.
+To get the files on your computer from any public GitHub repo, including Modular Sensors, you have a couple of options. You may download all of the files for the repo, as we did in Part 1, Episode 5 to get the tutorial sketches. But if you want to remain current with development updates, we recommend that you "clone" a repo. Since your purpose in this tutorial is to begin your own environmental monitoring, we recommend that you clone the Modular Sensors repo.
 
 To clone Modular Sensors,
   1. Go to the following site: [https://github.com/EnviroDIY/ModularSensors](https://github.com/EnviroDIY/ModularSensors)
