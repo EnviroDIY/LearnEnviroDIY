@@ -52,11 +52,11 @@ PlatformIO IDE is hosted within a text editor designed for editing code. Most co
 ### What you can see in PlatformIO
 In the following sections we will take you on a tour through the PlatformIO for Atom user interface to describe which features of PlatformIO you will need for using EnviroDIY Modular Sensors sketches.
 
-![Source and Destination Files]({{ page.root }}/fig/PlatformIO_navigation003.png)
-
 #### PlatformIO Toolbar:
 - For Atom, the PlatformIO Toolbar is on the left side.
 - For VSCode, the the PlatformIO Toolbar on the bottom.
+
+![Source and Destination Files]({{ page.root }}/fig/PlatformIO_navigation003.png)
 
 **PlatformIO Home.** This is where you will manage software updates for PlatformIO and other libraries that PlatformIO sees you using. You will know when updates are needed because they will be marked with bright badges. You also create a PlatformIO account here, which I think you need if you use some of the development capabilities; I don’t have a PlatformIO account.
 
