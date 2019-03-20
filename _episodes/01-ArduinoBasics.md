@@ -16,7 +16,7 @@ keypoints:
 > ## Prerequisites
 >
 > - A computer, an internet connection, and motivation to tinker and hack.
-> - For this episode, you'll need an [EnviroDIY Mayfly Starter Kit](https://www.amazon.com/EnviroDIY-Mayfly-Arduino-Compatible-Starter/dp/B01FCVALDW) + [CR1220 12mm Diameter - 3V Lithium Coin Cell Battery](https://www.adafruit.com/product/380).
+> - For this episode, you'll need an [EnviroDIY Mayfly Starter Kit](https://www.amazon.com/EnviroDIY-Mayfly-Arduino-Compatible-Starter/dp/B01FCVALDW) and a [CR1220 Lithium Coin Cell 3V Battery](https://www.adafruit.com/product/380).
 - If you are interested in extra tinkering, you may do the full online tutorials, but you will need either an [Arduino Uno Starter Kit](https://www.amazon.com/gp/product/B00BT0NDB8), an [Adafruit Metro 328 Starter Pack](https://www.adafruit.com/product/3345), a [Sparkfun RedBoard Tinker Kit](https://www.sparkfun.com/products/14556) or any Arduino-compatible micro-controller board along with other listed accessories.  
 {: .prereq}
 
