@@ -80,10 +80,10 @@ When you are testing sensors in the Modular Sensors sketches, the serial monitor
   1. Open the sketch `Example_05_Mayfly_DS18B20temp.ino`.
   2. Notice that you specify which pin you are using in Line 7, and the DS18B20 is currently assigned to pin 7. Your Mayfly has the pins labeled on the header rail and in the Grove ports. You can change this number to use any available digital pin on the Mayfly.
   3. Wire the sensor as illustrated below. If your DS18B20 has different wire colors than pictured:
-        Red connects to 3-5V power (3V3 on Mayfly)
-        Blue/Black connects to ground (GND on Mayfly)
-        Yellow/White is data (D7 on Mayfly)
-        4.7kΩ resistor between data and power (resistors are not directional)
+        - Red connects to 3-5V power (3V3 on Mayfly)
+        - Blue/Black connects to ground (GND on Mayfly)
+        - Yellow/White is data (D7 on Mayfly)
+        - 4.7kΩ resistor between data and power (resistors are not directional)
   <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/DS18B20pinout.jpg" width="600">
   4. Connect the Mayfly to your computer, set up `platformio.ini` and do all of the steps to run the sketch.
   5. As the sketch scrolls on your serial monitor, hold the sensor and see if you can get the temperature change.
@@ -97,10 +97,11 @@ When you are testing sensors in the Modular Sensors sketches, the serial monitor
 
   1. Open the sketch `Example_06_Mayfly_BME280_OLED.ino`.
   2. Take note of the address for your BME280 sensor, which is probably printed in *tiny* characters on the breakout board (0x77 is Adafruit default; 0x76 is Grove default). Make sure line 32 in the sketch has the correct address for your sensor.
-  3. Wire the sensors as illustrated below. Note, we are not offering a breadboard variation because the OLED (which is optional in the sketch) only has Grove connection available (in our SwitchDoctor breakout, the holes the board connect to nothing).
+  3. Wire the sensors as illustrated below. Note, we are not offering a breadboard variation because the OLED (which is optional in the sketch) only has Grove connection available because the other holes on the board are for mounting and contain no digital connections (true at least for the SwitchDoctor OLED).
   <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/I2CtoMayfly.JPG" width="500">
-  4. Connect the Mayfly to your computer, set up `platformio.ini` and do all of the steps to run the sketch.
-  5. As the sketch scrolls on your serial monitor, hold the sensor or blow on it and see if you can get the temperature and humidity to change.
+  4. Connect the Mayfly to your computer, set up `platformio.ini` by adding the following address in the 'lib_deps': ```https://github.com/switchdoclabs/SDL_Arduino_SSD1306.git```
+  5. Do all of the steps to run the sketch.
+  6. As the sketch scrolls on your serial monitor and/or OLED display, hold the sensor or blow on it and see if you can get the temperature and humidity to change.
 
 ### Extras
 - There are several additional example sketches in the extras folder that you may try if you have the sensors.
