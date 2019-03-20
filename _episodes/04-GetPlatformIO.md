@@ -23,6 +23,11 @@ PlatformIO IDE is hosted within a text editor designed for editing code. Most co
   - You need to have an all-purpose Git Client installed to use the library functions in PlatformIO. Although you installed GitHub Desktop, its Git client is only used by that application.
   - Download and install Git from [https://git-scm.com/downloads](https://git-scm.com/downloads). Install selecting all the defaults (make sure your PATH environment allows Git from command line and also from 3rd-party software). We find it best to reboot your computer before installing Atom.
 
+- [Install Python 2.7](https://www.python.org/download/releases/2.7/)
+  - Python is a programming language that is probably running as a dependency for some form of software on your computer. The thing about Python is that that your computer may require multiple versions, and the most recent version may not be enough. Atom was built on Python 2.7, so you will need this on your computer even if you have a different version of Python.
+  - Before you install Python 2.7, let's check which versions are already on your computer.
+    - In Windows:
+
 - [Install Atom](https://atom.io/)
   - Download and install official GitHub's Atom text editor, PlatformIO IDE is built on top of it.
   - You will likely be asked to install Clang, a library for Intelligent Code Completion. If so, follow the [instructions for installing Clang for PlatformIO](https://docs.platformio.org/en/latest/ide/atom.html#ii-clang-for-intelligent-code-completion), which guides you to “Add LLVM to the system PATH for all users” (which is not the default).
