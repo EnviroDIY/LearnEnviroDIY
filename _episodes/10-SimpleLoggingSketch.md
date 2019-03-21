@@ -21,7 +21,7 @@ keypoints:
 ### Collect data from the Mayfly data logger's built-in sensors
 
 First we will use `simple_logging.ino` to collect data from the Mayfly data logger's built-in sensors.
-  1. Set up your logger and board settings to give your logger a name, set your time zone, logging interval, and confirm the version of your Mayfly. For now let's select a short logging interval (1-2 minutes) so we can see what's happening on our board.
+  1. Set up your logger and board settings to give your logger a name, set your time zone, logging interval, and confirm the version of your Mayfly. You may select a short logging interval (1-2 minutes) so we can see what's happening on our board, but we will also use sensor testing mode, which does not wait for logging intervals.
 
   <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/simple_logging_boardsettings.png" width="600">
 
@@ -30,7 +30,10 @@ First we will use `simple_logging.ino` to collect data from the Mayfly data logg
   <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/simple_logging_ini.png" width="600">
   3. Build/compile and upload your sketch.
   4. View your logger output using the serial monitor (note: `serialBaud = 115200`).
-    - After the logger is set up, you can push the round, black button near the SD card on the Mayfly to enter sensor testing mode.
+      - After the logger is set up, you can push the round, black button near the SD card on the Mayfly to enter sensor testing mode.
+  5. In sensor testing mode, this sketch will display the RAM, voltage, and temperature of the Mayfly logger as shown:
+  <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/simple_logging_serialmonitor.png" width="600">
+
 
 **Congratulations you successfully set up your first Modular Sensors sketch!**
 
@@ -65,8 +68,8 @@ Now we will modify your existing `simple_logging.ino` to add the Maxim DS18 subm
 
   <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/simple_logging_variablearray.png" width="600">
 
-  4. Save the sketch, compile/build, upload, open the serial monitor, and enter sensor testing mode as soon as you are able.
-  5. As you watch the sensor test, notice that Modular Sensors not only figured out how to communicate with your OneWire sensor with unknown address, it found the address for you! As you may have noticed in the sensor block for the DS18, in order to run multiple instances of this sensor, you need to display the address. There are sketches buried deep in the *.piolibdeps folder that will help you find this address, but you can also use the unknown address option in Modular Sensors to find your sensor's address.  
+  4. Save the sketch, compile/build, upload, open the serial monitor, and enter sensor testing mode as soon as you the program will allow.
+  5. As you watch the sensor test, notice that Modular Sensors not only figured out how to communicate with your OneWire sensor with unknown address, it found the address for you! As you may have noticed in the sensor code for the DS18, in order to run multiple instances of this sensor, you need to call each sensor using its address. There are sketches buried deep in the *.piolibdeps folder that will help you find this address, but you can also use the unknown address option in Modular Sensors to find your sensor's address.  
 
 
 In our next few episodes, we will get learn to set up the EnviroDIY/Monitor My Watershed data portal to receive your data. Then we will use a sketch that is nearly identical to *simple_logging.ino* to send data to the portal.  
