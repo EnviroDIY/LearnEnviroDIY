@@ -21,17 +21,17 @@ keypoints:
 ### Collect data from the Mayfly data logger's built-in sensors
 
 First we will use `simple_logging.ino` to collect data from the Mayfly data logger's built-in sensors.
-  1. Set up your logger and board settings to give your logger a name, set your time zone, logging interval, and confirm the version of your Mayfly. You may select a short logging interval (1-2 minutes) so we can see what's happening on our board, but we will also use sensor testing mode, which does not wait for logging intervals.
+  - Set up your logger and board settings to give your logger a name, set your time zone, logging interval, and confirm the version of your Mayfly. You may select a short logging interval (1-2 minutes) so we can see what's happening on our board, but we will also use sensor testing mode, which does not wait for logging intervals.
 
   <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/simple_logging_boardsettings.png" width="600">
 
-  2. Set up the `platformio.ini` file in the root directory of your repository (you may need to copy one from [LearnEnviroDIYcode](https://github.com/EnviroDIY/LearnEnviroDIYcode)). Save the .ini file.
+  - Set up the `platformio.ini` file in the root directory of your repository (you may need to copy one from [LearnEnviroDIYcode](https://github.com/EnviroDIY/LearnEnviroDIYcode)). Save the .ini file.
 
   <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/simple_logging_ini.png" width="600">
-  3. Build/compile and upload your sketch.
-  4. View your logger output using the serial monitor (note: `serialBaud = 115200`).
+  - Build/compile and upload your sketch.
+  - View your logger output using the serial monitor (note: `serialBaud = 115200`).
       - After the logger is set up, you can push the round, black button near the SD card on the Mayfly to enter sensor testing mode.
-  5. In sensor testing mode, this sketch will display the RAM, voltage, and temperature of the Mayfly logger as shown:
+  - In sensor testing mode, this sketch will display the RAM, voltage, and temperature of the Mayfly logger as shown:
   <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/simple_logging_serialmonitor.png" width="600">
 
 
