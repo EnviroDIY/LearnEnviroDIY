@@ -71,7 +71,7 @@ Now we will modify your existing `simple_logging.ino` to add the Maxim DS18 subm
   - As you watch the sensor test, notice that Modular Sensors not only figured out how to communicate with your OneWire sensor with unknown address, it found the address for you! As you may have noticed in the sensor code for the DS18, in order to run multiple instances of this sensor, you need to call each sensor using its address. There are sketches buried deep in the *.piolibdeps folder that will help you find this address, but you can also use the unknown address option in Modular Sensors to find your sensor's address.  
 
 
-In our next few episodes, we will get learn to set up the EnviroDIY/Monitor My Watershed data portal to receive your data. Then we will use a sketch that is nearly identical to *simple_logging.ino* to send data to the portal.  
+In our next few episodes, we will get learn to set up the EnviroDIY/Monitor My Watershed data portal to receive your data. Then we will use a sketch that expands the format of *simple_logging.ino* to send data to the portal.  
 
 
 {% include links.md %}
