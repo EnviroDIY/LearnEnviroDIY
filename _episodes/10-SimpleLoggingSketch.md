@@ -23,12 +23,10 @@ keypoints:
 First we will use `simple_logging.ino` to collect data from the Mayfly data logger's built-in sensors.
   1. Set up your logger and board settings to give your logger a name, set your time zone, logging interval, and confirm the version of your Mayfly. For now let's select a short logging interval (1-2 minutes) so we can see what's happening on our board.
 
-  [FIX ME: Image below needs to be updated!]
   <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/simple_logging_boardsettings.png" width="600">
 
   2. Set up the `platformio.ini` file in the root directory of your repository (you may need to copy one from [LearnEnviroDIYcode](https://github.com/EnviroDIY/LearnEnviroDIYcode)). Save the .ini file.
 
-  [FIX ME: Image below needs to be updated!]
   <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/simple_logging_ini.png" width="600">
   3. Build/compile and upload your sketch.
   4. View your logger output using the serial monitor (note: `serialBaud = 115200`).
@@ -42,10 +40,8 @@ Now we will modify your existing `simple_logging.ino` to add the Maxim DS18 subm
   1. Connect the DS18 sensor to the digital pin of your choice (D5, D7, or D11) following our example in Part 1 Episode 6.
   2. *Turn on* (so... what I mean by *turn on* is to undo the commenting out of this sensor) the *Maxim DS18 One Wire Temperature Sensor* for a sensor with unknown address and assign the pin to match the pin you chose in step 1 (called *OneWireBus*):
 
-  [FIX ME: Image below needs to be updated! Use a copy/paste code snippet?]
   <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/simple_logging_onewire.png" width="600">
 
-  [FIX ME: Did this work?]
   ```cpp
   // ==========================================================================
   //    Maxim DS18 One Wire Temperature Sensor
@@ -56,7 +52,7 @@ Now we will modify your existing `simple_logging.ino` to add the Maxim DS18 subm
   // If only using a single sensor on the OneWire bus, you may omit the address
   // DeviceAddress OneWireAddress1 = {0x28, 0xFF, 0xBD, 0xBA, 0x81, 0x16, 0x03, 0x0C};
   const int8_t OneWirePower = sensorPowerPin;  // Pin to switch power on and off (-1 if unconnected)
-  const int8_t OneWireBus = 6;  // Pin attached to the OneWire Bus (-1 if unconnected) (D24 = A0)
+  const int8_t OneWireBus = 7;  // Pin attached to the OneWire Bus (-1 if unconnected) (D24 = A0)
 
   // Create a Maxim DS18 sensor objects (use this form for a known address)
   // MaximDS18 ds18(OneWireAddress1, OneWirePower, OneWireBus);
@@ -67,15 +63,13 @@ Now we will modify your existing `simple_logging.ino` to add the Maxim DS18 subm
 
   3. Be sure to add this sensor to the variable array as well: `new MaximDS18_Temp(&ds18_u),`.
 
-
-    [FIX ME: Also add snippet of variableArray]
-
+  <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/simple_logging_variablearray.png" width="600">
 
   4. Save the sketch, compile/build, upload, open the serial monitor, and enter sensor testing mode as soon as you are able.
   5. As you watch the sensor test, notice that Modular Sensors not only figured out how to communicate with your OneWire sensor with unknown address, it found the address for you! As you may have noticed in the sensor block for the DS18, in order to run multiple instances of this sensor, you need to display the address. There are sketches buried deep in the *.piolibdeps folder that will help you find this address, but you can also use the unknown address option in Modular Sensors to find your sensor's address.  
 
 
-In our next few episodes, we will get learn to set up the EnviroDIY data portal to receive your data. Then we will use a sketch that is nearly identical to *simple_logging.ino* to send data to the portal.  
+In our next few episodes, we will get learn to set up the EnviroDIY/Monitor My Watershed data portal to receive your data. Then we will use a sketch that is nearly identical to *simple_logging.ino* to send data to the portal.  
 
 
 {% include links.md %}
