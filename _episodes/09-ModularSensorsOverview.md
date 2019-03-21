@@ -68,7 +68,7 @@ Open your copy of `simple_logging.ino`. This sketch is 181 lines long (as of Mod
 
 - **Real Time Clock**: Technically this is the beginning of the list of sensors, but this one is the real time clock (RTC) on the Mayfly, and the Maxim DS3231 is the RTC most commonly in use in the Arduino world. The RTC has a temperature sensor that we are able to log to monitor the temperature of the Mayfly.
 
-- **Settings for Additional Sensors**: Additional sensors supported by ModularSensors can setup here, following the general form shown for the RTC. Each requires:
+- **Settings for Additional Sensors**: Additional sensors supported by ModularSensors can be set up here, following the general form shown for the RTC. Each requires:
   - An `#include <sensors/xxxx.h>` statement, to include the ModularSensors wrapper functions for that sensor.
     - See the [list of supported sensors in the ModularSensors wiki](https://github.com/EnviroDIY/ModularSensors/wiki#these-sensors-are-currently-supported)
     - NOTE: the list is actively expanding! Help us get new sensors set up with wrapper functions!
@@ -79,7 +79,7 @@ Open your copy of `simple_logging.ino`. This sketch is 181 lines long (as of Mod
   - A constructor function for each sensor
     - Copy syntax from the specific [sensor description in the ModularSensors wiki](https://github.com/EnviroDIY/ModularSensors/wiki#these-sensors-are-currently-supported), or
     - Copy syntax from the `menu_a_la_carte.ino` example.
-  - NOTE: Many of the example code snippets have optional statements that are "commented out". When you modify this  sketch for your sensors, you can select which code lines *comment out* depending on EnviroDIY_ModularSensors need.
+  - NOTE: Many of the example code snippets have optional statements that are "commented out". When you modify this sketch for your sensors, you can select which code lines to *comment out* depending on EnviroDIY_ModularSensors need.
     - The *comment out* character is two forward slashes '//'. To comment out multiple lines at a time, most code editors allow you to select all of the text you wish to comment out and do the following keystroke commands:
       - MacOS: <kbd>Command</kbd>+<kbd>/</kbd>
       - PC and Linux: <kbd>Ctrl</kbd>+<kbd>/</kbd>  
