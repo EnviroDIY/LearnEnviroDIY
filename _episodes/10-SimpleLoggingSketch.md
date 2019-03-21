@@ -5,7 +5,8 @@ exercises: 20
 questions:
 - "How do I run multiple sensors and log to an SD card?"
 objectives:
-- "Run BME280 and DS18 sensors with simple_logging.ino."
+- "Run `simple_logging.ino` to collect data from the Mayfly data logger's built-in sensors."
+- "Modify `simple_logging.ino` to also collect data from a DS18 submersible temperature sensor and/or a BME280 air temperature, humidity and barometric pressure sensor."
 keypoints:
 - "Simple logging is a good way to test and deploy sensors without logging to internet."
 ---
@@ -14,35 +15,62 @@ keypoints:
 > ## Prerequisites
 >
 > - Complete all prior episodes.
-> - For this episode, you'll need an [EnviroDIY Mayfly Starter Kit](https://www.amazon.com/EnviroDIY-Mayfly-Arduino-Compatible-Starter/dp/B01FCVALDW), a [CR1220 12mm Diameter - 3V Lithium Coin Cell Battery](https://www.adafruit.com/product/380) (also available where watch batteries are sold), SD card, [DS18B20 Waterproof Digital Temperature sensor and 4.7kΩ resistor](https://www.adafruit.com/product/381), [Grove BME280 Temperature, Pressure, and Humidity sensor](https://www.seeedstudio.com/Grove-Temp-Humi-Barometer-Sensor-BME28-p-2653.html), [Grove I2C hub](https://www.robotshop.com/en/grove-i2c-hub-extension-module.html?gclid=EAIaIQobChMIwfqtttSb3wIVCYZpCh2lhQRgEAQYASABEgI3ifD_BwE), and [Grove cables](https://www.robotshop.com/en/grove-4-pin-buckled-20cm-cable.html).
+> - For this episode, you'll need an [EnviroDIY Mayfly Starter Kit](https://www.amazon.com/EnviroDIY-Mayfly-Arduino-Compatible-Starter/dp/B01FCVALDW), a [CR1220 Lithium Coin Cell 3V Battery](https://www.adafruit.com/product/380) (also available where watch batteries are sold), SD card, [DS18B20 Waterproof Digital Temperature sensor and 4.7kΩ resistor](https://www.adafruit.com/product/381), [Grove BME280 Temperature, Pressure, and Humidity sensor](https://www.seeedstudio.com/Grove-Temp-Humi-Barometer-Sensor-BME28-p-2653.html), [Grove I2C hub](https://www.robotshop.com/en/grove-i2c-hub-extension-module.html?gclid=EAIaIQobChMIwfqtttSb3wIVCYZpCh2lhQRgEAQYASABEgI3ifD_BwE), and [Grove cables](https://www.robotshop.com/en/grove-4-pin-buckled-20cm-cable.html).
 {: .prereq}
 
-First we will use *simple_logging.ino* to run only the BME280 sensor.
-  1. Set up your logger and board settings to give your logger a name, set your time zone, logging interval, and confirm the version of your Mayfly. For now let's select a short logging interval so we can see what's happening on our board.
+### Collect data from the Mayfly data logger's built-in sensors
+
+First we will use `simple_logging.ino` to collect data from the Mayfly data logger's built-in sensors.
+  1. Set up your logger and board settings to give your logger a name, set your time zone, logging interval, and confirm the version of your Mayfly. For now let's select a short logging interval (1-2 minutes) so we can see what's happening on our board.
+
+  [FIX ME: Image below needs to be updated!]
   <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/simple_logging_boardsettings.png" width="600">
-  2. Comment out lines 67-95 by selecting all of the text for the AOSong and Apogee sensors. To comment out multiple lines at a time, most code editors allow you to select all of the text you wish to comment out and do the following keystroke commands:
-      - MacOS: <kbd>Command</kbd>+<kbd>/</kbd>
-      - PC and Linux: <kbd>Ctrl</kbd>+<kbd>/</kbd>  
-  3. Leave the BME280 sensor (lines 98-105 untouched for now. Following the same procedure as in step 1, comment out the remaining sensors (lines 108-410).
-  4. In the variable array, comment out all lines unrelated to the Mayfly or the BME280 as shown:
-  <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/simple_logging_BME280.png" width="600">
-  5. In the "Main setup function" section comment out the sonar and modbus serials:
-  <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/simple_logging_modbussonarout.png" width="600">
-  6. Return to the BME280 sensor and confirm the sensor address (e.g. 0x77 is Adafruit default and 0x76 is Grove default). Also uncomment the line about I2C power. If you are running multiple I2C devices, only one of the sensors needs to define this power pin location.
-  <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/simple_logging_BME280sensor.png" width="600">
-  7. Set up the platformio.ini file in the root directory of your repository (you may need to copy one from LearnEnviroDIYcode). Save the ini file.
+
+  2. Set up the `platformio.ini` file in the root directory of your repository (you may need to copy one from [LearnEnviroDIYcode](https://github.com/EnviroDIY/LearnEnviroDIYcode)). Save the .ini file.
+
+  [FIX ME: Image below needs to be updated!]
   <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/simple_logging_ini.png" width="600">
-  8. Connect the BME280 to the Mayfly, connect the Mayfly to your computer using the USB cable, and turn it on. (Note: Modular Sensors sketches will not run if the SD card is missing.)
-  9. Build/compile and upload your sketch.
-  10. View your sensor using the serial monitor (note: `serialBaud = 115200`). After the logger is set up, you can push the round, black button near the SD card on the Mayfly to enter sensor testing mode.
+  3. Build/compile and upload your sketch.
+  4. View your logger output using the serial monitor (note: `serialBaud = 115200`).
+    - After the logger is set up, you can push the round, black button near the SD card on the Mayfly to enter sensor testing mode.
 
 **Congratulations you successfully set up your first Modular Sensors sketch!**
 
-Now we will modify your existing *simple_logging.ino* to add the DS18 temperature sensor.
+### Modify simple_logging to also collect data from external sensors
+
+Now we will modify your existing `simple_logging.ino` to add the Maxim DS18 submersible temperature sensor.
   1. Connect the DS18 sensor to the digital pin of your choice (D5, D7, or D11) following our example in Part 1 Episode 6.
   2. *Turn on* (so... what I mean by *turn on* is to undo the commenting out of this sensor) the *Maxim DS18 One Wire Temperature Sensor* for a sensor with unknown address and assign the pin to match the pin you chose in step 1 (called *OneWireBus*):
+
+  [FIX ME: Image below needs to be updated! Use a copy/paste code snippet?]
   <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/simple_logging_onewire.png" width="600">
+
+  [FIX ME: Did this work?]
+  ```cpp
+  // ==========================================================================
+  //    Maxim DS18 One Wire Temperature Sensor
+  // ==========================================================================
+  #include <sensors/MaximDS18.h>
+
+  // OneWire Address [array of 8 hex characters]
+  // If only using a single sensor on the OneWire bus, you may omit the address
+  // DeviceAddress OneWireAddress1 = {0x28, 0xFF, 0xBD, 0xBA, 0x81, 0x16, 0x03, 0x0C};
+  const int8_t OneWirePower = sensorPowerPin;  // Pin to switch power on and off (-1 if unconnected)
+  const int8_t OneWireBus = 6;  // Pin attached to the OneWire Bus (-1 if unconnected) (D24 = A0)
+
+  // Create a Maxim DS18 sensor objects (use this form for a known address)
+  // MaximDS18 ds18(OneWireAddress1, OneWirePower, OneWireBus);
+
+  // Create a Maxim DS18 sensor object (use this form for a single sensor on bus with an unknown address)
+  MaximDS18 ds18(OneWirePower, OneWireBus);
+  ```
+
   3. Be sure to add this sensor to the variable array as well: `new MaximDS18_Temp(&ds18_u),`.
+
+
+    [FIX ME: Also add snippet of variableArray]
+
+
   4. Save the sketch, compile/build, upload, open the serial monitor, and enter sensor testing mode as soon as you are able.
   5. As you watch the sensor test, notice that Modular Sensors not only figured out how to communicate with your OneWire sensor with unknown address, it found the address for you! As you may have noticed in the sensor block for the DS18, in order to run multiple instances of this sensor, you need to display the address. There are sketches buried deep in the *.piolibdeps folder that will help you find this address, but you can also use the unknown address option in Modular Sensors to find your sensor's address.  
 
