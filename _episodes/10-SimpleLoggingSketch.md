@@ -40,10 +40,8 @@ First we will use `simple_logging.ino` to collect data from the Mayfly data logg
 ### Modify simple_logging to also collect data from external sensors
 
 Now we will modify your existing `simple_logging.ino` to add the Maxim DS18 submersible temperature sensor.
-  1. Connect the DS18 sensor to the digital pin of your choice (D5, D7, or D11) following our example in Part 1 Episode 6.
-  2. *Turn on* (so... what I mean by *turn on* is to undo the commenting out of this sensor) the *Maxim DS18 One Wire Temperature Sensor* for a sensor with unknown address and assign the pin to match the pin you chose in step 1 (called *OneWireBus*):
-
-  <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/simple_logging_onewire.png" width="600">
+  - Connect the DS18 sensor to the digital pin of your choice (D5, D7, or D11) following our example in Part 1 Episode 6.
+  - Refer to the code snippet below, taken from `menu_a_la_carte.ino` to set up the DS18 sensor (you may copy and paste the snippet from your web browser). We do not know the sensor address, so we will use the options for a sensor with unknown address by commenting out the lines with the address, and commenting in the single sensor lines as shown in the snippet below. Assign the pin to match the pin you chose in step 1 (called *OneWireBus*).
 
   ```cpp
   // ==========================================================================
@@ -64,12 +62,13 @@ Now we will modify your existing `simple_logging.ino` to add the Maxim DS18 subm
   MaximDS18 ds18(OneWirePower, OneWireBus);
   ```
 
-  3. Be sure to add this sensor to the variable array as well: `new MaximDS18_Temp(&ds18_u),`.
+  - Be sure to add this sensor to the variable array as well: `new MaximDS18_Temp(&ds18_u),`. These two code snippets are the only code we need to add to run the DS18.
+      - Note that some sensors will require you to initiate serial ports to run them (modbus and sonar are supported examples of this), so you will have to add additional code snippets for these sensors, but most sensors only have two snippets: the main sensor block and the variable array snippet.
 
   <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/simple_logging_variablearray.png" width="600">
 
-  4. Save the sketch, compile/build, upload, open the serial monitor, and enter sensor testing mode as soon as you the program will allow.
-  5. As you watch the sensor test, notice that Modular Sensors not only figured out how to communicate with your OneWire sensor with unknown address, it found the address for you! As you may have noticed in the sensor code for the DS18, in order to run multiple instances of this sensor, you need to call each sensor using its address. There are sketches buried deep in the *.piolibdeps folder that will help you find this address, but you can also use the unknown address option in Modular Sensors to find your sensor's address.  
+  - Save the sketch, compile/build, upload, open the serial monitor, and enter sensor testing mode as soon as you the program will allow.
+  - As you watch the sensor test, notice that Modular Sensors not only figured out how to communicate with your OneWire sensor with unknown address, it found the address for you! As you may have noticed in the sensor code for the DS18, in order to run multiple instances of this sensor, you need to call each sensor using its address. There are sketches buried deep in the *.piolibdeps folder that will help you find this address, but you can also use the unknown address option in Modular Sensors to find your sensor's address.  
 
 
 In our next few episodes, we will get learn to set up the EnviroDIY/Monitor My Watershed data portal to receive your data. Then we will use a sketch that is nearly identical to *simple_logging.ino* to send data to the portal.  
