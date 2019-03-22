@@ -8,7 +8,7 @@ objectives:
 - "Run `simple_logging.ino` to collect data from the Mayfly data logger's built-in sensors."
 - "Modify `simple_logging.ino` to also collect data from a DS18 submersible temperature sensor and/or a BME280 air temperature, humidity and barometric pressure sensor."
 keypoints:
-- "Simple logging is a good way to test and deploy sensors without logging to internet."
+- "Simple logging is a good way to test and deploy sensors and log to an SD card."
 ---
 ## Part 2, Episode 3: Your first Modular Sensors sketch
 
@@ -70,6 +70,11 @@ Now we will modify your existing `simple_logging.ino` to add the Maxim DS18 subm
   - Save the sketch, compile/build, upload, open the serial monitor, and enter sensor testing mode as soon as you the program will allow.
   - As you watch the sensor test, notice that Modular Sensors not only figured out how to communicate with your OneWire sensor with unknown address, it found the address for you! As you may have noticed in the sensor code for the DS18, in order to run multiple instances of this sensor, you need to call each sensor using its address. There are sketches buried deep in the *.piolibdeps folder that will help you find this address, but you can also use the unknown address option in Modular Sensors to find your sensor's address.  
 
+
+> ## Solution
+> A working version of `simple_logging.ino` with two external sensors, including the DS18, is among the examples in the Modular Sensors library.
+>  - [simple_logging_LearnEnviroDIY.ino](https://github.com/EnviroDIY/ModularSensors/tree/master/examples/simple_logging_LearnEnviroDIY)
+{: .solution}
 
 In our next few episodes, we will get learn to set up the EnviroDIY/Monitor My Watershed data portal to receive your data. Then we will use a sketch that expands the format of *simple_logging.ino* to send data to the portal.  
 

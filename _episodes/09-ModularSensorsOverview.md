@@ -84,7 +84,7 @@ Open your copy of `simple_logging.ino`. This sketch is 181 lines long (as of Mod
       - MacOS: <kbd>Command</kbd>+<kbd>/</kbd>
       - PC and Linux: <kbd>Ctrl</kbd>+<kbd>/</kbd>  
 
-- **Variable Array**: This is a list of the sensors' variables that we will measure and log. Notice that some sensors have multiple variables. For example, in  `simple_logging.ino` the processor can return three variables:
+- **Variable Array**: This is a list of the sensor variables that we will measure and log. Notice that some sensors have multiple variables. For example, in  `simple_logging.ino` the processor can return three variables:
 ```cpp
     new ProcessorStats_SampleNumber(&mcuBoard),
     new ProcessorStats_FreeRam(&mcuBoard),

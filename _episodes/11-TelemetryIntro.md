@@ -16,7 +16,7 @@ keypoints:
 ## Part 2, Episode 4: Introduction to Telemetry
 
 Realtime data has numerous benefits, including:
-- Improving the management and maintenance of automated monitoring stations, for example by showing that a sensor might need cleaning, that battery charge is getting low, or that the logger might be malfunctioning.
+- Improving the management and maintenance of automated monitoring stations, for example by showing that a sensor might need to be cleaned, that battery charge is getting low, or that the logger might be malfunctioning.
 - Informing the prioritization and timing of when to collect samples for laboratory analysis.
 - Engaging collaborators or the public in your monitoring and other activities.
 
@@ -37,10 +37,10 @@ Telemetry is the automated communication of measurements and other data from a r
 **Communication Protocols for Telemetry** include familiar internet protocols and also more modern protocols designed specifically for IoT, such as:
 - FTP
 - HTTP SOAP web services api
-- HTTP REST web services api 
+- HTTP REST web services api
 - Message Queuing Telemetry Transport (MQTT)
 - UDP CoAP
-NOTE: both the client (your station or device) and the server BOTH need to be configured to use the same protocol.
+    -NOTE: the client (your station or device) and the server BOTH need to be configured to use the same protocol.
 
 Any of these Communication Protocols can operate over any physical connectivity layer.
 
@@ -48,7 +48,7 @@ Presently, the use of cellular radios with HTTP REST is the most common combinat
 
 ### Hologram.io to Manage Your Wireless Network
 
-There are many ways to acquire and manage cellular plans for monitoring devices. However, we have found that [Hologram.io](https://hologram.io) provides one of the most flexible, lowest-cost and easiest-to-manage services for organizations developing cellular IoT networks. Read some of the reasons [Why Hologram](https://hologram.io/why-hologram/), including that you can [Start for Free](https://dashboard.hologram.io/account/register?e=IA==).
+There are many ways to acquire and manage cellular plans for monitoring devices. However, we have found that [Hologram.io](https://hologram.io) provides one of the most flexible, lowest-cost and easiest-to-manage services for organizations developing cellular IoT networks. Read some of the reasons [Why Hologram](https://hologram.io/why-hologram/), including that you can [Start for Free](https://dashboard.hologram.io/account/register?e=IA==). (Hologram.io has no affiliation with or sponsorship of EnviroDIY.)
 
 **Get Stared:**
 - Set up a [Free Hologram Account](https://dashboard.hologram.io/account/register?e=IA==)

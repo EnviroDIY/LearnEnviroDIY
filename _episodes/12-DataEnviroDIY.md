@@ -1,21 +1,21 @@
 ---
-title: "Episode 2.5 Set up Data.EnviroDIY Site"
+title: "Episode 2.5 Set up Monitor My Watershed Data Portal"
 teaching: 10
 exercises: 20
 questions:
 - "How can I have real-time monitoring for my sensor stations?"
 - "How do I send data to an internet repository?"
 objectives:
-- "Create a repository at data.EnviroDIY.org."
+- "Create a repository at MonitorMyWatershed.org."
 - "Add variables to log from available sensors."
 keypoints:
-- "Create a repository at data.EnviroDIY.org. Add variables to log from available sensors."
+- "Create a repository at MonitorMyWatershed.org. Add variables to log from available sensors."
 ---
-## Part 2, Episode 5: Setting up a Data.EnviroDIY Site
+## Part 2, Episode 5: Setting up a Monitor My Watershed Site
 
-The EnviroDIY ecosystem includes a data repository that is free, open source, secure, and does not expire. The data portal includes a time-series analyst and the ability to download your data. In this episode you will create an account and set up a site to log variables for the BME280, the DS18, and the Mayfly.
+The EnviroDIY ecosystem includes a data repository that is free, open source, secure, and does not expire. The data portal includes a time-series analyst and the ability to download your data. In this episode you will create an account and set up a site to log variables for the Mayfly and/or BME280, and/or the DS18.
 
-  1. Go to [data.EnviroDIY.org](https://data.envirodiy.org) and create an account.
+  1. Go to [MonitorMyWatershed.org](https://monitormywatershed.org) and create an account.
   2. After your account is created, click **My Sites** next to the "Monitor my Watershed" logo.
   3. Push the `Register a New Site` button.
   4. Fill in the site information by making a test site located at your desk.
@@ -28,7 +28,7 @@ The EnviroDIY ecosystem includes a data repository that is free, open source, se
     7. Use the drop down menus to find and add your sensors. The Mayfly manufacturer is EnviroDIY. The clock and DS18 are by Maxim. The BME280 is made by Bosch (because they made the chip and Adafruit or Grove made the breakout board).
     <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/envirodiy_addsensor.png" width="300">
     8. After you have added at least 3-4 variables to log, click **Back to Site Details**.
-    9. Click the **Token UUID List** button. This is a universally unique identifier for your data repository and for each variable that you log. These numbers are how your data get put in the right place when you transmit them to data.envirodiy.org. You will need these numbers for the final episode of Part 2, but you may copy and paste them during that episode.  
+    9. Click the **Token UUID List** button. This is a universally unique identifier for your data repository and for each variable that you log. These numbers are how your data get put in the right place when you transmit them to the data portal. You will need these numbers for the final episode of Part 2, but you can wait to copy and paste them during that episode.  
 
 In the next episode we will discuss telemetry and set up your sim card.
 
