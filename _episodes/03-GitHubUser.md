@@ -1,5 +1,5 @@
 ---
-title: "Episode 1.3 Connecting to GitHub"
+title: "Connecting to GitHub"
 teaching: 0
 exercises: 30
 questions:
@@ -14,7 +14,7 @@ keypoints:
 ---
 This lesson will help you connect to GitHub, which is a web-hosting service for computer code repositories. This tutorial is hosted on GitHub, and the EnviroDIY Modular Sensor Library is also on GitHub. That means GitHub is the source code manager for the code you will be using, so you will benefit from using GitHub to keep track of updates to the EnviroDIY Modular Sensor Library. You may also find it to be a useful place to keep track of your own codes to manage versions and share will collaborators.
 
-## Part 1, Episode 3: Connecting to GitHub
+## Episode 3: Connecting to GitHub
 
 > ## GitHub example use case
 > [What is GitHub?](https://www.youtube.com/watch?v=w3jLJU7DT5E) is a short introduction to one group's project using GitHub for collaboration. It's a little bit silly, but we like how it introduces the vocabulary and workflow of GitHub.
@@ -36,7 +36,7 @@ The operative word for our use of GitHub is collaborative! It can be a place whe
   - This software is a graphical user interface (GUI) to help you manage the files that you get from (pull) or send to (push) GitHub repositories. Having a Git Client will allow you to (mostly) avoid command line interaction with GitHub. There are other Git Clients available, and you are welcome to explore and use them. Our tutorials will be from the perspective of GitHub Desktop simply because that is what was available when the authors started. Sign in to GitHub desktop so it will be prepared to track your contributions.
 
 - [Install Git Client](https://git-scm.com/downloads)
-  - You will need this when you use PlatformIO in the next episode. 
+  - You will need this when you use PlatformIO in the next episode.
 
 
 > ## For your reference

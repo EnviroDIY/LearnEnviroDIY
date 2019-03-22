@@ -1,5 +1,5 @@
 ---
-title: "Episode 1.5 Using PlatformIO and Mayfly"
+title: "Using PlatformIO and Mayfly"
 teaching: 0
 exercises: 90
 questions:
@@ -15,12 +15,12 @@ keypoints:
 > ## Prerequisites
 >
 > - A computer, an internet connection, and motivation to tinker and hack.
-> - For this episode, you'll need an [EnviroDIY Mayfly Starter Kit](https://www.amazon.com/EnviroDIY-Mayfly-Arduino-Compatible-Starter/dp/B01FCVALDW), and a [CR1220 12mm Diameter - 3V Lithium Coin Cell Battery](https://www.adafruit.com/product/380) (also available where watch batteries are sold).
+> - For this episode, you'll need an [EnviroDIY Mayfly Starter Kit](https://www.amazon.com/EnviroDIY-Mayfly-Arduino-Compatible-Starter/dp/B01FCVALDW), and a [CR1220 Lithium Coin Cell 3V Battery](https://www.adafruit.com/product/380) (also available where watch batteries are sold).
 {: .prereq}
 
-## Part 1, Episode 5: Using PlatformIO
+## Episode 5: Using PlatformIO
 
-In this lesson we will interactively explore the features of PlatformIO and increase your readiness for Part 2, where we begin using the EnviroDIY Modular Sensors sketches to run multiple environmental sensors in a manner that is energy efficient and that can send data to an internet repository.
+In this lesson we will interactively explore the features of PlatformIO and increase your readiness for Part 2 (Episodes 8-13), where we begin using the EnviroDIY Modular Sensors sketches to run multiple environmental sensors in a manner that is energy efficient and that can send data to an internet repository.
 
 ### Get Mayfly running in PlatformIO
 

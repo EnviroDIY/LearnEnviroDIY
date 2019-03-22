@@ -1,5 +1,5 @@
 ---
-title: "Episode 2.6 Second Sketch: logging_to_mmw.ino"
+title: "Second Sketch: logging_to_mmw.ino"
 teaching: 10
 exercises: 30
 questions:
@@ -10,12 +10,12 @@ objectives:
 keypoints:
 - "Where to insert UUIDs into Modular Sensors sketches. How to view differences between sketches."
 ---
-## Part 2, Episode 6: Your second Modular Sensors sketch
+## Episode 13: Your second Modular Sensors sketch
 
 > ## Prerequisites
 >
 > - Complete all prior episodes.
-> - For this episode, you'll need an [EnviroDIY Mayfly Starter Kit](https://www.amazon.com/EnviroDIY-Mayfly-Arduino-Compatible-Starter/dp/B01FCVALDW), a [CR1220 12mm Diameter - 3V Lithium Coin Cell Battery](https://www.adafruit.com/product/380) (also available where watch batteries are sold), SD card, [DS18B20 Waterproof Digital Temperature sensor and 4.7kΩ resistor](https://www.adafruit.com/product/381), [Grove BME280 Temperature, Pressure, and Humidity sensor](https://www.seeedstudio.com/Grove-Temp-Humi-Barometer-Sensor-BME28-p-2653.html), [Grove I2C hub](https://www.robotshop.com/en/grove-i2c-hub-extension-module.html?gclid=EAIaIQobChMIwfqtttSb3wIVCYZpCh2lhQRgEAQYASABEgI3ifD_BwE), and [Grove cables](https://www.robotshop.com/en/grove-4-pin-buckled-20cm-cable.html).
+> - For this episode, you'll need an [EnviroDIY Mayfly Starter Kit](https://www.amazon.com/EnviroDIY-Mayfly-Arduino-Compatible-Starter/dp/B01FCVALDW), a [CR1220 Lithium Coin Cell 3V Battery](https://www.adafruit.com/product/380) (also available where watch batteries are sold), SD card, [DS18B20 Waterproof Digital Temperature sensor and 4.7kΩ resistor](https://www.adafruit.com/product/381), [Grove BME280 Temperature, Pressure, and Humidity sensor](https://www.seeedstudio.com/Grove-Temp-Humi-Barometer-Sensor-BME28-p-2653.html), [Grove I2C hub](https://www.robotshop.com/en/grove-i2c-hub-extension-module.html?gclid=EAIaIQobChMIwfqtttSb3wIVCYZpCh2lhQRgEAQYASABEgI3ifD_BwE), and [Grove cables](https://www.robotshop.com/en/grove-4-pin-buckled-20cm-cable.html).
 > - You will need a sensor station set up at MonitorMyWatershed.org as described in Part 2 Episode 4.
 > - Additional hardware for this sketch includes a modem (see modem list in [Modular Sensors Wiki](https://github.com/EnviroDIY/ModularSensors/wiki)) and a SIM card (such as from hologram.io).
 {: .prereq}

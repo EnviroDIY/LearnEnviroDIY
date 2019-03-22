@@ -1,5 +1,5 @@
 ---
-title: "Episode 2.5 Set up Monitor My Watershed Data Portal"
+title: "Set up Monitor My Watershed Data Portal"
 teaching: 10
 exercises: 20
 questions:
@@ -11,7 +11,7 @@ objectives:
 keypoints:
 - "Create a repository at MonitorMyWatershed.org. Add variables to log from available sensors."
 ---
-## Part 2, Episode 5: Setting up a Monitor My Watershed Site
+## Episode 12: Setting up a Monitor My Watershed Site
 
 The EnviroDIY ecosystem includes a data repository that is free, open source, secure, and does not expire. The data portal includes a time-series analyst and the ability to download your data. In this episode you will create an account and set up a site to log variables for the Mayfly and/or BME280, and/or the DS18.
 

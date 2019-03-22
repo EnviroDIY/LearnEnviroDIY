@@ -1,9 +1,11 @@
 ---
 layout: break
-title: "Part 2: Program with ModularSensors"
+title: "Program with ModularSensors"
 break: 0
 ---
 
-Part 2: Program with ModularSensors (Episodes 7-13) provides exercises to program, test and deploy a monitoring station based on the example code in the ModularSensors library.
+## Part 2: Program with ModularSensors (Episodes 8-13)
+
+Part 2: Program with ModularSensors, provides exercises to program, test and deploy a monitoring station based on the example code in the ModularSensors library.
 
 {% include links.md %}

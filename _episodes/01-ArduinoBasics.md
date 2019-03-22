@@ -1,5 +1,5 @@
 ---
-title: "Episode 1.1 Arduino Basics for EnviroDIY"
+title: "Arduino Basics for EnviroDIY"
 teaching: 0
 exercises: 120
 questions:
@@ -29,7 +29,7 @@ In **Part 1: Arduino and IoT for EnviroDIY**, we introduce you to general skills
 {: .callout}
 
 
-## Part 1, Episode 1: Arduino Basics for EnviroDIY
+## Episode 1: Arduino Basics for EnviroDIY
 
 The Arduino sketches in this episode are simple and require a minimal number of libraries to run. We include a short note for each tutorial to help users know how elements of the tutorial will apply to their use of EnviroDIY Modular Sensors for environmental monitoring and to modify the sketch for use with the EnviroDIY Mayfly.
 

@@ -1,5 +1,5 @@
 ---
-title: "Episode 1.6 Using PlatformIO Serial Monitor and Sensors"
+title: "Using PlatformIO Serial Monitor and Sensors"
 teaching: 0
 exercises: 90
 questions:
@@ -13,12 +13,12 @@ keypoints:
 > ## Prerequisites
 >
 > - A computer, an internet connection, and motivation to tinker and hack.
-> - For this episode, you'll need an [EnviroDIY Mayfly Starter Kit](https://www.amazon.com/EnviroDIY-Mayfly-Arduino-Compatible-Starter/dp/B01FCVALDW), a [CR1220 12mm Diameter - 3V Lithium Coin Cell Battery](https://www.adafruit.com/product/380) (also available where watch batteries are sold), [DS18B20 Waterproof Digital Temperature sensor and 4.7kΩ resistor](https://www.adafruit.com/product/381), [Grove BME280 Temperature, Pressure, and Humidity sensor](https://www.seeedstudio.com/Grove-Temp-Humi-Barometer-Sensor-BME28-p-2653.html), [Grove I2C hub](https://www.robotshop.com/en/grove-i2c-hub-extension-module.html?gclid=EAIaIQobChMIwfqtttSb3wIVCYZpCh2lhQRgEAQYASABEgI3ifD_BwE), [Grove cables](https://www.robotshop.com/en/grove-4-pin-buckled-20cm-cable.html), and an [I2C OLED display with Grove connector](https://www.amazon.com/gp/product/B01D5GLDJ2/).
+> - For this episode, you'll need an [EnviroDIY Mayfly Starter Kit](https://www.amazon.com/EnviroDIY-Mayfly-Arduino-Compatible-Starter/dp/B01FCVALDW), a [CR1220 Lithium Coin Cell 3V Battery](https://www.adafruit.com/product/380) (also available where watch batteries are sold), [DS18B20 Waterproof Digital Temperature sensor and 4.7kΩ resistor](https://www.adafruit.com/product/381), [Grove BME280 Temperature, Pressure, and Humidity sensor](https://www.seeedstudio.com/Grove-Temp-Humi-Barometer-Sensor-BME28-p-2653.html), [Grove I2C hub](https://www.robotshop.com/en/grove-i2c-hub-extension-module.html?gclid=EAIaIQobChMIwfqtttSb3wIVCYZpCh2lhQRgEAQYASABEgI3ifD_BwE), [Grove cables](https://www.robotshop.com/en/grove-4-pin-buckled-20cm-cable.html), and an [I2C OLED display with Grove connector](https://www.amazon.com/gp/product/B01D5GLDJ2/).
 {: .prereq}
 
-## Part 1, Episode 6: Using PlatformIO
+## Episode 6: Using PlatformIO
 
-This lesson builds directly on Episode 6. We will interactively explore the features of PlatformIO and finalize your readiness for using the EnviroDIY Modular Sensors sketches in Part 2.
+This lesson builds directly on Episode 6. We will interactively explore the features of PlatformIO and finalize your readiness for using the EnviroDIY Modular Sensors sketches in Part 2 (Episodes 8-13).
 
 ### Load your second sketch from PlatformIO to the Mayfly!
 - Open the `platformio.ini` file in the LearnEnviroDIYcode project and type a ";" in front of the "example1" sketch, and uncomment the `Example_02_Mayfly_blink.ino` sketch to make that active.
@@ -106,6 +106,6 @@ When you are testing sensors in the Modular Sensors sketches, the serial monitor
 ### Extras
 - There are several additional example sketches in the extras folder that you may try if you have the sensors.
 
-If you are able to edit and run sketches using PlatformIO and upload them to the Mayfly, you are ready for Part 2, where we begin to use the Modular Sensors library.
+If you are able to edit and run sketches using PlatformIO and upload them to the Mayfly, you are ready for Part 2 (Episodes 8-13), where we begin to use the Modular Sensors library.
 
 {% include links.md %}

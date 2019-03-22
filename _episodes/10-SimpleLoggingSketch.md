@@ -1,5 +1,5 @@
 ---
-title: "Episode 2.3 First Sketch: simple_logging.ino"
+title: "First Sketch: simple_logging.ino"
 teaching: 10
 exercises: 20
 questions:
@@ -10,7 +10,7 @@ objectives:
 keypoints:
 - "Simple logging is a good way to test and deploy sensors and log to an SD card."
 ---
-## Part 2, Episode 3: Your first Modular Sensors sketch
+## Episode 10: Your first Modular Sensors sketch
 
 > ## Prerequisites
 >

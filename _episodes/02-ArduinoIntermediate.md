@@ -1,5 +1,5 @@
 ---
-title: "Episode 1.2 Arduino Intermediate Skills for EnviroDIY"
+title: "Arduino Intermediate Skills for EnviroDIY"
 teaching: 0
 exercises: 120
 questions:
@@ -20,14 +20,14 @@ keypoints:
 > - For this episode, you'll need an [EnviroDIY Mayfly Starter Kit](https://www.amazon.com/EnviroDIY-Mayfly-Arduino-Compatible-Starter/dp/B01FCVALDW) because we will use the LEDs and button onboard the Mayfly for the tutorials.
 {: .prereq}
 
-In **Part 1, Episode 2**, we continue to introduce you to Arduino concepts and skills necessary for utilizing ModularSensors. We again do this through online tutorials.
+In **Episode 2**, we continue to introduce you to Arduino concepts and skills necessary for utilizing ModularSensors. We again do this through online tutorials.
 
 > ## Actively Participate
 > We strongly recommend that you actively participate in the activities in each tutorial because you will need to be comfortable with both physical connectivity to an Arduino and code edits prior to using EnviroDIY Modular Sensors Library.
 {: .callout}
 
 
-## Part 1, Episode 2: Arduino Intermediate Skills for EnviroDIY
+## Episode 2: Arduino Intermediate Skills for EnviroDIY
 
 **[Arduino Libraries](https://learn.adafruit.com/arduino-tips-tricks-and-techniques/arduino-libraries) by Tyler Cooper**
 - Libraries are the software drivers for everything you connect to an Arduino. Stop here first to learn about Arduino libraries, how to use them in a sketch, and the file structures of libraries. You may stop after the first linked page on libraries (skip the information about bootloader and beyond).

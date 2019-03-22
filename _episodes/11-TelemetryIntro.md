@@ -1,5 +1,5 @@
 ---
-title: "Episode 2.4 Introduction to Telemetry"
+title: "Introduction to Telemetry"
 teaching: 30
 exercises: 15
 questions:
@@ -13,7 +13,7 @@ keypoints:
 ---
 
 
-## Part 2, Episode 4: Introduction to Telemetry
+## Episode 11: Introduction to Telemetry
 
 Realtime data has numerous benefits, including:
 - Improving the management and maintenance of automated monitoring stations, for example by showing that a sensor might need to be cleaned, that battery charge is getting low, or that the logger might be malfunctioning.

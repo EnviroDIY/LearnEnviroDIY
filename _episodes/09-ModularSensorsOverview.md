@@ -1,5 +1,5 @@
 ---
-title: "Episode 2.2 Tour of Modular Sensors Library"
+title: "Tour of Modular Sensors Library"
 teaching: 30
 exercises: 0
 questions:
@@ -12,7 +12,7 @@ objectives:
 keypoints:
 - "Modular Sensors Library features. Cloning vs downloading repository. Using your own repository."
 ---
-## Part 2, Episode 2: Tour of Modular Sensors Library
+## Episode 9: Tour of Modular Sensors Library
 
 The Modular Sensors Library is thoroughly documented on GitHub at the following wiki: [https://github.com/EnviroDIY/ModularSensors/wiki](https://github.com/EnviroDIY/ModularSensors/wiki). The wiki outlines how Modular Sensors works and the sensors that are currently supported. You may refer to this wiki at any time. In this episode we will walk you through the process of getting Modular Sensors sketches ready to run on your system.
 
