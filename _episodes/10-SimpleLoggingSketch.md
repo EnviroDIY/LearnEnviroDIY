@@ -40,7 +40,7 @@ First we will use `simple_logging.ino` to collect data from the Mayfly data logg
 ### Modify simple_logging to also collect data from external sensors
 
 Now we will modify your existing `simple_logging.ino` to add the Maxim DS18 submersible temperature sensor.
-  - Connect the DS18 sensor to the digital pin of your choice (D5, D7, or D11) following our example in Part 1 Episode 6.
+  - Connect the DS18 sensor to the digital pin of your choice (D5, D7, or D11) following our example in Episode 6.
   - Refer to the code snippet below, taken from `menu_a_la_carte.ino` to set up the DS18 sensor (you may copy and paste the snippet from your web browser). We do not know the sensor address, so we will use the options for a sensor with unknown address by commenting out the lines with the address, and commenting in the single sensor lines as shown in the snippet below. Assign the pin to match the pin you chose in step 1 (called *OneWireBus*).
 
   ```cpp

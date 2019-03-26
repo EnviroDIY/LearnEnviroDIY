@@ -49,7 +49,7 @@ You just cloned a repository that we want to watch for updates, but you do not h
 
 - Create a new repository and name it *deployments* in your GitHub account as you did in the [GitHub Hello World tutorial](https://guides.github.com/activities/hello-world/#repository). For now we will make this a public repository, but you may need to consider using a private repo for your organization's deployment sketches.
 
-- Clone your *deployments* repo (as we did earlier in this episode) and make it a project in PlatformIO (as in Part 1 Episode 5).
+- Clone your *deployments* repo (as we did earlier in this episode) and make it a project in PlatformIO (as in Episode 5).
 
 - Typically within a deployments repo, we keep a separate folder for each project or site. In your *deployments* project in PlatformIO, right click on the *deployments* folder and select "New Folder" from pop up menu. Name the new folder *tutorials*.
 
