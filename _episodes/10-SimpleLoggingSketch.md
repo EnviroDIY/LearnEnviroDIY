@@ -76,7 +76,7 @@ Now we will modify your existing `simple_logging.ino` to add the Maxim DS18 subm
 >  - [simple_logging_LearnEnviroDIY.ino](https://github.com/EnviroDIY/ModularSensors/tree/master/examples/simple_logging_LearnEnviroDIY)
 {: .solution}
 
-In our next few episodes, we will get learn to set up the EnviroDIY/Monitor My Watershed data portal to receive your data. Then we will use a sketch that expands the format of *simple_logging.ino* to send data to the portal.  
+In our next few episodes, we will set up the EnviroDIY/Monitor My Watershed data portal to receive your data. Then we will use a sketch that expands the format of *simple_logging.ino* to send data to the portal.  
 
 
 {% include links.md %}
