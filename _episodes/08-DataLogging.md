@@ -16,7 +16,7 @@ DIYers generally find rapid success at reading data from simple sensors to an Ar
 
 Let's dig in study the various steps of a data logging cycle, along with additional things a data logger needs to do.
 
-### Timing, Sleep and Wake
+##### Timing, Sleep and Wake
 A datalogger needs to carefully keep track of time for a wide variety of purposes:
 - **Logging interval(s)**, or ***time spacing***, between recording measurements.
   - Keeping track of logging/recording intervals is complicated by the need to align logging to time stamps on a real time clock, which is a separate device from the micro-controller chip, and the imperative to put the logger into a deep, power-saving sleep mode between recording measurements.
@@ -40,7 +40,7 @@ A datalogger needs to carefully keep track of time for a wide variety of purpose
 {: .callout}
 
 
-### Collecting Data from Various Sensors
+##### Collecting Data from Various Sensors
 
 A key requirement of any datalogger is to **mediate all of the communications with different kinds of sensors**. Data loggers are designed to potentially interface with hundreds of different sensors from dozens of manufacturers. Fortunately, there are only about a dozen communication protocols used by environmental sensors, such as:
 - Analog to Digital Conversion (ADC)
@@ -69,20 +69,20 @@ Another key requirement of any data logger is to **provide the appropriate power
   - a sensor's common or maximum current draw is *sometimes* specified in its spec sheet, but real world current usage most often can only be quantified as directly measured by the user.
 
 
-### Writing Data to an SD Card
+##### Writing Data to an SD Card
 Once a datalogger had retreived data values from each of the connected sensors, it needs to write those values from short-term memory (i.e. which is erased when the microcontroller is turned off) to a form of long-term data storage (i.e. which can persist for decades even with no power). To do this, the data values need to be organized into a comma-separated string of numbers and characters, along with the date-time at which the measurements were made. For the user to make sense of the data later, the datalogger also needs to record "headers", which are one or more special rows that contain information about the entire file and also what is found in each column, such as the sensor name, variable name and units
 
 <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/DataloggerCSVFileExample.png" width="600">
 *Figure from Jeff Horsburgh's lecture 7 in his [2016 HydroInformatics (USU CEE-6110)](https://usu.instructure.com/courses/417249/pages/lecture-materials) class.*
 
 
-### Transmitting Data via Radio
+##### Transmitting Data via Radio
 A wireless datalogger needs to:
 - control the radio, so that it can connect to an internet hub and knows when the requested communication has completed.
 - connect to a server that is set up to receive the data.
 - format the data in the proper format that the data server expects and knows how to parse.
 
-### Debugging
+##### Debugging
 Few users can setup a programable datalogger without encountering errors. The key to fixing these errors is a datalogger program that provides meaningful output describing where those errors might have occurred. Debugging information might answer such questions as:
 - Did the sensor respond at all to a request for data?
 - Was the response from the sensor a valid data value?
