@@ -20,13 +20,13 @@ keypoints:
 > - Additional hardware for this sketch includes a modem (see modem list in [Modular Sensors Wiki](https://github.com/EnviroDIY/ModularSensors/wiki)) and a SIM card (such as from hologram.io).
 {: .prereq}
 
-One of the advantages of working in a code editor is the ability to compare files within the editor. Before we get started with the sketches, install *split-diff* package to Atom:
+#### One of the advantages of working in a code editor is the ability to compare files within the editor. Before we get started with the sketches, install *split-diff* package to Atom:
   - Go to settings (bottom left, gear icon).
   - Click on **Packages**.
   - Search for **split-diff**.
   - Click Install. (Restart Atom if required.)
 
-Compare *logging_to_MMW.ino* and your version of *simple_logging.ino* in which you added sensors.
+#### Compare *logging_to_MMW.ino* and your version of *simple_logging.ino* in which you added sensors.
   - Copy *logging_to_MMW.ino* from your cloned Modular Sensors to your repository.
   - Open both sketches.
   - With *logging_to_MMW.ino* as the active tab, right click on *simple_logging.ino*. In the drop-down menu, select **Diff with Active File**.
@@ -39,7 +39,7 @@ Compare *logging_to_MMW.ino* and your version of *simple_logging.ino* in which y
     - lots of extra code in the setup and loop functions.
   - You may wish to exit Split Diff mode by selecting from the menu: **Packages>Split Diff>Toggle** (note the keystroke command available in the menu). I sometimes find this mode helpful to leave on as I make edits to a sketch.
 
-Set up *logging_to_MMW.ino* to run BME280 and/or DS18 sensors.
+#### Set up *logging_to_MMW.ino* to run BME280 and/or DS18 sensors.
   - In **Data Logger Settings**, edit your sketch name, logger ID, logging interval and time zone.
     ```cpp
       new Modem_RSSI(&modem, "12345678-abcd-1234-efgh-1234567890ab"),
@@ -54,8 +54,10 @@ Set up *logging_to_MMW.ino* to run BME280 and/or DS18 sensors.
         - With *ReadMe.md* and *logging_to_MMW.ino* both open, right click on the tab that is not active and select **Split Left** (or right or up or down).
         - This is my preferred method for pasting UUIDs into a sketch.
   - In the **A Publisher to Monitor My Watershed** section, insert your registration token and sampling feature from your MonitorMyWatershed.org site (this should be among the things you pasted into your *Readme.md* file).  
+
+#### Connect sensors and upload sketch  
   - Set up the platformio.ini file in the root directory of your repository. Save the ini file.  
-  - Connect the BME280 and or the DS18 to the Mayfly (as we did in Episodes 6 and 10), connect the Mayfly to your computer using the microUSB cable, and turn it on. (Note: Modular Sensors sketches will not run if the SD card is missing.)
+  - Connect the BME280 and or the DS18 to the Mayfly (as we did in Episodes 6 and 10), connect the Mayfly to your computer using the microUSB cable, and turn it on. (Note: Modular Sensors sketches will not run if the SD card is missing.)  
   - Build/compile and upload your sketch.
   - View your sensor using the serial monitor (note: `serialBaud = 115200`). After the logger is set up, push the round, black button near the SD card on the Mayfly to enter sensor testing mode.
   - Your serial monitor will now include information about your modem signal strength. Sometimes the first few logging intervals have low strength, so watch give the modem a warm up period.  
