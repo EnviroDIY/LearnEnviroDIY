@@ -1,7 +1,7 @@
 ---
 title: "First Sketch: simple_logging.ino"
-teaching: 10
-exercises: 20
+teaching: 30
+exercises: 30
 questions:
 - "How do I run multiple sensors and log to an SD card?"
 objectives:
