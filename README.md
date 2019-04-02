@@ -38,5 +38,6 @@ A list of contributors to the lesson can be found in [AUTHORS](AUTHORS).
 ## Citation
 
 To cite this lesson, please consult with [CITATION](CITATION).
+For our v0.2.0-beta release, please cite this DOI: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2621373.svg)](https://doi.org/10.5281/zenodo.2621373)
 
 This tutorial was created by using [The Carpentries lesson template & example](https://github.com/carpentries/lesson-example). 
