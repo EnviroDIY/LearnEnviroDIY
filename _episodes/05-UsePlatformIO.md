@@ -68,27 +68,36 @@ You have a few ways to use an existing GitHub repository (repo from now on), inc
 
 - **Step 4:** Open Example_01_Mayfly_blink.ino, and examine the code. It should look extremely familiar to the very first sketch from Ladyada's lesson 1. We changed the pin number in the sketch to match one of the LED options on the Mayfly. Although many Arduino framework boards have compatible functionality, the ports and lights are usually not located at the same pin numbers. Most have documentation to help you locate the pin numbers. [Documentation for the Mayfly is compiled at envirodiy.org.](https://www.envirodiy.org/mayfly/hardware/).
 
-- **Step 5:** Open `platformio.ini` file located in the LearnEnviroDIYcode directory. Notice that opening this ".ini" file caused the *LearnEnviroDIYcode* to be highlighted with the blue vertical line indicating that it is the active directory (if it wasn't already). If you cannot see the `platformio.ini` file in your root directory, go to Atom Settings (press gear wheel icon, bottom left), click on *packages*, and in the search bar type `tree-view`. Select the "settings" for tree-view and uncheck "Hide Ignored Names." Now you should be able to see the `platformio.ini` file in faded text.
+- **Step 5:** Open `platformio.ini` file located in the LearnEnviroDIYcode directory. Notice that opening this ".ini" file caused the *LearnEnviroDIYcode* to be highlighted with the blue vertical line indicating that it is the active directory (if it wasn't already).
+  - If you cannot see the `platformio.ini` file in your root directory, go to Atom Settings (press gear wheel icon, bottom left), click on *packages*, and in the search bar type `tree-view`. Select the "settings" for tree-view and uncheck "Hide Ignored Names." Now you should be able to see the `platformio.ini` file in faded text, along with the `.pioenvs` and `.piolibdeps` folders.
 
 > ## About the `platformio.ini` file
-> This is an “initialization” file (the community calls it the “ini” file, pronounced like an innie belly button). The `platformio.ini` file is where you give PlatformIO instructions, and we have it set up for your first sketch. We specified the board and framework you are using (e.g. board = mayfly and framework = arduino), the “lib_deps” needed for the sketch, and other information that you will not need to change. The part that you will need to change is the source directory, which is where PlatformIO will look for the Arduino sketch to "Build/Compile" and "Upload", located under `[platformio]`. Currently the source directory is set as `src_dir = Part1-sketches/Example_01_Mayfly_blink` (in line 12), which is what we want to use as our first sketch.
+> This is an “initialization” file (the community calls it the “ini” file, pronounced like an innie belly button). The `platformio.ini` file is where you give PlatformIO instructions, and we have it set up for your first sketch. We specified the board and framework you are using (e.g. board = mayfly and framework = arduino), the `lib_deps` needed for the sketch, and other information that you will not need to change. The part that you will need to change is the source directory, which is where PlatformIO will look for the Arduino sketch to "Build/Compile" and "Upload", located under `[platformio]`. Currently the source directory is set as `src_dir = Part1-sketches/Example_01_Mayfly_blink` (in line 12), which is what we want to use as our first sketch.
 >
 >Notice line 13 has a different source directory listed, but it has a semicolon (;) at the beginning, which comments out this line. We commonly keep a list of the source directories that we are actively using and add or remove the semicolon to switch between sketches.
 >
 > The `platformio.ini` file must be located in the root directory for your project. When you start using Modular Sensors, many of the sketches will have a “`platformio.ini`” file included in the sketch directory; these exist so you do not have to guess which “lib_deps” you will need to run the sketch, and not guessing is awesome. But PlatformIO will only look for the ".ini" file in the root of the active directory. Each project needs its own `platformio.ini` file.
 >
 > ALSO NOTE: If you are working with a group and syncing to GitHub, you do not want to upload your root `platformio.ini` file to GitHub (list it in the gitignore and/or uncheck it when pushing your contributions to GitHub).
+>
+>> For more information, see [PlatformIO Documentation](https://docs.platformio.org/en/latest/) on [`platformio.ini`](https://docs.platformio.org/en/latest/projectconf.html) for detailed documentation about all the syntax options.
 {: .callout}
 
 - **Step 6:** Connect the Mayfly logger using the USB cable included in your starter kit. Turn the Mayfly on. Push the Build/Compile button (checkmark). You should see a terminal pop up and lines of text will scroll through the terminal, and if all goes well, it will conclude with a green bar that says "platform run" and "[SUCCESS]" in green, as shown below. Sometimes the system takes a little while to compile and gives an error message ending in "No such file or directory." If you get this error message, wait ~30 seconds and Build/Compile again.
 <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/platformrunSuccess.png" width="700">
-
+  - If you have trouble compiling, it is possible that you your `.piolibdeps` are:
+    - still installing, and if so, wait for them to complete
+    - corrupted for some reason, and if so, try updating following the instructions at in this [GitHub issue #247 comment](https://github.com/EnviroDIY/ModularSensors/issues/247#issue-423925820).
 
 - **Step 7:** Upload the sketch to the Mayfly by pushing the right arrow button:
   ![Source and Destination Files]({{ page.root }}/fig/pioUploadButton.png)
   Select your upload port (the one with something about USB), if prompted. The success indicator will look the same as in Step 6. And the green LED on your Mayfly will blink on and off!
+    - If you have trouble connecting to the Mayfly:
+      - check that it is turned on,
+      - confirm that you have a good USB data cable (some micro-USB cables are only for charging, and old cables can become damaged), and
+      - confirm that you have installed the [Arduino IDE desktop software](https://www.arduino.cc/en/main/software), which will install the proper drivers to recognize the board as a COM port.
+        - NOTE for Installing Arduino Desktop IDE for Windows: If your IDE does not recognize a COM port for your board, you may need to follow these [instructions to install the board drivers](https://www.arduino.cc/en/Guide/ArduinoUno#toc3). This might happen if you installed from the Windows Zip package. If you used the Windows Installer (admin privileges required), then the drivers should have installed automatically.
 
-    - If your upload was not successful, double-check to see if the Mayfly is turned on. Another possibility is that your USB cable, if it did not come with the EnviroDIY kit, is not able to transmit data (some are for charging only).
 
 > ## The `lib_deps` talk
 >I told you in the last episode that we are using PlatformIO so it can keep track of complicated libraries for us. If this tutorial is your Arduino starting point, you may have avoided library management. If you spent much time using the Arduino IDE prior to this tutorial, you may have discovered that you needed to download libraries manually and keep them in a very specifically located and perfectly named directory. Keeping track of updates to libraries was a manual task. (Note, Arduino IDE added a library manager that seems to make life a little easier than when I learned to use it.) Herein we discuss how PlatformIO handles libraries, where it puts them, and how you keep track of them.
