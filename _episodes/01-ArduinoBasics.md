@@ -42,6 +42,8 @@ The Arduino sketches in this episode are simple and require a minimal number of 
 
   - A note on the USB fuse on the Uno. The Mayfly does not not have this, which means that it is possible to "fry" the Mayfly more easily than the Uno. Make sure the toggle that we have labeled "12V power option" is on USB/LiPo for the tutorials and for almost everything you will do with the Mayfly. Supplying 12V power is an advanced maneuver that requires extra hardware.
   - After you work through Lady Ada's software download instructions, follow the [instructions for installing the Mayfly driver](https://www.envirodiy.org/mayfly/software/).
+    - NOTE for Installing [Arduino Desktop IDE](https://www.arduino.cc/en/Main/Software) for Windows: If your IDE does not recognize a COM port for your board, you may need to follow these [instructions to install the board drivers](https://www.arduino.cc/en/Guide/ArduinoUno#toc3). This might happen if you installed from the Windows Zip package. If you used the Windows Installer (admin privileges required), then the drivers should have installed automatically.
+
 - [Lesson 1: Upload your First Sketch](https://learn.adafruit.com/ladyadas-learn-arduino-lesson-number-1)
   - Walks you through uploading your first program, which is called a "sketch" in Arduino.
   - Select Board Type: Instead of the Ardunio Uno, select "EnviroDIY Mayfly 1284p".
