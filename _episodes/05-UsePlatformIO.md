@@ -86,16 +86,17 @@ You have a few ways to use an existing GitHub repository (repo from now on), inc
 - **Step 6:** Connect the Mayfly logger using the USB cable included in your starter kit. Turn the Mayfly on. Push the Build/Compile button (checkmark). You should see a terminal pop up and lines of text will scroll through the terminal, and if all goes well, it will conclude with a green bar that says "platform run" and "[SUCCESS]" in green, as shown below. Sometimes the system takes a little while to compile and gives an error message ending in "No such file or directory." If you get this error message, wait ~30 seconds and Build/Compile again.
 <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/platformrunSuccess.png" width="700">
   - If you have trouble compiling, it is possible that you your `.piolibdeps` are:
-    - still installing, and if so, wait for them to complete
-    - corrupted for some reason, and if so, try updating following the instructions at in this [GitHub issue #247 comment](https://github.com/EnviroDIY/ModularSensors/issues/247#issue-423925820).
+    - Still installing, and if so, wait for them to complete; and
+    - Corrupted for some reason, and if so, try updating following the instructions at in this [GitHub issue #247 comment](https://github.com/EnviroDIY/ModularSensors/issues/247#issue-423925820).
 
 - **Step 7:** Upload the sketch to the Mayfly by pushing the right arrow button:
   ![Source and Destination Files]({{ page.root }}/fig/pioUploadButton.png)
   Select your upload port (the one with something about USB), if prompted. The success indicator will look the same as in Step 6. And the green LED on your Mayfly will blink on and off!
     - If you have trouble connecting to the Mayfly:
-      - check that it is turned on,
-      - confirm that you have a good USB data cable (some micro-USB cables are only for charging, and old cables can become damaged), and
-      - confirm that you have installed the [Arduino IDE desktop software](https://www.arduino.cc/en/main/software), which will install the proper drivers to recognize the board as a COM port.
+      - Check that the Mayfly is turned on;
+      - Check that the tiny [power source switch](https://www.envirodiy.org/features-of-the-new-mayfly-v0-5/) on the top of the Mayfly is set to *USB/Lipo* rather than *Ext* (12V) power source;
+      - Confirm that you have a good USB data cable (some micro-USB cables are only for charging, and old cables can become damaged); and
+      - Confirm that you have installed the [Arduino IDE desktop software](https://www.arduino.cc/en/main/software), which will install the proper drivers to recognize the board as a COM port.
         - NOTE for Installing Arduino Desktop IDE for Windows: If your IDE does not recognize a COM port for your board, you may need to follow these [instructions to install the board drivers](https://www.arduino.cc/en/Guide/ArduinoUno#toc3). This might happen if you installed from the Windows Zip package. If you used the Windows Installer (admin privileges required), then the drivers should have installed automatically.
 
 
