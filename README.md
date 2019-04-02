@@ -1,8 +1,16 @@
 # Learn EnviroDIY Programming tutorial
 
-[![Create a Slack Account with us](https://img.shields.io/badge/Create_Slack_Account-The_Carpentries-071159.svg)](https://swc-slack-invite.herokuapp.com/)
+A tutorial for learning how to program an Arduino-framework micro-controller to become an environmental data logger, available at https://envirodiy.github.io/LearnEnviroDIY. 
 
-FIXME
+Do-it-yourself (DIY) enthusiasts generally find rapid success at reading data from simple sensors to an Arduino board. However, it is much more challenging to program an Arduino to perform all required functions of a solar-powered station that collects data from several research-grade environmental sensors, saves to an SD card, transmits to a public server with web services, and puts the sensors to sleep to conserve energy between logging intervals. The [EnviroDIY community](https://www.envirodiy.org/) has made all of this much simpler by creating the [ModularSensors](https://github.com/EnviroDIY/ModularSensors) library, putting the power of the Internet of Things (IoT) revolution into the hands of DIYers.
+
+**These lesson episodes will teach you how to program your Arduino for environmental IoT using [ModularSensors](https://github.com/EnviroDIY/ModularSensors).**
+
+We organize episodes into two parts:
+- Part 1: Arduino and IoT for EnviroDIY (Episodes 1-6) introduces basic Arduino and IoT skills to prepare you for using ModularSensors.
+- Part 2: Program with ModularSensors (Episodes 7-13) provides exercises to program, test and deploy a monitoring station based on the example code in the ModularSensors library.
+
+**Get Started** at https://envirodiy.github.io/LearnEnviroDIY!
 
 ## Contributing
 
