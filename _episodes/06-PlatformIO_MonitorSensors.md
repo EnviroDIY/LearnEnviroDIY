@@ -62,7 +62,8 @@ When you are testing sensors in the Modular Sensors sketches, the serial monitor
 {: .callout}
 
 ### Set Real Time Clock on the Mayfly
-- We can manually set the Real Time Clock (RTC) on the Mayfly, which will be useful in your future with environmental sensors. Ideally we would let the Mayfly's connection to the WiFi or data network sync the clock, but we will not always have that functionality. As long as your coin battery remains installed and alive, the RTC on your Mayfly will keep ticking. Note: Setting the RTC is a finicky task.
+- We can manually set the Real Time Clock (RTC) on the Mayfly, which will be useful in your future with environmental sensors. Ideally we would let the Mayfly's connection to the WiFi or data network sync the clock, but we will not always have that functionality. As long as your coin battery remains installed and alive, the RTC on your Mayfly will keep ticking. Note: Setting the RTC is a finicky task. NOTE: This procedure will work with PlatformIO for Atom, and with Arduino IDE, but *it will not work with PlatformIO for VSCode*, which does not have the ability to upload text to the Arduino via an open serial monitor.
+
 
   1. Set the baud rate to 57600 for this task. The sketch has this correct, but you may need to set it `platformio.ini` as ```monitor_speed = 57600``` and possibly when prompted by your serial monitor. If you have the wrong baud rate, the serial print may look fine, but any date you try to set will give an "out of range" error.
   2. Upload `Example_04_Mayfly_setRTC.ino` to your Mayfly.
