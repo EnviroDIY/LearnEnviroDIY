@@ -46,7 +46,10 @@ PlatformIO IDE is hosted within a text editor designed for editing code. Most co
   - [Install PlatformIO for VSCode](https://platformio.org/install/ide?install=vscode)
   - Follow the instructions to download VSCode, then within VSCode you will use a command line to install PlatformIO.
   - As recommended on the download page, read through the [PlatformIO quick start guide for VSCode](https://docs.platformio.org/en/latest/ide/vscode.html#quick-start).
-  - Note: VSCode might recommend that you install the "Arduino" extension for the `.ino` file types. DO NOT do this, as it will conflict with PlatformIO.
+  - NOTE 1: VSCode might recommend that you install the "Arduino" extension for the `.ino` file types. DO NOT do this, as it will conflict with PlatformIO.
+  - NOTE 2: Changing Serial Monitor baud rates can't be done through the VSCode IDE, but rather requires a new line in the PlatformIO.ini file. See:
+    - https://docs.platformio.org/en/latest/ide/vscode.html#serial-port-monitor and
+    - https://docs.platformio.org/en/latest/projectconf/section_env_monitor.html#projectconf-monitor-speed
 
 
 ### What you can see in PlatformIO

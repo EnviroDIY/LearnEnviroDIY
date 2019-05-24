@@ -28,7 +28,7 @@ keypoints:
 
 ##### One of the advantages of working in a code editor is the ability to compare files within the editor. Before we get started with the sketches, install *split-diff* package to Atom:
   - Go to settings (bottom left, gear icon).
-  - Click on **Packages**.
+  - Click on **+ Install** Packages.
   - Search for **split-diff**.
   - Click Install. (Restart Atom if required.)
 
@@ -48,10 +48,14 @@ keypoints:
 
 
 ##### Set up *logging_to_MMW.ino* to run BME280 and/or DS18 sensors.
-  - In **Data Logger Settings**, edit your sketch name, logger ID, logging interval and time zone.
+  - In **Variable Array**, edit your sketch name, logger ID, logging interval and time zone.
     ```cpp
-      new Modem_RSSI(&modem, "12345678-abcd-1234-efgh-1234567890ab"),
-      new Modem_SignalPercent(&modem, "12345678-abcd-1234-efgh-1234567890ab"),
+    Variable *variableList[] = {
+        // your other variables here
+        new Modem_RSSI(&modem, "12345678-abcd-1234-efgh-1234567890ab"),
+        new Modem_SignalPercent(&modem, "12345678-abcd-1234-efgh-1234567890ab"),
+        // your other variables here
+    };
     ```
   - In **Wifi/Cellular Modem Main Chip Selection**, make sure only one modem is uncommented. Recall that commented out lines start with `//`. If you are using the Mayfly, you will not need to make any additional edits to the modem settings.
   - Around line 540, you will find the **Network Information and LoggerModem Object** section. Change the apn to match your SIM provider: `const char *apn = "hologram";` or for WiFi modems, put in the ID and Password.

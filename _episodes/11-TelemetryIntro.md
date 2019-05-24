@@ -40,7 +40,7 @@ Telemetry is the automated communication of measurements and other data from a r
 - HTTP REST web services api
 - Message Queuing Telemetry Transport (MQTT)
 - UDP CoAP
-    -NOTE: the client (your station or device) and the server BOTH need to be configured to use the same protocol.
+  - NOTE: the client (your station or device) and the server BOTH need to be configured to use the same protocol.
 
 Any of these Communication Protocols can operate over any physical connectivity layer.
 

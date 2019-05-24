@@ -72,7 +72,7 @@ Now we will modify your existing `simple_logging.ino` to add the Maxim DS18 subm
 
   <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/simple_logging_variablearray.png" width="600">
 
-        - Note that some sensors will require you to initiate serial ports to run them (modbus and sonar are supported examples of this), so you will have to add additional code snippets for these sensors, but most sensors only have two snippets: the main sensor block and the variable array snippet.
+    - Note that some sensors will require you to initiate serial ports to run them (modbus and sonar are supported examples of this), so you will have to add additional code snippets for these sensors, but most sensors only have two snippets: the main sensor block and the variable array snippet.
 
   - Save the sketch, compile/build, upload, open the serial monitor, and enter sensor testing mode as soon as you the program will allow.
   - As you watch the sensor test, notice that Modular Sensors not only figured out how to communicate with your OneWire sensor with unknown address, it found the address for you! As you may have noticed in the sensor code for the DS18, in order to run multiple instances of this sensor, you need to call each sensor using its address. There are sketches buried deep in the *.piolibdeps folder that will help you find this address, but you can also use the unknown address option in Modular Sensors to find your sensor's address.  
