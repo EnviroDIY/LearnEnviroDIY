@@ -67,7 +67,7 @@ Now we will modify your existing `simple_logging.ino` to add the Maxim DS18 subm
   MaximDS18 ds18(OneWirePower, OneWireBus);
   ```
 
-  - Be sure to add this sensor to the variable array as well: `new MaximDS18_Temp(&ds18_u),`. These two code snippets are the only code we need to add to run the DS18.
+  - Be sure to add this sensor to the variable array as well: `new MaximDS18_Temp(&ds18),`. These two code snippets are the only code we need to add to run the DS18.
       - Note that some sensors will require you to initiate serial ports to run them (modbus and sonar are supported examples of this), so you will have to add additional code snippets for these sensors, but most sensors only have two snippets: the main sensor block and the variable array snippet.
 
   <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/simple_logging_variablearray.png" width="600">
