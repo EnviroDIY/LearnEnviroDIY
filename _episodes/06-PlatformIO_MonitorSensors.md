@@ -21,9 +21,9 @@ keypoints:
   - a [Grove I<sup>2</sup>C hub](https://www.seeedstudio.io/Grove-I2C-Hub-p-851.html) (if you use the OLED display).
 {: .prereq}
 
-## Episode 6: Using PlatformIO
+## Episode 6: Using PlatformIO Serial Monitor and Sensors
 
-This lesson builds directly on Episode 6. We will interactively explore the features of PlatformIO and finalize your readiness for using the EnviroDIY Modular Sensors sketches in Part 2 (Episodes 8-13).
+This lesson builds directly on Episode 5: Using PlatformIO and Mayfly. We will interactively explore the features of PlatformIO and finalize your readiness for using the EnviroDIY Modular Sensors sketches in Part 2 (Episodes 8-13).
 
 ### Load your second sketch from PlatformIO to the Mayfly!
 - Open the `platformio.ini` file in the LearnEnviroDIYcode project and type a ";" in front of the "example1" sketch, and uncomment the `Example_02_Mayfly_blink.ino` sketch to make that active.
