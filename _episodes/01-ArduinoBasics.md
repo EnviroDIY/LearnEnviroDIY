@@ -51,7 +51,7 @@ The Arduino sketches in this episode are simple and require a minimal number of 
   - You will need to edit the Blink sketch for the Mayfly. As shown in the image below, replace all three instances of `LED_BUILTIN` with `8` to use the green LED2 on the Mayfly's pin number 8.  
   <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/blink_mayflypin.png" width="600">
 - [Lesson 2: The Parts of Sketch](https://learn.adafruit.com/ladyadas-learn-arduino-lesson-number-2)
-  - The anatomy of an Arduino sketch and how to change a sketch. This is the core of what you will do with EnviroDIY Modular Sensors.
+  - The anatomy of an Arduino sketch and how to change a sketch. Taking an existing sketch and chaning it to work for your sensors and pins and ports is the core of what you will do with EnviroDIY Modular Sensors.
 
 
 #### The Serial Monitor

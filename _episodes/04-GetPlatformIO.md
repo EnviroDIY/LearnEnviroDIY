@@ -20,12 +20,12 @@ In this lesson we will prepare you to use PlatformIO, an Integrated Development 
 PlatformIO IDE is hosted within a text editor designed for editing code. Most code text editors highlight syntax and have special auto-complete and debugging features based on elements of the code. PlatformIO can be hosted by several text editors, so if you are a coder and already use VSCode or Sublime, please feel free to install PlatformIO for your favorite editor. The original combination was PlatformIO hosted within Atom text editor. Since Microsoft took ownership of GitHub, their VSCode has become the "recommended" download for PlatformIO, but we continue to use Atom. If you choose a different text editor, some of the buttons and commands will be located in different places, but all of the functionality will be preserved.
 
 - [Install Git](https://git-scm.com/downloads)
-  - You need to have an all-purpose Git Client installed to use the library functions in PlatformIO. Although you installed GitHub Desktop, its Git client is only used by that application.
+  - You need to have an all-purpose Git Client installed to use the library functions in PlatformIO. Although you installed GitHub Desktop, its Git client is only used by that application. (You may hove done this as the last step in Episode 3.)
   - Download and install Git from [https://git-scm.com/downloads](https://git-scm.com/downloads). Install selecting all the defaults (make sure your PATH environment allows Git from command line and also from 3rd-party software). We find it best to reboot your computer before installing Atom.
 
 - [Install Atom](https://atom.io/)
   - Download and install official GitHub's Atom text editor, PlatformIO IDE is built on top of it.
-  - If you get a **"Clang is not installed on your system!"** message, please proceed to install it.
+  - If you get a **"Clang is not installed on your system!"** message, please proceed to install it. (This is not as alarming as it sounds!)
     - The "Install Clang" button only sends you to the  PlatformIO web page with instructions for installing [Clang for for Intelligent Code Completion](https://docs.platformio.org/en/latest/ide/atom.html#ii-clang-for-intelligent-code-completion). Clang does not install automatically, you need to follow the instructions depending on your operating system.
     - During installation, select **“Add LLVM to the system PATH for all users”** (which is not the default).
     - If you get a "Failed to find MSBuild toolset directory" error when installing on Windows, you can ignore it and conintue, as described [here](https://stackoverflow.com/questions/34029904/problems-installing-clang-in-windows).
@@ -37,7 +37,7 @@ PlatformIO IDE is hosted within a text editor designed for editing code. Most co
   - Installation may take a while, as a lot of dependencies (i.e. other libraries and plugins used by PlatformIo) are also being installed.
   - You may wish to read through the [PlatformIO quick start guide for Atom](https://docs.platformio.org/en/latest/ide/atom.html#quick-start), but our tutorial will take you through many of the same steps.
   - NOTE for Windows users:
-    - PlatformIO is written in Python 2.7, which should automatically get installed as a dependency. However, there can be conflicts if you have an existing installation of Python 3.6.x. See https://github.com/platformio/platformio-atom-ide-terminal/issues/668#issuecomment-470893810.
+    - PlatformIO is written in Python 2.7, which should automatically get installed as a dependency. However, there can be conflicts if you have an existing installation of Python 3.6.x. If this is a conflict for you, read [this issue](https://github.com/platformio/platformio-atom-ide-terminal/issues/668#issuecomment-470893810).
 
   ![Source and Destination Files]({{ page.root }}/fig/PlatformIO_navigation002.png)
 
