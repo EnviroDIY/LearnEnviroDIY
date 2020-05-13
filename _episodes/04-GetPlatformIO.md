@@ -41,7 +41,7 @@ PlatformIO IDE is hosted within a text editor designed for editing code. Most co
 
   ![Source and Destination Files]({{ page.root }}/fig/PlatformIO_navigation002.png)
 
-- You may choose VSCode instead of Atom
+- If you choose VSCode instead of Atom
   - Note that all our PlatformIO instructions in this tutorial are geared for Atom.
   - [Install PlatformIO for VSCode](https://platformio.org/install/ide?install=vscode)
   - Follow the instructions to download VSCode, then within VSCode you will use a command line to install PlatformIO.
@@ -57,13 +57,13 @@ In the following sections we will take you on a tour through the PlatformIO for 
 
 #### PlatformIO Toolbar:
 - For Atom, the PlatformIO Toolbar is on the left side.
-- For VSCode, the the PlatformIO Toolbar on the bottom.
+- For VSCode, the the PlatformIO Toolbar is on the bottom.
 
 ![Source and Destination Files]({{ page.root }}/fig/PlatformIO_navigation003.png)
 
 **PlatformIO Home.** This is where you will manage software updates for PlatformIO and other libraries that PlatformIO sees you using. You will know when updates are needed because they will be marked with bright badges. You also create a PlatformIO account here, which I think you need if you use some of the development capabilities; I don’t have a PlatformIO account.
 
-**Build (checkmark).** Known as “compile” in Arduino. This is the button you push when your sketch is ready and your `platformio.ini` is pointing to all of the right files and repositories for your sketch. This process will list color-coded errors (and successes) as it runs the build. I have found that the error messages are usually pretty understandable and repairable, so don’t despair. Red error messages will not allow you to proceed. Yellow error messages will still allow you to proceed.
+**Build (checkmark).** Previously “compile” in Arduino, now it's "verify", and it's always been a checkmark. This is the button you push when your sketch is ready and your `platformio.ini` is pointing to all of the right files and repositories for your sketch. This process will list color-coded errors (and successes) as it runs the build. I have found that the error messages are usually pretty understandable and repairable, so keep calm and READ THE MESSAGES. Red error messages will not allow you to proceed. Yellow error messages will allow you to proceed.
 
 **Upload (right arrow).** This is the button that will send your sketch to your Arduino board.
 
@@ -81,11 +81,11 @@ In the following sections we will take you on a tour through the PlatformIO for 
 
 **Find in Project (magnifying glass).** Works as a “Find and Replace” for all the files in your project directory.
 
-**Terminal (cursor box).** Command line access to the functions of PlatformIO. I’ve had to use this when my pushes to GitHub created conflicts.
+**Terminal (cursor box).** Command line access to the functions of PlatformIO. I use this when my pushes to GitHub create conflicts (while sharing a repository with others).
 
-**Serial Monitor (power plug).** This is your window into what’s happening on your Arduino board. Every time I upload a sketch this is where I see if it’s working correctly.
+**Serial Monitor (power plug).** This is your window into what’s happening on your Arduino board. The print statements that update you regarding the progress of your sketch show up here. Every time I upload a sketch this is where I see if it’s working correctly.
 
-**Atom Settings (gear wheel).** The main setting that I change is in the `tree-view` package, which is the code that tells Atom how to view your project files. You will want to see hidden files and need go to Settings>Packages>tree-view to uncheck “Hide Ignored Names.” After you build/compile your sketches, PlatformIO will create several items in your root directory, including the Arduino libraries, and sometimes you will need to be able to see these (namely, `.git`, `.pioenvs`, and `.piolibdeps`).
+**Atom Settings (gear wheel).** The main time I use this is to change settings in the `tree-view` package, which is the code that tells Atom how to view your project files. You will want to see hidden files and need go to Settings>Packages>tree-view to uncheck “Hide Ignored Names.” After you build/compile your sketches, PlatformIO will create several items in your root directory, including the Arduino libraries, and sometimes you will need to be able to see these (namely, `.git`, `.pioenvs`, and `.piolibdeps`).
 
 ![Source and Destination Files]({{ page.root }}/fig/PlatformIO_navigation004.png)
 
