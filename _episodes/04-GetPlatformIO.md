@@ -33,7 +33,7 @@ PlatformIO IDE is hosted within a text editor designed for editing code. Most co
 
 - [Install PlatformIO for Atom.](https://platformio.org/install/ide?install=atom)
   - After you install Atom, follow the [PlatformIO for Atom Installation Instructions](https://docs.platformio.org/en/latest/ide/atom.html#installation).
-  - In brief, you will go to Settings in Atom (gear symbol), select install (plus symbol) and type in `platformio-ide` in the box that says "search packages" (see image below). PlatformIO should appear in the list after your search. Click on the blue install button and follow any additional instructions (such as to restart) to complete the installation.
+  - As pictured below, you will go to (1) Settings in Atom (gear symbol), (2) select install (plus symbol) and (3) type in `platformio-ide` in the box that says "search packages". PlatformIO should appear in the list after your search. Click on the blue install button and follow any additional instructions (such as to restart) to complete the installation.
   - Installation may take a while, as a lot of dependencies (i.e. other libraries and plugins used by PlatformIo) are also being installed.
   - You may wish to read through the [PlatformIO quick start guide for Atom](https://docs.platformio.org/en/latest/ide/atom.html#quick-start), but our tutorial will take you through many of the same steps.
   - NOTE for Windows users:
@@ -41,7 +41,7 @@ PlatformIO IDE is hosted within a text editor designed for editing code. Most co
 
   ![Source and Destination Files]({{ page.root }}/fig/PlatformIO_navigation002.png)
 
-- You can also choose VSCode instead of Atom
+- You may choose VSCode instead of Atom
   - Note that all our PlatformIO instructions in this tutorial are geared for Atom.
   - [Install PlatformIO for VSCode](https://platformio.org/install/ide?install=vscode)
   - Follow the instructions to download VSCode, then within VSCode you will use a command line to install PlatformIO.
@@ -50,7 +50,7 @@ PlatformIO IDE is hosted within a text editor designed for editing code. Most co
   - NOTE 2: Changing Serial Monitor baud rates can't be done through the VSCode IDE, but rather requires a new line in the PlatformIO.ini file. See:
     - https://docs.platformio.org/en/latest/ide/vscode.html#serial-port-monitor and
     - https://docs.platformio.org/en/latest/projectconf/section_env_monitor.html#projectconf-monitor-speed
-
+  - FURTHER NOTES: If you encounter other VSCode tips and tricks that we should include, please submit these to the [LearnEnviroDIY issues on GitHub](https://github.com/EnviroDIY/LearnEnviroDIY/issues).
 
 ### What you can see in PlatformIO
 In the following sections we will take you on a tour through the PlatformIO for Atom user interface to describe which features of PlatformIO you will need for using EnviroDIY Modular Sensors sketches.

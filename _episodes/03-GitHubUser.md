@@ -24,6 +24,7 @@ The operative word for our use of GitHub is collaborative! It can be a place whe
 
 > ## Things you should know
 > Your activity on GitHub is public. Your content on GitHub is public (but credited to you as the owner/contributor). Private repositories (*repos* for short, defined as a storage place) exist, but they are not free. Don't let this scare you away from interacting on GitHub, submitting *issues*, or making *commits*.
+As soon as you have a GitHub account you are qualified to help us improve this tutorial! Please submit your suggestions to the [LearnEnviroDIY issues on GitHub](https://github.com/EnviroDIY/LearnEnviroDIY/issues).
 {: .discussion}
 
 - ["Sign Up" for GitHub (create your own user account).](https://github.com/)
