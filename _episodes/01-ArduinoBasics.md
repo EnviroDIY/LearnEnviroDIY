@@ -42,7 +42,7 @@ The Arduino sketches in this episode are simple and require a minimal number of 
   <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/mayfly_outline.jpg" width="500">
 
   - This is the Mayfly v1.0, which was released in early 2022. Details of the changes between board versions can be found at [EnviroDIY.org](https://www.envirodiy.org/mayfly/hardware/details-and-specs/). You will need to note some pin and LED location differnces to complete this tutorial.
-  <img src="https://github.com/EnviroDIY/LearnEnviroDIY/blob/gh-pages/fig/FeaturesofMayfly-v10graphic2.jpg" width="500">
+  <img src="https://raw.githubusercontent.com/EnviroDIY/LearnEnviroDIY/gh-pages/fig/FeaturesofMayfly-v10graphic2.jpg" width="500">
 
   - A note on the USB fuse on the Uno. The Mayfly does not not have this, which means that it is possible to "fry" the Mayfly more easily than the Uno. Make sure the toggle that we have labeled "12V power option" is on USB/LiPo for the tutorials and for almost everything you will do with the Mayfly. Supplying 12V power is an advanced maneuver that requires extra hardware.
   - After you work through Lady Ada's software download instructions, follow the [instructions for installing the Mayfly driver](https://www.envirodiy.org/mayfly/software/).
