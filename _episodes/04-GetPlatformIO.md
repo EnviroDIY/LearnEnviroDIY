@@ -8,7 +8,7 @@ questions:
 - "How can I easily compare two codes files?"
 - "Which buttons do I push in PlatformIO?"
 objectives:
-- "Download PlatformIO and Atom. Test PlatformIO."
+- "Download PlatformIO and VSCode. Test PlatformIO."
 keypoints:
 - "PlatformIO provides an Integrated Development Environment (IDE) that combines all the capabilities of the Arduino IDE along with many advanced capabilities of a code editor that you will come to appreciate."
 ---
@@ -16,28 +16,18 @@ keypoints:
 
 In this lesson we will prepare you to use PlatformIO, an Integrated Development Environment (IDE) for Internet of Things (IoT). PlatformIO IDE is extremely helpful (and we believe necessary) for keeping track of libraries and code differences when programming a data logger with the EnviroDIY Modular Sensors library. You will install PlatformIO, and become acquainted with many of its features, including file management, syntax highlighting, code difference tracking, code debugging, library management, and integration with Arduino and GitHub.
 
-### Atom and PlatformIO
-PlatformIO IDE is hosted within a text editor designed for editing code. Most code text editors highlight syntax and have special auto-complete and debugging features based on elements of the code. PlatformIO can be hosted by several text editors, so if you are a coder and already use VSCode or Sublime, please feel free to install PlatformIO for your favorite editor. The original combination was PlatformIO hosted within Atom text editor. Since Microsoft took ownership of GitHub, their VSCode has become the "recommended" download for PlatformIO, but we continue to use Atom. If you choose a different text editor, some of the buttons and commands will be located in different places, but all of the functionality will be preserved.
+### VSCode and PlatformIO
+PlatformIO IDE is hosted within a text editor designed for editing code. Most code text editors highlight syntax and have special auto-complete and debugging features based on elements of the code. PlatformIO can be hosted by several text editors, so if you are a coder and already use VSCode or Sublime, please feel free to install PlatformIO for your favorite editor. The original combination was PlatformIO hosted within VSCode text editor. Since Microsoft took ownership of GitHub, their VSCode has become the "recommended" download for PlatformIO (we used to use Atom, but have found that support for Atom is dwindling). If you choose a different text editor, some of the buttons and commands will be located in different places, but all of the functionality will be preserved.
 
 - [Install Git](https://git-scm.com/downloads)
   - You need to have an all-purpose Git Client installed to use the library functions in PlatformIO. Although you installed GitHub Desktop, its Git client is only used by that application. (You may hove done this as the last step in Episode 3.)
-  - Download and install Git from [https://git-scm.com/downloads](https://git-scm.com/downloads). Install selecting all the defaults (make sure your PATH environment allows Git from command line and also from 3rd-party software). We find it best to reboot your computer before installing Atom.
+  - Download and install Git from [https://git-scm.com/downloads](https://git-scm.com/downloads). Install selecting all the defaults (make sure your PATH environment allows Git from command line and also from 3rd-party software). We find it best to reboot your computer before installing PlatformIO and VSCode.
 
-- [Install Atom](https://atom.io/)
-  - Download and install official GitHub's Atom text editor, PlatformIO IDE is built on top of it.
-  - If you get a **"Clang is not installed on your system!"** message, please proceed to install it. (This is not as alarming as it sounds!)
-    - The "Install Clang" button only sends you to the  PlatformIO web page with instructions for installing [Clang for for Intelligent Code Completion](https://docs.platformio.org/en/latest/ide/atom.html#ii-clang-for-intelligent-code-completion). Clang does not install automatically, you need to follow the instructions depending on your operating system.
-    - During installation, select **“Add LLVM to the system PATH for all users”** (which is not the default).
-    - If you get a "Failed to find MSBuild toolset directory" error when installing on Windows, you can ignore it and conintue, as described [here](https://stackoverflow.com/questions/34029904/problems-installing-clang-in-windows).
-
-
-- [Install PlatformIO for Atom.](https://platformio.org/install/ide?install=atom)
-  - After you install Atom, follow the [PlatformIO for Atom Installation Instructions](https://docs.platformio.org/en/latest/ide/atom.html#installation).
-  - As pictured below, you will go to (1) Settings in Atom (gear symbol), (2) select install (plus symbol) and (3) type in `platformio-ide` in the box that says "search packages". PlatformIO should appear in the list after your search. Click on the blue install button and follow any additional instructions (such as to restart) to complete the installation.
+- [Install PlatformIO for VSCode.](https://platformio.org/install/ide?install=vscode)
+  - This page will guide you to first install Visual Studio Code. After you install VSCode, follow the [PlatformIO for VSCode Installation Instructions](https://platformio.org/install/ide?install=vscode).
+  - As pictured below, you will go to (1) Extension in VSCode (4-square symbol), (2) type "platformio" into the extensions search box and (3) Click on the install button and follow any additional instructions (such as to restart) to complete the installation.
   - Installation may take a while, as a lot of dependencies (i.e. other libraries and plugins used by PlatformIo) are also being installed.
-  - You may wish to read through the [PlatformIO quick start guide for Atom](https://docs.platformio.org/en/latest/ide/atom.html#quick-start), but our tutorial will take you through many of the same steps.
-  - NOTE for Windows users:
-    - PlatformIO is written in Python 2.7, which should automatically get installed as a dependency. However, there can be conflicts if you have an existing installation of Python 3.6.x. If this is a conflict for you, read [this issue](https://github.com/platformio/platformio-atom-ide-terminal/issues/668#issuecomment-470893810).
+  - Many of the details of this installation process (and more) are included in this hour-long, but well indexed video [Getting Started with PlatformIO by DroneBot Workshop](https://www.youtube.com/watch?v=JmvMvIphMnY).
 
   ![Source and Destination Files]({{ page.root }}/fig/PlatformIO_navigation002.png)
 
