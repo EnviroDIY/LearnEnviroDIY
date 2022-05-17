@@ -38,6 +38,8 @@ As soon as you have a GitHub account you are qualified to help us improve this t
 
 - [Install Git Client](https://git-scm.com/downloads)
   - You will need this when you use PlatformIO in the next episode.
+  - Follow the instructions for your operating system. Note that these installations will require multiple steps, and will require you to do some command line installations (e.g. in Terminal in MacOS and PowerShell in Windows). This series of installations may take a long time, dpending on your computer and internet connections. 
+  - You will need to have adiminstrator access on your computer to complete these installations. 
 
 
 > ## For your reference

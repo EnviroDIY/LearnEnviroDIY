@@ -31,10 +31,6 @@ PlatformIO IDE is hosted within a text editor designed for editing code. Most co
 
   ![Source and Destination Files]({{ page.root }}/fig/PlatformIO_navigation002.png)
 
-- If you choose VSCode instead of Atom
-  - Note that all our PlatformIO instructions in this tutorial are geared for Atom.
-  - [Install PlatformIO for VSCode](https://platformio.org/install/ide?install=vscode)
-  - Follow the instructions to download VSCode, then within VSCode you will use a command line to install PlatformIO.
   - As recommended on the download page, read through the [PlatformIO quick start guide for VSCode](https://docs.platformio.org/en/latest/ide/vscode.html#quick-start).
   - NOTE 1: VSCode might recommend that you install the "Arduino" extension for the `.ino` file types. DO NOT do this, as it will conflict with PlatformIO.
   - NOTE 2: Changing Serial Monitor baud rates can't be done through the VSCode IDE, but rather requires a new line in the PlatformIO.ini file. See:
@@ -43,39 +39,24 @@ PlatformIO IDE is hosted within a text editor designed for editing code. Most co
   - FURTHER NOTES: If you encounter other VSCode tips and tricks that we should include, please submit these to the [LearnEnviroDIY issues on GitHub](https://github.com/EnviroDIY/LearnEnviroDIY/issues).
 
 ### What you can see in PlatformIO
-In the following sections we will take you on a tour through the PlatformIO for Atom user interface to describe which features of PlatformIO you will need for using EnviroDIY Modular Sensors sketches.
+In the following sections we will take you on a tour through the PlatformIO user interface to describe which features of PlatformIO you will need for using EnviroDIY Modular Sensors sketches.
 
 #### PlatformIO Toolbar:
-- For Atom, the PlatformIO Toolbar is on the left side.
-- For VSCode, the the PlatformIO Toolbar is on the bottom.
+- The PlatformIO Toolbar location varies depending on your code text editor. The VSCode toolbar is at the far left of this screenshot and the PlatformIO window is embedded within VSCode.
 
 ![Source and Destination Files]({{ page.root }}/fig/PlatformIO_navigation003.png)
 
-**PlatformIO Home.** This is where you will manage software updates for PlatformIO and other libraries that PlatformIO sees you using. You will know when updates are needed because they will be marked with bright badges. You also create a PlatformIO account here, which I think you need if you use some of the development capabilities; I don’t have a PlatformIO account.
+**PlatformIO Home.** This is where you will manage software updates for PlatformIO and other libraries that PlatformIO sees you using. You will know when updates are needed because they will be marked with bright badges. You also create a PlatformIO account here, which you need if you use some of the development capabilities (not necessary as you get started).
 
-**Build (checkmark).** Previously “compile” in Arduino, now it's "verify", and it's always been a checkmark. This is the button you push when your sketch is ready and your `platformio.ini` is pointing to all of the right files and repositories for your sketch. This process will list color-coded errors (and successes) as it runs the build. I have found that the error messages are usually pretty understandable and repairable, so keep calm and READ THE MESSAGES. Red error messages will not allow you to proceed. Yellow error messages will allow you to proceed.
+**Projects.** All of your Arduino work will be stored as projects. Once you add a project in PlatformIO, you will have more menu items across the bottom bar of the VSCode window. 
 
-**Upload (right arrow).** This is the button that will send your sketch to your Arduino board.
+**Inspect.** Details about each of your projects will be here, including memory usage and debugging information.
 
-**Upload to remote device (cloud arrow).** I have never used it, but I dream of the day when I can upload to a deployed sensor station!
+**Libraries.** This makes it easy for you to see the libraries and versions that are currently installed in your project. PlatformIO manages the libraries for your Arduino projects.
 
-**Clean (trash can).** This removes previously compiled files and can be helpful to clear any compile errors. The only downside is that it will need to recompile all files, which can take a bit longer to complete.
+**Boards.** Many Arduino framework microcontroller boards are listed here as pre-configured boards. This means that PlatformIO will know your board's platform, memory, and clock frequency. If you are using the EnviroDIY Mayfly, you will select that board here.
 
-**Test (flask).** We don't use this.
-
-**Debug (bug).** We don't use this, and it apparently requires a PlatformIO account.
-
-**Run other target (page with checkmark).** We don't use this.
-
-**Toggle Build Panel (vertical arrows).** When you build a sketch and it is successful, the terminal with the build messages disappears. If you want to check out what it said, you can press this and it will bring back your most recent build.
-
-**Find in Project (magnifying glass).** Works as a “Find and Replace” for all the files in your project directory.
-
-**Terminal (cursor box).** Command line access to the functions of PlatformIO. I use this when my pushes to GitHub create conflicts (while sharing a repository with others).
-
-**Serial Monitor (power plug).** This is your window into what’s happening on your Arduino board. The print statements that update you regarding the progress of your sketch show up here. Every time I upload a sketch this is where I see if it’s working correctly.
-
-**Atom Settings (gear wheel).** The main time I use this is to change settings in the `tree-view` package, which is the code that tells Atom how to view your project files. You will want to see hidden files and need go to Settings>Packages>tree-view to uncheck “Hide Ignored Names.” After you build/compile your sketches, PlatformIO will create several items in your root directory, including the Arduino libraries, and sometimes you will need to be able to see these (namely, `.git`, `.pioenvs`, and `.piolibdeps`).
+**Devices.** Each Arduino board that you connect to your computer will have a unique port assignment. On a PC this will be a COM + a number. On a Mac this will be a character string containing USB.  
 
 ![Source and Destination Files]({{ page.root }}/fig/PlatformIO_navigation004.png)
 
