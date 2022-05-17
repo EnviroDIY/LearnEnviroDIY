@@ -48,7 +48,7 @@ In the following sections we will take you on a tour through the PlatformIO user
 
 **PlatformIO Home.** This is where you will manage software updates for PlatformIO and other libraries that PlatformIO sees you using. You will know when updates are needed because they will be marked with bright badges. You also create a PlatformIO account here, which you need if you use some of the development capabilities (not necessary as you get started).
 
-**Projects.** All of your Arduino work will be stored as projects. Once you add a project in PlatformIO, you will have more menu items across the bottom bar of the VSCode window. 
+**Projects.** All of your Arduino work will be stored as projects. Once you add a project in PlatformIO, you will have more menu items across the bottom bar of the VSCode window. You may have work open from multiple projects at a time.
 
 **Inspect.** Details about each of your projects will be here, including memory usage and debugging information.
 
@@ -58,14 +58,27 @@ In the following sections we will take you on a tour through the PlatformIO user
 
 **Devices.** Each Arduino board that you connect to your computer will have a unique port assignment. On a PC this will be a COM + a number. On a Mac this will be a character string containing USB.  
 
+**Home (house icon).** This is the most direct way to go the PlatformIO Home in VSCode. When you have a project installed/open, there will be several more PlatformIO icons next to this Home icon, and these are the tools you will use most for your Arduino work, as shown below. This is where you will manage software updates for PlatformIO and other libraries that PlatformIO sees you using. You will know when updates are needed because they will be marked with bright badges. You also create a PlatformIO account here, which you need if you use some of the development capabilities (not necessary as you get started).
+
 ![Source and Destination Files]({{ page.root }}/fig/PlatformIO_navigation004.png)
 
-#### Project tab
-This is basically Finder/Windows Explorer conveniently located right in PlatformIO. You can add, move, copy, and delete files and folders in this tab. Right-clicking on any of the items in your project will give you a list of possible actions. I also frequently use the “Copy Project Path” option for naming the source directories in my `platformio.ini` file.
+#### The Bar of EVERYTHING:
+- This understated bar at the bottom of your VSCode window is the main set of tools that you will use in PlaformIO for Arduino. 
 
-One of the most important things to notice in the project tab is the blue vertical line along the left side of the project tab. This line indicates which project is the active project, meaning that the `platformio.ini` file in the root directory of that project is where PlatformIO will look for build instructions. In the screen shots provided “ModularSensors” is the active project, and all others are inactive.
+**Build (checkmark).** This is the button you push when your sketch is ready and your `platformio.ini` is pointing to all of the right files and repositories for your sketch. This process will list color-coded errors (and successes) as it runs the build. I have found that the error messages are usually pretty understandable and repairable, so keep calm and READ THE MESSAGES. Red error messages will not allow you to proceed. Yellow error messages will allow you to proceed.
 
-There’s a little half-circle that appears when your mouse hovers over the project tab that will allow you to hide or show it as needed. This will be useful when you are comparing two sketches side-by-side.
+**Upload (right arrow).** This is the button that will send your sketch to your Arduino board. You need to Build before you Upload.
+
+**Clean (trash can).** This removes previously compiled files and can be helpful to clear any compile errors. The only downside is that it will need to recompile all files, which can take a bit longer to complete.
+
+**Serial Monitor (power plug).** This is your window into what’s happening on your Arduino board. The print statements that update you regarding the progress of your sketch show up here. Every time I upload a sketch this is where I see if it’s working correctly.
+
+**Terminal (cursor box).** Command line access to the functions of PlatformIO. I use this when my pushes to GitHub create conflicts (while sharing a repository with others). You may not need to use this.
+
+**Project Environment (file folder).** One of the most important things to notice in the PlatformIO environment is this directory name. This directory indicates which project is the active project, meaning that the `platformio.ini` file in the root directory of that project is where PlatformIO will look for instructions. You could have a dozen files open in PlatformIO, but the one named in the `platformio.ini` file in this directory is the only one that will Build and Upload. In the screen shot provided “EnfiorDIY_deployments” is the active project.
+
+#### Explorer
+This is basically Finder/Windows Explorer conveniently located right in PlatformIO. You can add, move, copy, and delete files and folders in this tab. Right-clicking on any of the items in your project will give you a list of possible actions. I also frequently use the “Copy Relative Path” option for naming the source directories in my `platformio.ini` file.
 
 In the next episode, we will start uploading code to the Mayfly!
 
