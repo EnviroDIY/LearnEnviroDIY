@@ -25,9 +25,9 @@ PlatformIO IDE is hosted within a text editor designed for editing code. Most co
 
 - [Install PlatformIO for VSCode.](https://platformio.org/install/ide?install=vscode)
   - This page will guide you to first install Visual Studio Code. After you install VSCode, follow the [PlatformIO for VSCode Installation Instructions](https://platformio.org/install/ide?install=vscode).
-  - As pictured below, you will go to (1) Extension in VSCode (4-square symbol), (2) type "platformio" into the extensions search box and (3) Click on the install button and follow any additional instructions (such as to restart) to complete the installation.
+  - After installing VSCode, open VSCode and install PlatformIO from within VSCode. As pictured below, you will go to (1) Extension in VSCode (4-square symbol), (2) type "platformio" into the extensions search box and (3) Click on the install button and follow any additional instructions (such as to restart) to complete the installation.
   - Installation may take a while, as a lot of dependencies (i.e. other libraries and plugins used by PlatformIo) are also being installed.
-  - Many of the details of this installation process (and more) are included in this hour-long, but well indexed video [Getting Started with PlatformIO by DroneBot Workshop](https://www.youtube.com/watch?v=JmvMvIphMnY).
+  - Many of the details of this installation process (and more) are included in this hour-long, but well-indexed video [Getting Started with PlatformIO by DroneBot Workshop](https://www.youtube.com/watch?v=JmvMvIphMnY).
 
   ![Source and Destination Files]({{ page.root }}/fig/PlatformIO_navigation002.png)
 
