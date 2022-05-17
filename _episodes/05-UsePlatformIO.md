@@ -24,19 +24,19 @@ In this lesson we will interactively explore the features of PlatformIO and incr
 
 ### Get Mayfly running in PlatformIO
 
-In PlatformIO, click the Home button and in the PlatformIO Home tab, select *Boards*, and in the search bar search for "Mayfly" or "EnviroDIY". Good news! The Mayfly is among the more than 500 boards supported by PlatformIO.
+In PlatformIO, click the Home button and in the PlatformIO Home tab, select *Boards*, and in the search bar search for "Mayfly" or "EnviroDIY". Good news! The Mayfly is among the more than 800 boards supported by PlatformIO.
 
 You did not really need to go find the Mayfly, but we lead you there because we want you to see the columns next to the Mayfly. Notice that the Mayfly's platform is "Atmel AVR" and the framework is "Arduino." These are important pieces of information that you will need to include in your `platformio.ini` file so you can upload code to the Mayfly. If you are using a different microcontroller for this tutorial, you will need to use this information to customize the `platformio.ini` file to give correct upload instructions for your board.
 
 ### Get to know the Mayfly
 
-Many of the Sketches in the EnviroDIY library will not work if the Mayfly is missing an SD card. While we are getting familiar with its ports and connections, let's take a moment to insert a CR1220 coin battery and SD card into the Mayfly. The coin battery keeps the Real Time Clock running on the Mayfly, which we will set at the end of this episode. You will need a separate, external LiPo battery to supply power to the Mayfly and sensors.
+Many of the Sketches in the EnviroDIY library will not work if the Mayfly is missing an SD card. While we are getting familiar with its ports and connections, let's take a moment to insert a CR1220 coin battery and SD card into the Mayfly. The coin battery keeps the Real Time Clock running on the Mayfly, which we will set at the end of this episode. You will need a separate, external LiPo battery to supply power to the Mayfly and sensors. For the sake of this tutorial and testing, your USB connection will also supply  power to sensors.
 
-To insert the coin battery, make sure the positive (+) side of the battery is facing upward as shown below. (Caution: if you insert the battery upside-down you might ruin the Real Time Clock).  
+To insert the coin battery, make sure the positive (+) side of the battery is facing upward as shown below. (Caution: if you insert the battery upside-down you might ruin the Real Time Clock, dpending on the version of the Mayfly).  
 <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/MayflyBattSD.JPG" width="600">
 
 
-Press the battery securely (and carefully) into the slot on the Mayfly. The fit is intentionally tight, and inserting the battery is somewhat difficult to do. If you need extra leverage, using the edge of the cover on your starter kit (shown below) might give you what you need to push the battery into the slot (but don't push too far!). The good news is that you will not have to do this again for years.
+Press the battery securely (and carefully) into the slot on the Mayfly. The fit is intentionally tight, and inserting the battery is somewhat difficult to do. If you need extra leverage, using the edge of a hard plastic item might give you what you need to push the battery into the slot (but don't push too far!). The good news is that you will not have to do this again for years.
 <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/MayflyBattPush.jpg" width="400">
 
 
@@ -44,7 +44,7 @@ Inserting the SD card is much easier. Orient the card into the SD card slot as s
 
 ### Create a project of Episode 5 sketches
 [Download Sketches for Episode 5](https://github.com/EnviroDIY/LearnEnviroDIYcode)
-You have a few ways to use an existing GitHub repository (repo from now on), including to *fork*, *clone*, or *download* the full repository of files. The typical GitHub behavior is that downloading individual files or folders within a repo is possible but difficult. Let's pause for a moment and find out what each of those actions means.
+You have a few ways to use an existing GitHub repository (repo from now on), including to *fork*, *clone*, or *download* the full repository of files. The typical GitHub behavior is that downloading individual files or folders within a repo is possible but difficult. Let's pause for a moment and find out what each of those actions means. (Note, we recommend download the repo for this tutorial.)
 
 > ## GitHub Jargon
 >**Fork:** If you want to take an existing repo and modify it for your purposes, you could *fork* the repo. That sounds a lot like copying someone else's work, but in the GitHub and open-source world, this is permitted and encouraged. Forking through GitHub retains attribution and authorship. For example, if you look at the documentation for this tutorial, you will see that we are using a repository designed by Software Carpentry.
@@ -64,15 +64,18 @@ You have a few ways to use an existing GitHub repository (repo from now on), inc
 <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/GitDownload.png" width="700">
 
 
-- **Step 3:** In PlatformIO, add the unzipped directory as a "Project" by going to File>Add Project Folder... and selecting your *LearnEnviroDIYcode* directory. Notice that each sketch includes a folder that is named identically to the *.ino* file Ardunio sketch. This structure is still required even though we are not working in the Arudino IDE.  
+- **Step 3:** In PlatformIO, add the unzipped directory as a "Project" by going to Home, Projects, Import Arduino Project... and select your *LearnEnviroDIYcode* directory. Find this new directory in VSCode Explorer. In the directory "Part1-sketches," notice that each sketch includes a folder that is named identically to the *.ino* file Ardunio sketch. This structure is required in PlatformIO, just like it was in the Arudino IDE.  
 
 - **Step 4:** Open Example_01_Mayfly_blink.ino, and examine the code. It should look extremely familiar to the very first sketch from Ladyada's lesson 1. We changed the pin number in the sketch to match one of the LED options on the Mayfly. Although many Arduino framework boards have compatible functionality, the ports and lights are usually not located at the same pin numbers. Most have documentation to help you locate the pin numbers. [Documentation for the Mayfly is compiled at envirodiy.org.](https://www.envirodiy.org/mayfly/hardware/).
 
-- **Step 5:** Open `platformio.ini` file located in the LearnEnviroDIYcode directory. Notice that opening this ".ini" file caused the *LearnEnviroDIYcode* to be highlighted with the blue vertical line indicating that it is the active directory (if it wasn't already).
-  - If you cannot see the `platformio.ini` file in your root directory, go to Atom Settings (press gear wheel icon, bottom left), click on *packages*, and in the search bar type `tree-view`. Select the "settings" for tree-view and uncheck "Hide Ignored Names." Now you should be able to see the `platformio.ini` file in faded text, along with the `.pioenvs` and `.piolibdeps` folders.
+> ## C++ IntelliSense error message
+>**Error:** If you get an pop-up error message instructing you to convert your .INO sketch into a .CPP file, you can select "Do not show again." PlatformIO will successfully auto-convert and Build .INO files if the file includes `#include <Arduino.h>` at the beginning of the sketch.
+{: .callout}
+
+- **Step 5:** Open `platformio.ini` file located in the LearnEnviroDIYcode directory. Confirm that "LearnEnviroDIYcode" is the name of the active directory (in The Bar of EVERYTHING at the bottom of the VSCode window).
 
 > ## About the `platformio.ini` file
-> This is an “initialization” file (the community calls it the “ini” file, pronounced like an innie belly button). The `platformio.ini` file is where you give PlatformIO instructions, and we have it set up for your first sketch. We specified the board and framework you are using (e.g. board = mayfly and framework = arduino), the `lib_deps` needed for the sketch, and other information that you will not need to change. The part that you will need to change is the source directory, which is where PlatformIO will look for the Arduino sketch to "Build/Compile" and "Upload", located under `[platformio]`. Currently the source directory is set as `src_dir = Part1-sketches/Example_01_Mayfly_blink` (in line 12), which is what we want to use as our first sketch.
+> This is an “initialization” file (the community calls it the “ini” file, pronounced like an innie belly button). The `platformio.ini` file is where you give PlatformIO instructions, and we have it set up for your first sketch. We specified the board and framework you are using (e.g. board = mayfly and framework = arduino), the `lib_deps` needed for the sketch, and other information that you will not need to change. The part that you will need to change is the source directory, which is where PlatformIO will look for the Arduino sketch to "Build" and "Upload", located under `[platformio]`. Currently the source directory is set as `src_dir = Part1-sketches/Example_01_Mayfly_blink` (in line 12), which is what we want to use as our first sketch.
 >
 >Notice line 13 has a different source directory listed, but it has a semicolon (;) at the beginning, which comments out this line. We commonly keep a list of the source directories that we are actively using and add or remove the semicolon to switch between sketches.
 >
