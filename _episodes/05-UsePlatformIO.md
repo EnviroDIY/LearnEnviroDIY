@@ -86,20 +86,19 @@ You have a few ways to use an existing GitHub repository (repo from now on), inc
 >> For more information, see [PlatformIO Documentation](https://docs.platformio.org/en/latest/) on [`platformio.ini`](https://docs.platformio.org/en/latest/projectconf.html) for detailed documentation about all the syntax options.
 {: .callout}
 
-- **Step 6:** Connect the Mayfly logger using the USB cable included in your starter kit. Turn the Mayfly on. Push the Build/Compile button (checkmark). You should see a terminal pop up and lines of text will scroll through the terminal, and if all goes well, it will conclude with a green bar that says "platform run" and "[SUCCESS]" in green, as shown below. Sometimes the system takes a little while to compile and gives an error message ending in "No such file or directory." If you get this error message, wait ~30 seconds and Build/Compile again.
+- **Step 6:** Connect the Mayfly logger using the USB cable included in your starter kit. Turn the Mayfly on. Push the Build button (checkmark). You should see a terminal pop up and lines of text will scroll through the terminal, and if all goes well, it will conclude with a green bar that says "platform run" and "[SUCCESS]" in green, as shown below. Sometimes the system takes a little while to compile and gives an error message ending in "No such file or directory." If you get this error message, wait ~30 seconds and Build again.
 <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/platformrunSuccess.png" width="700">
   - If you have trouble compiling, it is possible that you your `.piolibdeps` are:
     - Still installing, and if so, wait for them to complete; and
     - Corrupted for some reason, and if so, try updating following the instructions at in this [GitHub issue #247 comment](https://github.com/EnviroDIY/ModularSensors/issues/247#issue-423925820).
 
-- **Step 7:** Upload the sketch to the Mayfly by pushing the right arrow button:
-  ![Source and Destination Files]({{ page.root }}/fig/pioUploadButton.png)
-  Select your upload port (the one with something about USB), if prompted. The success indicator will look the same as in Step 6. And the green LED on your Mayfly will blink on and off!
+- **Step 7:** Upload the sketch to the Mayfly by pushing the right arrow button. 
+  The success indicator will look the same as in Step 6. And the green LED on your Mayfly will blink on and off!
     - If you have trouble connecting to the Mayfly:
       - Check that the Mayfly is turned on;
       - Check that the tiny [power source switch](https://www.envirodiy.org/features-of-the-new-mayfly-v0-5/) on the top of the Mayfly is set to *USB/Lipo* rather than *Ext* (12V) power source;
       - Confirm that you have a good USB data cable (some micro-USB cables are only for charging, and old cables can become damaged); and
-      - Confirm that you have installed the [Arduino IDE desktop software](https://www.arduino.cc/en/main/software), which will install the proper drivers to recognize the board as a COM port.
+      - Confirm that you have installed the [Arduino IDE desktop software](https://www.arduino.cc/en/main/software), which will install the proper drivers to recognize the board as a COM port. If you started at the beginnning of this tutorial, you already have the Arduino IDE.
         - NOTE for Installing Arduino Desktop IDE for Windows: If your IDE does not recognize a COM port for your board, you may need to follow these [instructions to install the board drivers](https://www.arduino.cc/en/Guide/ArduinoUno#toc3). This might happen if you installed from the Windows Zip package. If you used the Windows Installer (admin privileges required), then the drivers should have installed automatically.
 
 
@@ -108,9 +107,9 @@ You have a few ways to use an existing GitHub repository (repo from now on), inc
 >
 >The `platformio.ini` file has a category for the library dependencies that you need for each sketch. We are slightly cheating in this tutorial by referencing the full collection of library dependencies for Modular Sensors from the start because that more than covers the dependencies required by the tutorial sketches. EnviroDIY has a collection of all of the libraries needed to run the Modular Sensors sketches, skillfully curated in a way that collects the current version of several external libraries needed to support all of the functions and sensors in Modular Sensors. It's brilliant. Essentially, thanks to how brilliant it is to use with PlatformIO, you would not have to think about `lib_deps` for this whole tutorial, so we have to take this little break to teach you what you need to know.
 >
->When you pushed the Build button for your first sketch, PlatformIO created two hidden directories: `.pioenvs` and `.piolibdeps`. Since we unhid them using the `tree-view` package (Step 5, above), if you look in the `.piolibdeps` directory, you will see the names and models of several sensors. These sensor libraries were curated for you by directing PlatformIO to get libraries from EnviroDIY_ModularSensors. You could direct PlatformIO to each of these libraries independently, and we did this for the software serial libraries listed in the `platformio.ini` file.  
+>When you pushed the Build button for your first sketch, PlatformIO created a directory: `.pio`, which inlclues a directory called `libdeps`. If you look in the `libdeps` directory, you will see the names and models of several sensors. These sensor libraries were curated for you by directing PlatformIO to get libraries from EnviroDIY_ModularSensors. You could direct PlatformIO to each of these libraries independently, and we did this for the some libraries listed in the `platformio.ini` file.  
 >
->You may notice that many items listed under `lib_deps` look like URLs. These are links to GitHub repositories, which allows you to get the current version of the libraries. Here are three ways you can link to libraries:
+>You may notice that many items listed under `lib_deps` in your `platformio.ini` file look like URLs. These are links to GitHub repositories, which allows you to get the current version of the libraries. Here are three ways you can link to libraries:
 > - `https://github.com/EnviroDIY/ModularSensors.git`
 >   - This is a link directly to the repository. PlatformIO knows how to get the library files from the latest files on the default branch  (they are .cpp and .h files which stand for C++ and header, respectively).
 > - `https://github.com/EnviroDIY/ModularSensors.git#a84934eebc1fadef8b372dc0251cb3b127c8f71a`
