@@ -27,13 +27,10 @@ This lesson builds directly on Episode 5: Using PlatformIO and Mayfly. We will i
 
 ### Load your second sketch from PlatformIO to the Mayfly!
 - Open the `platformio.ini` file in the LearnEnviroDIYcode project and type a ";" in front of the "example1" sketch, and uncomment the `Example_02_Mayfly_blink.ino` sketch to make that active.
+- Change "monitor speed" from 57600 to 115200 (this is on line 18 the `platformio.ini` file).
 - **Save the `platformio.ini` file.**
 - Push the Build/Compile button (checkmark), and after that has completed, push the Upload button (right arrow).
-- The Mayfly should blink as it did before, but now we will be able to check its status through the serial monitor by clicking the power plug button:
-  ![Source and Destination Files]({{ page.root }}/fig/pioSerialMonitorButton.png)
-  You will be prompted to select your Port and Baudrate:
-  <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/pioPortBaudrate.png" width="400">
-  The Baudrate is defined in the ini file and sketch as 115200.
+- The Mayfly should blink as it did before, but now we will be able to check its status through the serial monitor by clicking the power plug button. (If the serial monitor is printing nonsense characters, your baud rate is not correct.)
 
   Regarding your port selection:
 
@@ -42,12 +39,13 @@ This lesson builds directly on Episode 5: Using PlatformIO and Mayfly. We will i
   **In MacOS** your port will be a long string of gobbledygook with something about "usb" in the string (as shown above).
   Your serial output should look something like this:
   <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/SerialMonitorBlink.png" width="700">
+
 When you are testing sensors in the Modular Sensors sketches, the serial monitor will help you confirm that all of your sensors are working correctly, which is an extremely useful thing.
 
 ### Oh hey! There's a sensor on the Mayfly!
 - Your next task is to run `Example_03_Mayfly_temp.ino`. We did not put it in the `platformio.ini` file for you. Please add it to the "ini" file, save, Build, Upload, and run it on the serial monitor.
   - Notes:
-    - You can either type the file name into the "ini" file, or right-click on the directory (not the .ino file!) for Example 3 and select "Copy Project Path" (possibly two-finger click on MacOS, depending on your settings) and paste that into the "ini" file.  
+    - You can either type the file name into the "ini" file, or right-click on the directory (not the .ino file) for Example 3 and select "Copy Project Path" (possibly two-finger click on MacOS, depending on your settings) and paste that into the "ini" file.  
     <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/src_dir-edit.png" width="400">
     - It doesn't hurt to check the baud rate in the sketch to make sure it matches your `platformio.ini` file.
     - Your serial monitor should be outputting a temperature in degrees C once per second (or every 1000 milliseconds).
@@ -55,7 +53,7 @@ When you are testing sensors in the Modular Sensors sketches, the serial monitor
 > ## Running sketches in PlatformIO
 > From this point forward we will not remind you of the steps to upload a sketch, so here they are for quick reference:
 > 1. Add your project directory in the src_dir list in `platformio.ini`.
-> 2. Double check that the baud rate in the sketch matches the setting in `platformio.ini`.
+> 2. Double check that the baud rate in the sketch matches the setting in `platformio.ini`. 
 > 3. Save `platformio.ini` to build all the directories needed for the sketch.
 > 4. Build and upload the sketch.
 > 5. Run the serial monitor.
@@ -67,11 +65,11 @@ When you are testing sensors in the Modular Sensors sketches, the serial monitor
 
   1. Set the baud rate to 57600 for this task. The sketch has this correct, but you may need to set it `platformio.ini` as ```monitor_speed = 57600``` and possibly when prompted by your serial monitor. If you have the wrong baud rate, the serial print may look fine, but any date you try to set will give an "out of range" error.
   2. Upload `Example_04_Mayfly_setRTC.ino` to your Mayfly.
-  3. Open the serial monitor to confirm that it is outputting a time (probably ~January of 2000).
-  4. Click on the keyboard icon at the top left corner of the serial monitor window to open the Serial Text Insert box.
+  3. Open the serial monitor to confirm that it is outputting a time (probably ~January of 2000). The date and time should be scrolling if your sketch and monitor speed are correct. 
+  4. Now open the Arduino IDE, select your port (Tools menu), and open the serial monitor (magnifying glass). The place to insert text is at the top of the serial monitor. There's a "Send" button on the top right of the serial monitor. 
   5. Open a web browser to the [current unix time stamp at Sodaq](http://time.sodaq.net/) or [http://www.unixtimestamp.com/](http://www.unixtimestamp.com/). I prefer the simplicity of [time.sodaq.net](http://time.sodaq.net/).
   6. I like to split my screen between PlatformIO and my web browser for the next task.
-  7. As quickly as possible, you will need to copy the numeric unix time from the web browser and paste into the PlatformIO Serial Text Insert box. For the sketch to receive this time it needs to begin with a *T* followed by the numeric unix time stamp. I type the *T* into PlatformIO, then refresh the browser, select the number, copy, insert my cursor after the T in PlatformIO, paste, and immediately press [Enter].
+  7. As quickly as possible, you will need to copy the numeric unix time from the web browser and paste into the Arduino IDE Serial Text Insert box. For the sketch to receive this time it needs to begin with a *T* followed by the numeric unix time stamp. I type the *T* into PlatformIO, then refresh the browser, select the number, copy, insert my cursor after the T in Arduino IDE, paste, and immediately press [Enter] or click [Send].
   <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/serialtextinsert.png" width="400">
   8. If it worked, your serial monitor will begin scrolling a time that is within a minute of the current time, which is good enough for now.
 
