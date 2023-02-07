@@ -26,25 +26,22 @@ keypoints:
 {: .prereq}
 
 
-##### One of the advantages of working in a code editor is the ability to compare files within the editor. Before we get started with the sketches, install *split-diff* package to Atom:
-  - Go to settings (bottom left, gear icon).
-  - Click on **+ Install** Packages.
-  - Search for **split-diff**.
-  - Click Install. (Restart Atom if required.)
-
+##### One of the advantages of working in a code editor is the ability to compare files within the editor. VSCode has this as an embedded extension.
+  - You will do this by right clicking on each of the files you want to compare and choosing "Select to Compare" for the first file and "Compare with Selected".
 
 ##### Compare *logging_to_MMW.ino* and your version of *simple_logging.ino* in which you added sensors.
   - Copy *logging_to_MMW.ino* from your cloned Modular Sensors to your repository.
   - Open both sketches.
-  - With *logging_to_MMW.ino* as the active tab, right click on *simple_logging.ino*. In the drop-down menu, select **Diff with Active File**.
-  - Every line with different content will be highlighted in each file. Depending on how well the diff handles *comment out* characters, you may be able to see that much of the sketches align. However, *logging_to_MMW.ino* has several major differences that we will unpack so you can edit what you need and ignore what you do not need to change:
+  - In the Explorer, right click on the new *logging_to_MMW.ino* and select "Select to Compare" then right click on *simple_logging.ino* and choose "Compare with Selected". 
+  - Every line with different content will be highlighted in each file. Depending on how well the diff handles *comment out* characters, you may be able to see many lines from the sketches align. However, *logging_to_MMW.ino* has several major differences that we will unpack so you can edit what you need and ignore what you do not need to change. 
+  Here are things you do not need to change: 
     - small differences in the file header and name
-    - a massive section for modem settings (~500 lines of code to accommodate nearly any modem you could use with an Arduino),
+    - a massive section for modem settings (~many lines of code to accommodate nearly any modem you could use with an Arduino),
     - some differences in the sensors,
-    - UUIDs in the variable array,
+    - UUIDs in the variable array (until you are setting up a station),
     - a section for "registration and sampling feature information", and
     - lots of extra code in the setup and loop functions.
-  - You may wish to exit Split Diff mode by selecting from the menu: **Packages>Split Diff>Toggle** (note the keystroke command available in the menu). I sometimes find this mode helpful to leave on as I make edits to a sketch.
+  
 
 
 ##### Set up *logging_to_MMW.ino* to run BME280 and/or DS18 sensors.

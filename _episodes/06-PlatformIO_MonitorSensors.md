@@ -45,7 +45,7 @@ When you are testing sensors in the Modular Sensors sketches, the serial monitor
 ### Oh hey! There's a sensor on the Mayfly!
 - Your next task is to run `Example_03_Mayfly_temp.ino`. We did not put it in the `platformio.ini` file for you. Please add it to the "ini" file, save, Build, Upload, and run it on the serial monitor.
   - Notes:
-    - You can either type the file name into the "ini" file, or right-click on the directory (not the .ino file) for Example 3 and select "Copy Relative Path" (possibly two-finger click on MacOS, depending on your settings) and paste that into the "ini" file.  
+    - You can either type the file folder name into the "ini" file, or right-click on the directory (not the .ino file) for Example 3 and select "Copy Relative Path" (possibly two-finger click on MacOS, depending on your settings) and paste that into the "ini" file.  
     <img src="https://envirodiy.github.io/LearnEnviroDIY/fig/src_dir-edit.png" width="400">
     - It doesn't hurt to check the baud rate in the sketch to make sure it matches your `platformio.ini` file.
     - Your serial monitor should be outputting a temperature in degrees C once per second (or every 1000 milliseconds).
